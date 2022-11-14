@@ -1,0 +1,122 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+#footer {
+  background-color: #2a363b;
+  width: 100%;
+}
+#footer .logo {
+  padding-left: 50px;
+  padding-top: 30px;
+}
+#footer .float {
+  float: left;
+}
+#footer p {
+  font-size: 16px;
+
+  color: white;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+
+  line-height: 28px;
+  padding-left: 0px;
+}
+#footer h3 {
+  color: white;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 35px;
+  padding-left: 0px;
+}
+#footer .content {
+  display: flex;
+  padding-left: 110px;
+}
+#footer .content_1 {
+  flex: 1.2;
+}
+#footer .content_2 {
+  flex: 1;
+  padding-left: 20px;
+}
+#footer .content_3 {
+  flex: 1;
+}
+#footer .content_4 {
+  flex: 1;
+}
+#footer .content1 {
+  display: flex;
+}
+#footer .content1_1 {
+  flex: 50%;
+  padding-left: 400px;
+}
+#footer .content1_2 {
+  flex: 50%;
+}
+#footer #input- {
+  width: 380px;
+  height: 40px;
+  color: #9c9898;
+  padding-left: 10px;
+  background: #ffffff;
+  border: 1px solid #ffffff;
+  border-radius: 12px;
+
+  background-color: white;
+}
+#footer .tele {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 85vh;
+  left: 55vw;
+}
+#footer .float1 {
+  float: right;
+}
+#footer .blue {
+  color: #0075ff;
+}
+#footer .input-- {
+  color: rgb(165, 165, 165);
+  padding-bottom: 10px;
+}
+#footer .hover:hover {
+  text-decoration: underline;
+}
+@media screen and (max-width: 500px) {
+  #footer .content {
+    display: flex;
+    flex-direction: column;
+    padding-left: 50px;
+  }
+  #footer .content_2 {
+    padding-left: 0;
+  }
+  #footer .content1 {
+    display: flex;
+    flex-direction: column;
+    padding-left: 30px;
+  }
+  #footer .content1_1 {
+    padding-left: 20px;
+  }
+  #footer .content1_2 {
+    padding-left: 20px;
+  }
+  #footer .logo {
+    text-align: center;
+  }
+}
+#footer a {
+  text-decoration: none;
+  color: white;
+}
