@@ -1,129 +1,161 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>WorkZone</title>
-    <link rel="stylesheet" href="./Footer_candidate.css" />
-  </head>
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+#footer {
+  background-color: #2a363b;
+  width: 100%;
+}
+#footer .logo {
+  padding-left: 50px;
+  padding-top: 30px;
+}
+#footer .float {
+  float: left;
+}
+#footer p {
+  font-size: 16px;
 
-  <body>
-    <div id="footer">
-      <div class="logo">
-        <img src="./media/logo.png" width="297px" height="75px" />
-      </div>
-      <div class="content">
-        <div class="content_1">
-          <h3>
-            Kết nối với <span class="blue">Work</span>Z<span class="blue"
-              >one</span
-            >
-          </h3>
-          <p class="hover">
-            <img
-              class="float"
-              src="./media/phone.png"
-              width="27px"
-              height="27px"
-            />&nbsp; +123 456 7890
-          </p>
-          <p class="hover">
-            <a
-              href="https://www.google.com/intl/vi/gmail/about/"
-              target="_blank"
-              ><img
-                class="float"
-                src="./media/mail.png"
-                width="27px"
-                height="27px"
-              />&nbsp; uel@workzone.com</a
-            >
-          </p>
-          <p class="hover">
-            <a
-              href="https://www.google.com/maps/place/Tr%C6%B0%E1%BB%9Dng+%C4%90%E1%BA%A1i+h%E1%BB%8Dc+Kinh+t%E1%BA%BF+-+Lu%E1%BA%ADt,+%C4%90%E1%BA%A1i+h%E1%BB%8Dc+Qu%E1%BB%91c+gia+Th%C3%A0nh+ph%E1%BB%91+H%E1%BB%93+Ch%C3%AD+Minh/@10.8709374,106.7760666,17z/data=!3m1!4b1!4m6!3m5!1s0x3175277dbf11a271:0x4567e34b99494e3f!8m2!3d10.8709321!4d106.7782553!16s%2Fm%2F0ds8rvh?hl=vi"
-              target="_blank"
-              ><img
-                class="float"
-                src="./media/location.png"
-                width="27px"
-                height="27px"
-              />&nbsp; 265, QL1A, Phường Linh Trung, Thủ Đức</a
-            >
-          </p>
-          <p class="hover">
-            <a href="https://www.facebook.com/" target="_blank"
-              ><img
-                class="float"
-                src="./media/fb.png"
-                width="27px"
-                height="27px"
-              />&nbsp; WorkZone</a
-            >
-          </p>
-          <p class="hover">
-            <a href="https://www.linkedin.com/" target="_blank"
-              ><img
-                class="float"
-                src="./media/in.png"
-                width="27px"
-                height="27px"
-              />&nbsp; linkedin.com/workzone</a
-            >
-          </p>
-        </div>
-        <div class="content_2">
-          <h3>Công việc</h3>
+  color: white;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
 
-          <p class="hover"><a href="">Hot Job</a></p>
-          <p class="hover"><a href="">Latest Job</a></p>
-          <p class="hover"><a href="">Công ty hàng đầu</a></p>
-          <p class="hover"><a href="">Việc làm hấp dẫn</a></p>
-          <p class="hover"><a href="">Tin tức</a></p>
-        </div>
-        <div class="content_3">
-          <h3>About us</h3>
-          <p class="hover">
-            <a href=""
-              >Thông tin về <span class="blue">Work</span>Z<span class="blue"
-                >one</span
-              ></a
-            >
-          </p>
-          <p class="hover"><a href="">Điều khoản và dịch vụ</a></p>
-        </div>
-        <div class="content_4">
-          <h3>Liên hệ</h3>
-          <p class="hover"><a href="">Liên hệ ngay</a></p>
-          <p class="hover"><a href="">Hỗ trợ</a></p>
-        </div>
-      </div>
-      <div class="content1">
-        <div class="content1_1">
-          <h3>Still Need Help?</h3>
-          <p>
-            Hãy để chúng tôi giải đáp vấn đề của bạn ngay bây giờ <br />bằng
-            cách để lại email của bạn tại đây.
-          </p>
+  line-height: 28px;
+  padding-left: 0px;
+}
+#footer h3 {
+  color: white;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 35px;
+  padding-left: 0px;
+}
+#footer .content {
+  display: flex;
+  padding-left: 110px;
+}
+#footer .content_1 {
+  flex: 1.2;
+}
+#footer .content_2 {
+  flex: 1;
+  padding-left: 20px;
+}
+#footer .content_3 {
+  flex: 1;
+}
+#footer .content_4 {
+  flex: 1;
+}
+#footer .content1 {
+  display: flex;
+}
+#footer .content1_1 {
+  flex: 50%;
+  padding-left: 400px;
+}
+#footer .content1_2 {
+  flex: 50%;
+}
+#footer #input- {
+  width: 380px;
+  height: 40px;
+  color: #9c9898;
+  padding-left: 10px;
+  background: #ffffff;
+  border: 1px solid #ffffff;
+  border-radius: 12px;
 
-          <div>
-            <img class="tele" src="./media/tele.png" />
-            <input type="text" id="input-" value="Địa chỉ Email" />
-          </div>
-          <p>
-            Copyright &#169; 2022. <span class="blue">WorkZone</span> . All
-            Right Reserved
-          </p>
-        </div>
-        <div class="content1_2">
-          <h3>Chứng nhận bởi</h3>
-          <a href="">
-            <img src="./media/chứng nhận.png" width="198px" height="89px"
-          /></a>
-        </div>
-      </div>
-    </div>
-  </body>
-</html>
+  background-color: white;
+}
+#footer .tele {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 85vh;
+  left: 55vw;
+}
+#footer .float1 {
+  float: right;
+}
+#footer .blue {
+  color: #0075ff;
+}
+#footer .hover:hover {
+  text-decoration: underline;
+}
+@media screen and (max-width: 600px) {
+  #footer .content {
+    display: flex;
+    flex-direction: column;
+    padding-left: 50px;
+  }
+  #footer .content_2 {
+    padding-left: 0;
+  }
+  #footer .content1 {
+    display: flex;
+    flex-direction: column;
+    padding-left: 30px;
+  }
+  #footer .content1_1 {
+    padding-left: 20px;
+  }
+  #footer .content1_2 {
+    padding-left: 20px;
+  }
+  #footer .logo {
+    text-align: center;
+  }
+  #footer .tele {
+    position: absolute;
+    top: 179vh;
+    left: 80vw;
+  }
+}
+#footer a {
+  text-decoration: none;
+  color: white;
+}
+@media screen and (max-width: 480px) {
+  #footer .content {
+    display: flex;
+    flex-direction: column;
+    padding-left: 50px;
+  }
+  #footer .content_2 {
+    padding-left: 0;
+  }
+  #footer .content1 {
+    display: flex;
+    flex-direction: column;
+    padding-left: 30px;
+  }
+  #footer .content1_1 {
+    padding-left: 20px;
+  }
+  #footer .content1_2 {
+    padding-left: 20px;
+  }
+  #footer .logo {
+    text-align: center;
+  }
+  #footer #input- {
+    width: 270px;
+  }
+  #footer .tele {
+    position: absolute;
+    top: 168.5vh;
+    left: 60vw;
+  }
+}
+#footer a {
+  text-decoration: none;
+  color: white;
+}
+
 
