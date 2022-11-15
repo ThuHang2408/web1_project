@@ -85,14 +85,10 @@ body {
 #footer .blue {
   color: #0075ff;
 }
-#footer .input-- {
-  color: rgb(165, 165, 165);
-  padding-bottom: 10px;
-}
 #footer .hover:hover {
   text-decoration: underline;
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
   #footer .content {
     display: flex;
     flex-direction: column;
@@ -115,8 +111,50 @@ body {
   #footer .logo {
     text-align: center;
   }
+  #footer .tele {
+    position: absolute;
+    top: 166vh;
+    left: 80vw;
+  }
 }
 #footer a {
   text-decoration: none;
   color: white;
 }
+@media screen and (max-width: 480px) {
+  #footer .content {
+    display: flex;
+    flex-direction: column;
+    padding-left: 50px;
+  }
+  #footer .content_2 {
+    padding-left: 0;
+  }
+  #footer .content1 {
+    display: flex;
+    flex-direction: column;
+    padding-left: 30px;
+  }
+  #footer .content1_1 {
+    padding-left: 20px;
+  }
+  #footer .content1_2 {
+    padding-left: 20px;
+  }
+  #footer .logo {
+    text-align: center;
+  }
+  #footer #input- {
+    width: 270px;
+  }
+  #footer .tele {
+    position: absolute;
+    top: 132.5vh;
+    left: 75vw;
+  }
+}
+#footer a {
+  text-decoration: none;
+  color: white;
+}
+
