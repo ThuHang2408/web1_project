@@ -6,7 +6,7 @@ body {
 }
 #support {
   position: absolute;
-  top: 13vh;
+  top: 14vh;
   width: 100%;
 }
 .container1 {
@@ -18,12 +18,12 @@ body {
   z-index: 1;
 }
 /* header */
-.header {
-  position: relative;
+#header {
   width: 100%;
-  height: 94px;
+  height: 88px;
+  background-color: #ffffff;
 }
-#header img {
+#header .logo img {
   width: 267px;
   height: 67.8px;
   float: left;
@@ -31,27 +31,19 @@ body {
   padding-top: 9px;
 }
 .content_tuyendung {
-  width: 10%;
-  height: auto;
-  left: 25.78125vw;
-  top: 0.53vh;
+  width: 48%;
 }
 .content_timhoso {
-  width: 6.56%;
-  left: 38vw;
-  height: auto;
-  top: 0.53vh;
+  width: 30%;
 }
 .content_lienhe {
-  width: 5%;
-  left: 46.6146vw;
-  height: auto;
-  top: 0.53vh;
+  width: 30%;
 }
-
 #content_header {
   position: absolute;
   top: 40px;
+  width: 30%;
+  left: 320px;
   height: 28px;
   font-weight: 400;
   font-size: 100%;
@@ -65,58 +57,67 @@ body {
   text-decoration: none;
   color: #000000;
 }
-.bt_Đăngky {
-  left: 63%;
-}
-.bt_Đăngnhap {
-  left: 74%;
+#bt_header {
+  position: relative;
+  height: 80px;
+  width: 34.375%;
+  position: relative;
+  left: 65.2%;
+  top: 26px;
 }
 .bt_Nguoitimviec {
   position: absolute;
   border-radius: 20px;
-  width: 12.5%;
+  width: 34%;
   height: 43px;
-  left: 85%;
-  top: 25px;
+  left: 64%;
   border: 1px solid rgba(36, 0, 255, 1);
-  font-style: normal;
   font-weight: 700;
   font-size: 90%;
-  line-height: 19px;
-  text-align: center;
   color: #ffffff;
   background-color: blue;
 }
-.bt_Đăngky,
-.bt_Đăngnhap {
+.bt_Đăngky {
+  box-sizing: border-box;
   position: absolute;
-  border-radius: 12px;
-  border: 1px solid rgba(36, 0, 255, 1);
-  width: 9.5%;
-  min-width: 100px;
+  width: 30%;
   height: 40px;
-  top: 28px;
-  background-color: rgba(72, 192, 253, 1);
-  font-weight: 600;
+  left: 0;
+  background: #48c0fd;
+  border: 1px solid #2400ff;
+  border-radius: 8px;
+  font-weight: 700;
   font-size: 90%;
-  line-height: 19px;
-  letter-spacing: 0.03em;
+  color: #ffffff;
+}
+.bt_Đăngnhap {
+  box-sizing: border-box;
+  position: absolute;
+  width: 30%;
+  height: 40px;
+  left: 32%;
+  background: #48c0fd;
+  border: 1px solid #2400ff;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 90%;
   color: #ffffff;
 }
 #gach_ngang {
-  position: absolute;
+  position: relative;
   width: 100%;
   background-color: #48c0fd;
   height: 3px;
-  top: 75px;
+  top: 0px;
 }
 #nav_header {
   position: absolute;
   padding-left: 70%;
-  padding-top: 20px;
+  padding-top: 0px;
   width: 200px;
   visibility: hidden;
   z-index: 1;
+  top: 20px;
 }
 #nav_header img {
   width: 30px;
@@ -125,7 +126,10 @@ body {
 }
 #nav_header hr {
   background-color: #000000;
+  margin-left: 0.6em;
+  width: 14em;
 }
+
 #nav_header ul {
   list-style-type: none;
   background-color: #ffffff;
@@ -139,25 +143,86 @@ body {
   color: #000000;
 }
 #nav_header li a:hover {
-  color: white;
-  background: blue;
+  font-weight: bolder;
+  color: blue;
 }
 #nav_header li ul {
   position: absolute;
   display: none;
-  width: 10em;
+  width: 15em;
+  height: 19em;
   border: 1px solid #000000;
+  border-radius: 8px;
+  top: -2em;
+  left: -6em;
 }
 #nav_header li:hover ul {
   display: block;
 }
+#nav_header ul li ul div {
+  width: 100%;
+  line-height: 5px;
+  margin-left: -15px;
+  padding-top: 20px;
+}
 #nav_header ul li ul li {
   width: 100%;
+  line-height: 35px;
+  left: 5px;
 }
+#nav_header ul li ul li a {
+  padding-left: 20px;
+}
+.dangKy {
+  width: 80%;
+  height: 30px;
+  margin-left: 12.5%;
+  background: #ffffff;
+  border: 1px solid #2400ff;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 90%;
+  color: #000;
+  margin-top: -8px;
+}
+.dangNhap {
+  width: 80%;
+  height: 30px;
+  margin-left: 12.5%;
+  background: #ffffff;
+  border: 1px solid #2400ff;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 90%;
+  color: #000;
+  margin-top: -5px;
+}
+.nguoiTimViec {
+  width: 80%;
+  height: 30px;
+  margin-left: 12.5%;
+  background: #ffffff;
+  border: 1px solid #2400ff;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 90%;
+  color: #000;
+  margin-top: -8px;
+}
+.dangKy:hover,
+.dangNhap:hover,
+.nguoiTimViec:hover {
+  color: #ffffff;
+  background-color: #48c0fd;
+}
+/*Responsive*/
 @media screen and (max-width: 990px) {
   #content_header,
-  #bt_header {
+  #bt_header,
+  .bt_Nguoitimviec {
     visibility: hidden;
+    width: 5%;
+    left: 10%;
   }
   #nav_header {
     visibility: visible;
@@ -182,20 +247,19 @@ body {
   }
 }
 @media screen and (max-width: 480px) {
-  #header img {
-    width: 200px;
-    height: auto;
-    float: left;
-    padding-left: 21px;
-    padding-top: 9px;
+  #header {
+    width: 100%;
+    height: 70px;
   }
   #gach_ngang {
-    height: 3px;
-    top: 58px;
+    top: -18px;
+  }
+  #header .logo img {
+    width: 200px;
+    height: auto;
   }
   #nav_header {
-    position: absolute;
-    top: -2vh;
+    padding-left: 45%;
   }
 }
 /* Header */
@@ -217,6 +281,10 @@ body {
 .lienhe1 {
   text-decoration: none;
   color: #000000;
+}
+.lienhe1:hover {
+  font-weight: 700;
+  color: #2f55d4;
 }
 .hotro {
   flex: 1;
@@ -290,6 +358,7 @@ h1 {
 
   border: 1px solid #000000;
 }
+
 .content-2 {
   text-align: center;
   font-family: "Roboto";
@@ -322,6 +391,7 @@ h2 {
   border: 1px solid #000000;
   border-radius: 50px 0px 0px 50px;
 }
+
 .content_3-2 {
   flex: 1;
   width: 200px;
