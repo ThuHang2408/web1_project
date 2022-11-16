@@ -1,0 +1,502 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+.container {
+  position: relative;
+  width: 100%;
+  height: auto;
+  background: #ffffff;
+  font-family: "roboto";
+  z-index: 1;
+  background: rgba(233, 233, 234, 1);
+}
+/* header */
+#header {
+  width: 100%;
+  height: 88px;
+  background-color: #ffffff;
+}
+#header .logo img {
+  width: 267px;
+  height: 67.8px;
+  float: left;
+  padding-left: 21px;
+  padding-top: 9px;
+}
+.content_tuyendung {
+  width: 48%;
+}
+.content_timhoso {
+  width: 30%;
+}
+.content_lienhe {
+  width: 30%;
+}
+#content_header {
+  position: absolute;
+  top: 40px;
+  width: 30%;
+  left: 320px;
+  height: 28px;
+  font-weight: 400;
+  font-size: 100%;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  float: left;
+}
+#header a {
+  text-decoration: none;
+  color: #000000;
+}
+#bt_header {
+  position: relative;
+  height: 80px;
+  width: 34.375%;
+  position: relative;
+  left: 65.2%;
+  top: 26px;
+}
+.bt_Nguoitimviec {
+  position: absolute;
+  border-radius: 20px;
+  width: 34%;
+  height: 43px;
+  left: 64%;
+  border: 1px solid rgba(36, 0, 255, 1);
+  font-weight: 700;
+  font-size: 90%;
+  color: #ffffff;
+  background-color: blue;
+}
+.bt_Đăngky {
+  box-sizing: border-box;
+  position: absolute;
+  width: 30%;
+  height: 40px;
+  left: 0;
+  background: #48c0fd;
+  border: 1px solid #2400ff;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 90%;
+  color: #ffffff;
+}
+.bt_Đăngnhap {
+  box-sizing: border-box;
+  position: absolute;
+  width: 30%;
+  height: 40px;
+  left: 32%;
+  background: #48c0fd;
+  border: 1px solid #2400ff;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 90%;
+  color: #ffffff;
+}
+#gach_ngang {
+  position: relative;
+  width: 100%;
+  background-color: #48c0fd;
+  height: 3px;
+  top: 0px;
+}
+#nav_header {
+  position: absolute;
+  padding-left: 70%;
+  padding-top: 0px;
+  width: 200px;
+  visibility: hidden;
+  z-index: 1;
+  top: 20px;
+}
+#nav_header img {
+  width: 30px;
+  height: 30px;
+  float: right;
+}
+#nav_header hr {
+  background-color: #000000;
+  margin-left: 0.6em;
+  width: 14em;
+}
+
+#nav_header ul {
+  list-style-type: none;
+  background-color: #ffffff;
+}
+#nav_header ul li {
+  position: relative;
+}
+#nav_header ul li a {
+  display: block;
+  text-decoration: none;
+  color: #000000;
+}
+#nav_header li a:hover {
+  font-weight: bolder;
+  color: blue;
+}
+#nav_header li ul {
+  position: absolute;
+  display: none;
+  width: 15em;
+  height: 19em;
+  border: 1px solid #000000;
+  border-radius: 8px;
+  top: -2em;
+  left: -6em;
+}
+#nav_header li:hover ul {
+  display: block;
+}
+#nav_header ul li ul div {
+  width: 100%;
+  line-height: 5px;
+  margin-left: -15px;
+  padding-top: 20px;
+}
+#nav_header ul li ul li {
+  width: 100%;
+  line-height: 35px;
+  left: 5px;
+}
+#nav_header ul li ul li a {
+  padding-left: 20px;
+}
+.dangKy {
+  width: 80%;
+  height: 30px;
+  margin-left: 12.5%;
+  background: #ffffff;
+  border: 1px solid #2400ff;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 90%;
+  color: #000;
+  margin-top: -8px;
+}
+.dangNhap {
+  width: 80%;
+  height: 30px;
+  margin-left: 12.5%;
+  background: #ffffff;
+  border: 1px solid #2400ff;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 90%;
+  color: #000;
+  margin-top: -5px;
+}
+.nguoiTimViec {
+  width: 80%;
+  height: 30px;
+  margin-left: 12.5%;
+  background: #ffffff;
+  border: 1px solid #2400ff;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 90%;
+  color: #000;
+  margin-top: -8px;
+}
+.dangKy:hover,
+.dangNhap:hover,
+.nguoiTimViec:hover {
+  color: #ffffff;
+  background-color: #48c0fd;
+}
+/*Responsive*/
+@media screen and (max-width: 990px) {
+  #content_header,
+  #bt_header,
+  .bt_Nguoitimviec {
+    visibility: hidden;
+    width: 5%;
+    left: 10%;
+  }
+  #nav_header {
+    visibility: visible;
+  }
+  #content_header {
+    padding-left: 0%;
+  }
+}
+@media screen and (max-width: 768px) {
+  #nav_header {
+    padding-left: 65%;
+  }
+}
+@media screen and (max-width: 650px) {
+  #nav_header {
+    padding-left: 57%;
+  }
+}
+@media screen and (max-width: 580px) {
+  #nav_header {
+    padding-left: 52%;
+  }
+}
+@media screen and (max-width: 480px) {
+  #header {
+    width: 100%;
+    height: 70px;
+  }
+  #gach_ngang {
+    top: -18px;
+  }
+  #header .logo img {
+    width: 200px;
+    height: auto;
+  }
+  #nav_header {
+    padding-left: 45%;
+  }
+}
+#main {
+  display: flex;
+  margin: 0 150px;
+}
+.left_main {
+  flex: 50%;
+  align-items: center;
+  text-align: left;
+  margin: 15% 0%;
+}
+.left_main h2 {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-style: bold;
+  font-size: 43px;
+  color: #48c0fd;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25),
+    0px 4px 4px rgba(0, 0, 0, 0.25);
+  line-height: 20px;
+}
+.left_main p {
+  font-size: 20px;
+  width: 72%;
+}
+.right_main {
+  flex: 50%;
+  padding-left: 70px;
+}
+.Hoac {
+  display: flex;
+
+  align-items: center;
+  padding-bottom: 14px;
+}
+.gach_den {
+  flex: 1;
+  background-color: #dbdbdb;
+  width: 100%;
+  height: 1px;
+}
+.text_hoac {
+  color: #ccc;
+  padding: 0 16px;
+}
+.box_login_other {
+  display: flex;
+  justify-content: space-evenly;
+}
+.login_other {
+  border-radius: 5px;
+  position: relative;
+  padding: 10px 0;
+  padding-left: 15px;
+  height: 34px;
+  width: 37%;
+  background-color: #ccc;
+}
+.right_main h2 {
+  font-size: 32px;
+  text-align: center;
+}
+.login_other span {
+  position: absolute;
+}
+.blue {
+  color: #00a9ff;
+  text-align: center;
+}
+.icon {
+  width: 20px;
+  padding: 0 3px;
+}
+.input {
+  border-width: 1px;
+  border-color: gray;
+  border-style: solid;
+  border-radius: 15px;
+  width: 100%;
+  height: 40px;
+  padding-left: 10px;
+  margin-bottom: 15px;
+}
+.forgot {
+  margin-left: 184px;
+}
+.login {
+  height: 38px;
+  width: 102%;
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 14px;
+  background: #48c0fd;
+  border: 1px solid #2400ff;
+  border-radius: 8px;
+  color: #ffffff;
+}
+.face:hover {
+  background-color: #3b5998;
+  cursor: pointer;
+}
+.google:hover {
+  background-color: red;
+  cursor: pointer;
+}
+/* footer */
+#footer {
+  position: absolute;
+  background-color: #2a363b;
+  width: 100%;
+}
+#footer .logo {
+  padding-left: 50px;
+  padding-top: 30px;
+}
+#footer .float {
+  float: left;
+}
+#footer p {
+  font-size: 16px;
+
+  color: white;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+
+  line-height: 28px;
+  padding-left: 0px;
+}
+#footer h3 {
+  color: white;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 35px;
+  padding-left: 0px;
+}
+#footer .content {
+  display: flex;
+  padding-left: 110px;
+}
+#footer .content_1 {
+  flex: 1.2;
+}
+#footer .content_2 {
+  flex: 1;
+  padding-left: 20px;
+}
+#footer .content_3 {
+  flex: 1;
+}
+#footer .content_4 {
+  flex: 1;
+}
+#footer .content1 {
+  display: flex;
+}
+#footer .content1_1 {
+  flex: 50%;
+  padding-left: 400px;
+}
+#footer .content1_2 {
+  flex: 50%;
+}
+#footer #input- {
+  width: 80%;
+  height: 40px;
+  color: #9c9898;
+  padding-left: 20px;
+  background: #ffffff;
+  border: 1px solid #ffffff;
+  border-radius: 12px;
+  font-size: 16px;
+
+  background-color: white;
+}
+#footer a {
+  text-decoration: none;
+  color: white;
+}
+#footer .box-tele {
+  position: relative;
+}
+#footer .tele {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  right: 20%;
+  top: 5px;
+}
+#footer .float1 {
+  float: right;
+}
+#footer .blue {
+  color: #0075ff;
+}
+#footer .input-- {
+  color: rgb(165, 165, 165);
+  padding-bottom: 10px;
+}
+
+#footer .hover:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 990px) {
+  #footer .content,
+  #footer .content1_1 {
+    padding-left: 50px;
+  }
+}
+@media screen and (max-width: 630px) {
+  .content1 {
+    flex-direction: column;
+  }
+  .content1_2 {
+    padding-left: 50px;
+  }
+}
+@media screen and (max-width: 530px) {
+  #footer .content {
+    display: flex;
+    flex-direction: column;
+    padding-left: 50px;
+  }
+  #footer .content_2 {
+    padding-left: 0;
+  }
+  #footer .content1 {
+    display: flex;
+    flex-direction: column;
+    padding-left: 30px;
+  }
+  #footer .content1_1 {
+    padding-left: 20px;
+  }
+  #footer .content1_2 {
+    padding-left: 20px;
+  }
+  #footer .logo {
+    text-align: center;
+  }
+}
