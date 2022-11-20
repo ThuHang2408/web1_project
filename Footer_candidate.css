@@ -1,122 +1,42 @@
-html,
-body {
-  margin: 0;
-  padding: 0;
+.logo-footer img {
+  width: 296px;
+  margin-bottom: 10px;
 }
-#footer {
-  background-color: #2a363b;
-  width: 100%;
+footer {
+  margin-top: 30px;
 }
-#footer .logo {
-  padding-left: 50px;
-  padding-top: 30px;
+.action-help {
+  background-image: url(./Image/tải\ xuống.jpg);
+  background-size: cover;
+  padding: 15px 0;
+  text-align: center;
 }
-#footer .float {
-  float: left;
+.box-tele {
+  background: white;
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 222px;
 }
-#footer p {
-  font-size: 16px;
-
-  color: white;
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
-
-  line-height: 28px;
-  padding-left: 0px;
+.box-tele input {
+  border: none;
+  background: none;
 }
-#footer h3 {
-  color: white;
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 35px;
-  padding-left: 0px;
-}
-#footer .content {
-  display: flex;
-  padding-left: 110px;
-}
-#footer .content_1 {
-  flex: 1.2;
-}
-#footer .content_2 {
-  flex: 1;
-  padding-left: 20px;
-}
-#footer .content_3 {
-  flex: 1;
-}
-#footer .content_4 {
-  flex: 1;
-}
-#footer .content1 {
-  display: flex;
-}
-#footer .content1_1 {
-  flex: 50%;
-  padding-left: 400px;
-}
-#footer .content1_2 {
-  flex: 50%;
-}
-#footer #input- {
-  width: 380px;
-  height: 40px;
-  color: #9c9898;
-  padding-left: 10px;
-  background: #ffffff;
-  border: 1px solid #ffffff;
-  border-radius: 12px;
-
-  background-color: white;
-}
-#footer .tele {
-  position: absolute;
+.box-tele span {
+  display: inline-block;
+  background-color: gray;
   width: 30px;
-  height: 30px;
-  top: 85vh;
-  left: 55vw;
 }
-#footer .float1 {
-  float: right;
+.center-position {
+  display: flex;
+  justify-content: center;
 }
-#footer .blue {
+.copyright {
+  text-align: center;
+}
+.content1_2 img {
+  width: 150px;
+  margin-left: -12px;
+}
+.blue {
   color: #0075ff;
-}
-#footer .input-- {
-  color: rgb(165, 165, 165);
-  padding-bottom: 10px;
-}
-#footer .hover:hover {
-  text-decoration: underline;
-}
-@media screen and (max-width: 500px) {
-  #footer .content {
-    display: flex;
-    flex-direction: column;
-    padding-left: 50px;
-  }
-  #footer .content_2 {
-    padding-left: 0;
-  }
-  #footer .content1 {
-    display: flex;
-    flex-direction: column;
-    padding-left: 30px;
-  }
-  #footer .content1_1 {
-    padding-left: 20px;
-  }
-  #footer .content1_2 {
-    padding-left: 20px;
-  }
-  #footer .logo {
-    text-align: center;
-  }
-}
-#footer a {
-  text-decoration: none;
-  color: white;
 }
