@@ -1,3 +1,4 @@
+/* header */
 .main-menu {
   display: flex;
   justify-content: space-between;
@@ -22,8 +23,13 @@
   margin-left: 10px;
 }
 .btn-menu {
+  border-radius: 12px;
+  border: 1px solid rgba(36, 0, 255, 1);
+  font-size: 90%;
+  font-weight: bold;
+  color: #ffffff;
   width: 150px;
-  background-color: blue;
+  background-color: #48c0fd;
 }
 .account {
   width: 180px;
@@ -46,18 +52,12 @@
   top: 13px;
   right: 9px;
 }
-.btn-nav {
-  width: 50%;
-  background: #48c0fd;
-  margin: 10px 10px;
-  color: #fff;
-  border-radius: 8px;
-}
+
 .relative {
   position: relative;
 }
 .ntd {
-  border-radius: 20px;
+  border-radius: 12px;
   border: 1px solid rgba(36, 0, 255, 1);
   font-size: 90%;
   font-weight: bold;
@@ -107,7 +107,8 @@
   background: black;
 }
 
-.list-menu-mb {
+.list-menu-mb-login {
+  padding-top: 10px;
   position: fixed;
   background: white;
   font-size: 15px;
@@ -117,6 +118,9 @@
   z-index: 1000;
   left: -2000px;
   transition: 0.5s;
+}
+.list-menu-mb-login li {
+  margin-bottom: 10px;
 }
 .is-left-default {
   left: 0px !important;
@@ -139,38 +143,12 @@
     top: 25px;
     right: 10px;
     font-size: 20px;
+
     display: block;
     color: #48c0fd;
     border: none;
     background: none;
   }
-  .input {
-    margin-bottom: 10px;
-  }
-  .banner-image img {
-    height: 300px !important;
-  }
-  .job-inf {
-    display: none !important;
-  }
-  .wrap-btn-appl {
-    margin-top: 20px;
-    margin-right: 10px;
-    margin-left: 0;
-  }
-  .job-logo {
-    display: block !important;
 
-    height: auto !important;
-  }
-  .job-logo img {
-    width: 100px;
-    display: block !important;
-
-    height: auto !important;
-  }
-  .job-content {
-    padding: 0 !important;
-    margin-bottom: 10px;
-  }
+ 
 }
