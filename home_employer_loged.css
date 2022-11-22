@@ -1,0 +1,785 @@
+html,body{
+    padding: 0;
+    margin: 0;
+}
+.container{
+    position: relative;
+    width: 100%;
+    height: 1500px;
+    background: #FFFFFF;
+    font-family: 'roboto';
+    z-index: 1;
+    background:  rgba(233, 233, 234, 1);
+}
+/* header */
+#header{
+    width: 100%;
+    height: 88px;background-color: #FFFFFF;
+}
+#header .logo img{
+    Width: 267px;
+    Height: 67.8px;
+    float: left;
+    padding-left: 21px;
+    padding-top: 9px;
+}
+.content_tuyendung{
+    width: 11%;
+    min-width: 89px;
+    left: 25.5%;
+}
+.content_timhoso{
+    width: 6.56%;
+    min-width: 40px;
+    left: 37.5%;
+}
+.content_lienhe{
+    width: 5%;
+    left: 47%;
+}
+#content_header{
+    position: absolute;
+    top:40px;
+    height: 28px;
+    font-weight: 400;
+    font-size: 100%;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    float: left;
+}
+#header a{
+    text-decoration: none;
+    color: #000000;
+}
+#bt_header{
+    height: 80px;
+    width: 14.4%;
+    position: relative;
+    left: 60%;
+}
+.bt_Nguoitimviec{
+    position: absolute ;
+    border-radius: 20px;
+    width: 12.5%;
+    height: 43px;
+    left: 86%;
+    top: 25px;
+    border: 1px solid rgba(36, 0, 255, 1);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 90%;
+    line-height: 19px;
+    text-align: center;
+    color: #FFFFFF;
+    background-color: blue;
+}
+input.nameCompany{
+    position: absolute ;
+    border-radius: 25px;
+    border: 1px solid #000;
+    width: 100%;
+    min-width: 100px;
+    height: 43px;
+    top: 25px;
+    background-color: #FFFFFF;
+    font-weight: 600;
+    font-size: 90%;
+    line-height: 19px;
+    letter-spacing: 0.05em;
+    color: #000;
+    left: 68%;
+}
+#nameCompany i{
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    left: 75% ;
+    top: 36px;
+}
+#gach_ngang{
+    position: relative;
+    width: 100%;
+    background-color: #48C0FD;
+    height: 3px;
+    top: 0px;
+}
+#nonNav_header .img{
+    position: absolute;
+    left: 165%;
+    top: 39px;
+    width: 15px;
+    height: 12px;
+}
+#nonNav_header hr{
+    background-color: #000000;
+}
+#nonNav_header ul{
+    left: 50%;
+    top: 53px;
+    height: 150px;
+    list-style-type: none;
+}
+#nonNav_header ul li{
+    position: relative;
+    z-index: 1;
+}
+#nonNav_header ul li a{
+    display: block;
+    text-decoration: none;
+    color: #000000;
+}
+#nonNav_header li a:hover{
+    font-weight: bolder;
+    color: blue;
+}
+#nonNav_header li ul{
+    position: absolute;
+    display: none;
+    width: 12em;
+    height: 10em;
+    border: 1px solid #000000;
+    border-radius: 8px;
+}
+#nonNav_header li:hover ul{
+    display:inline-block;
+    background-color: #FFFFFF;
+}
+#nonNav_header ul li ul div{
+    position: absolute;
+    width: 195px;
+    left: 3px;
+    top: 5px;
+}
+#nonNav_header ul li ul li {
+    width: 100%;
+    line-height: 35px;
+    left: 5px;
+}
+#nonNav_header ul li ul li img{
+    width: 30px;
+    height: 30px;
+    float: right;
+}
+#nav_header{
+    position: absolute;
+    padding-left: 68%;
+    padding-top: 0px;
+    width: 200px;
+    visibility: hidden;
+    z-index: 1;
+    top: 20px;
+}
+#nav_header .img{
+    width: 30px;
+    height: 30px;
+    float: right;
+}
+#nav_header hr{
+    background-color: #000000;
+    margin-left: 0.6em;
+    width: 14em;
+}
+#nav_header ul{
+    list-style-type: none;
+    background-color: #FFFFFF;
+}
+#nav_header ul li{
+    position: relative;
+}
+#nav_header ul li a{
+    display: block;
+    text-decoration: none;
+    color: #000000;
+}
+#nav_header li a:hover{
+    font-weight: bolder;
+    color: blue;
+}
+#nav_header li ul{
+    position: absolute;
+    display: none;
+    width: 15em;
+    height: 17em;
+    border: 1px solid #000000;
+    border-radius: 8px;
+    top: -2em;
+    left: -6em;
+}
+#nav_header li:hover ul{
+    display: block;
+}
+#nav_header ul li ul div{
+    width: 100%;
+    line-height: 5px;
+    margin-left: -15px;
+    padding-top: 20px;
+}
+#nav_header ul li ul li {
+    width: 100%;
+    line-height: 35px;
+    left: 5px;
+}
+#nav_header ul li ul li a{
+    padding-left: 20px;
+}
+/*Responsive*/
+@media screen and (max-width: 990px){
+    #content_header, #bt_header, .bt_Nguoitimviec{
+        visibility: hidden;
+        width: 5%;
+    }
+    #nav_header{
+        visibility: visible;
+    }
+    #content_header{
+    padding-left: 0%;
+    }
+    #bt_header{
+        width: 2%;
+    }
+}
+@media screen and (max-width: 768px){
+    #nav_header{
+    padding-left: 65%;
+    }
+}
+@media screen and (max-width: 650px){
+    #nav_header{
+    padding-left: 57%;
+    }
+}
+@media screen and (max-width: 580px){
+    #nav_header{
+    padding-left: 52%;
+    }
+}
+@media screen and (max-width: 480px){
+    #header{
+        width: 100%;
+        height: 70px;
+    }
+    #gach_ngang{
+        top: -18px;
+
+    }
+#header .logo img{
+    width: 200px;
+    height: auto;
+}
+#nav_header{
+    padding-left: 48%;
+}
+#nav_header li ul{
+    width: 13em;
+    padding-left: 30px;
+}
+#nav_header hr{
+    margin-left: 0.3em;
+    width: 12em;
+}
+}
+/* body */
+#body{
+    margin-left: 45px;
+    margin-right: 45px;
+    margin-top: 45px;
+}
+#body .hinhAnh{
+    position: relative;
+}
+#body img{
+    width: 100%;
+    height: 153px;
+}
+.form_button{
+    position: absolute;
+    border-radius: 25px; 
+    border: darkorange; 
+    width: 14%; 
+    height: 32px; 
+    color: aliceblue;
+    background: rgb(241, 133, 0); 
+    font-size: 15px; 
+    position: absolute; 
+    left: 52.5%; 
+    top: 97px; 
+    font-weight: bold;
+}
+#contentBody{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding-top: 48px;
+    padding-left: 5px;
+}
+#contentBody .leftContent{
+    flex: 1;
+}
+#contentBody .leftContent .leftTopContent{
+    width: 100%;
+    height: 220px;
+    background-color: #FFFFFF;
+    margin: 0px;
+    position: relative;
+}
+#contentBody .leftContent .leftTopContent .myPost{
+    position: absolute;
+    width: 249px;
+    height: 31px;
+    left: 5%;
+    top: 8px;
+    font-weight: 400;
+    font-size: 20px;
+}
+#contentBody .leftContent .leftTopContent .viewAll{
+    position: absolute;
+    width: 128px;
+    height: 29px;
+    left: 82%;
+    top: 8px;
+    font-weight: 400;
+    font-size: 15px;
+}
+#contentBody .leftContent .leftTopContent .viewAll a{
+text-decoration: none;color: #0075FF;
+}
+#contentBody .leftContent .leftTopContent .bodyPost, #contentBody .leftContent .leftBottomContent .bodyPost{
+    position: absolute;
+    width: 100%;
+    height: 29px;
+    top: 94px;
+    font-weight: 400;
+    font-size: 15px;
+    color: #9C9898;
+    justify-content: center;
+    text-align: center;
+}
+#contentBody .leftContent .leftBottomContent{
+    width: 100%;
+    height: 220px;
+    background-color: #FFFFFF;
+    margin-top: 38px;
+    position: relative;
+}
+#contentBody .leftContent .leftBottomContent .myPost{
+    position: absolute;
+    width: 249px;
+    height: 31px;
+    left: 5%;
+    top: 8px;
+    font-weight: 400;
+    font-size: 20px;
+}
+#contentBody .leftContent .leftBottomContent .tatCa_chuaXem{
+    position: absolute;
+    width: 140px;
+    height: 25px;
+    left: 53%;
+    top: 8px;
+    background: #D9D9D9;
+    border-radius: 8px;
+}
+#contentBody .leftContent .leftBottomContent .tatCa_chuaXem .tatCa{
+    position: absolute;
+    height: 20px;
+    left: 7px;
+    top: 3px;
+}
+#contentBody .leftContent .leftBottomContent .tatCa_chuaXem .chuaXem{
+    position: absolute;
+    height: 20px;
+    left: 60px;
+    top: 3px;
+}
+#contentBody .leftContent .leftBottomContent .tatCa_chuaXem a{
+    text-decoration: none;
+    color: #000;
+}
+#contentBody .leftContent .leftBottomContent .tatCa:hover a{
+    background-color: #FFFFFF;
+    border-radius: 3px;
+    
+}
+#contentBody .leftContent .leftBottomContent .chuaXem:hover a{
+    background-color: #FFFFFF;
+    border-radius: 3px;
+}
+#contentBody .leftContent .leftBottomContent .viewAll{
+    position: absolute;
+    width: 128px;
+    height: 29px;
+    left: 82%;
+    top: 8px;
+    font-weight: 400;
+    font-size: 15px;
+}
+#contentBody .leftContent .leftBottomContent .viewAll a{
+text-decoration: none;color: #0075FF;
+}
+#contentBody .rightContent{
+    flex: 1;
+    height: 320px;
+    background-color: #FFFFFF;
+    margin-left: 40px;
+}
+#contentBody .rightContent .rightTopContent{
+    background-color: #FFFFFF;
+    position: relative;
+    width: 100%;
+}
+#contentBody .rightContent .rightTopContent .nameCompany{
+    position: absolute;
+    width: 153px;
+    height: 23px;
+    left: 158px;
+    top: 51px;
+    font-weight: 700;
+    font-size: 18px;    
+}
+#contentBody .rightContent .rightTopContent .mail{
+    position: absolute;
+    width: 234px;
+    height: 16.8px;
+    left: 158px;
+    top: 81.6px;
+    font-weight: 700;
+    font-size: 14.4px;
+    color: #9C9898;    
+}
+#contentBody .rightContent .rightTopContent .changeView{
+    position: absolute;
+    top: 150px;
+    left: 21px;
+    line-height: 30px;
+}
+#contentBody .rightContent .rightTopContent .changeView a{
+    text-decoration: none;
+    color: #48C0FD;
+}
+#contentBody .rightContent .rightTopContent .changeView .change:hover a, #contentBody .rightContent .rightTopContent .changeView .view:hover a{
+    text-decoration: underline;
+}
+#contentBody .rightContent .rightTopContent .ngayDK{
+    position: absolute;
+    width: 178.8px;
+    height: 17.4px;
+    left: 21.6px;
+    top: 285px;
+    font-weight: 400;
+    font-size: 15px;
+}
+#contentBody .rightContent .rightTopContent .exit{
+    position: absolute;
+    width: 178.8px;
+    height: 17.4px;
+    left: 80%;
+    top: 285px; 
+    font-weight: 400;
+    font-size: 15px;
+}
+#contentBody .rightContent .rightTopContent img{
+    position: absolute;
+    width: 112px;
+    height: 112px;
+    left: 25px;
+    top: 21px;
+
+}
+/* footer */
+#footer {
+    background-color: #2a363b;
+    width: 100%;
+  }
+  #footer .logo {
+    padding-left: 50px;
+    margin-top: 50px;
+  }
+  #footer .float {
+    float: left;
+  }
+  #footer p {
+    font-size: 16px;
+  
+    color: white;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+  
+    line-height: 28px;
+    padding-left: 0px;
+  }
+  #footer h3 {
+    color: white;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 35px;
+    padding-left: 0px;
+  }
+  #footer .content {
+    display: flex;
+    padding-left: 110px;
+  }
+  #footer .content_1 {
+    flex: 1.2;
+  }
+  #footer .content_2 {
+    flex: 1;
+    padding-left: 20px;
+  }
+  #footer .content_3 {
+    flex: 1;
+  }
+  #footer .content_4 {
+    flex: 1;
+  }
+  #footer .content1 {
+    display: flex;
+  }
+  #footer .content1_1 {
+    flex: 50%;
+    padding-left: 400px;
+  }
+  #footer .content1_2 {
+    flex: 50%;
+  }
+  #footer .input {
+    width: 380px;
+    height: 40px;
+    color: #9c9898;
+    padding-left: 10px;
+    background: #ffffff;
+    border: 1px solid #ffffff;
+    border-radius: 12px;
+    background-color: white;
+  }
+  #footer #input{
+    position: relative;
+  }
+  #footer #input .tele {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 8px;
+    left: 82%;
+  }
+  #footer .float1 {
+    float: right;
+  }
+  #footer .blue {
+    color: #0075ff;
+  }
+  #footer .hover:hover {
+    text-decoration: underline;
+  }
+  @media screen and (max-width: 600px) {
+    #footer .content {
+      display: flex;
+      flex-direction: column;
+      padding-left: 50px;
+    }
+    #footer .content_2 {
+      padding-left: 0;
+    }
+    #footer .content1 {
+      display: flex;
+      flex-direction: column;
+      padding-left: 30px;
+    }
+    #footer .content1_1 {
+      padding-left: 20px;
+    }
+    #footer .content1_2 {
+      padding-left: 20px;
+    }
+    #footer .logo {
+      text-align: center;
+    }
+    #footer .tele {
+      position: absolute;
+      top: 166vh;
+      left: 80vw;
+    }
+  }
+  #footer a {
+    text-decoration: none;
+    color: white;
+  }
+  @media screen and (max-width: 480px) {
+    #footer .content {
+      display: flex;
+      flex-direction: column;
+      padding-left: 50px;
+    }
+    #footer .content_2 {
+      padding-left: 0;
+    }
+    #footer .content1 {
+      display: flex;
+      flex-direction: column;
+      padding-left: 30px;
+    }
+    #footer .content1_1 {
+      padding-left: 20px;
+    }
+    #footer .content1_2 {
+      padding-left: 20px;
+    }
+    #footer .logo {
+      text-align: center;
+    }
+    #footer #input- {
+      width: 270px;
+    }
+    #footer .tele {
+      position: absolute;
+      top: 132.5vh;
+      left: 75vw;
+    }
+  }
+  #footer a {
+    text-decoration: none;
+    color: white;
+  }
+@media screen and (max-width: 990px){
+    #content_header, #bt_header, .bt_Nguoitimviec{
+        visibility: hidden;
+    }
+    #nav_header{
+        visibility: visible;
+    }
+    #content_header{
+    padding-left: 0%;
+    }
+    #body img{
+        width: 100%;
+        height: auto;
+    }
+    #contentBody{
+        display: flex;
+        flex-direction: column;
+    }
+    #footer{
+        margin-top: 50px;
+    }
+    #contentBody .leftContent{
+        width: 100%;
+    }
+    #contentBody .rightContent .rightTopContent{
+        background-color: #FFFFFF;
+        height: 320px;
+    }
+    #contentBody .rightContent{
+        height: 320px;
+        margin-left: 0px;
+        margin-top: 40px;
+    }
+    #contentBody .rightContent .rightTopContent .changeView{
+        left: 40%;
+    }
+    .form_button{
+        height: 28px; 
+        font-size: 13px;
+    }
+}
+@media screen and (max-width: 768px){
+    #nav_header{
+    padding-left: 65%;
+    }
+    .form_button{
+        height: 28px; 
+        font-size: 11px;
+    }
+    #contentBody .leftContent .leftBottomContent .myPost{
+        font-size: 18px;
+    }
+}
+@media screen and (max-width: 650px){
+    #nav_header{
+    padding-left: 57%;
+    }
+    #body img{
+        width: 100%;
+        height: auto;
+    }
+    .form_button{
+        height: 28px; 
+        font-size: 9px;
+    }
+    #contentBody .leftContent .leftBottomContent .myPost{
+        font-size: 17px;
+    }
+    #contentBody .leftContent .leftBottomContent .tatCa_chuaXem{
+        top: 30px;
+        left: 69%;
+    }
+}
+@media screen and (max-width: 580px){
+    #nav_header{
+    padding-left: 52%;
+    }
+    #body img{
+        width: 100%;
+        height: auto;
+        margin-top: -20px;
+    }
+    .form_button{
+        height: 22px; 
+        font-size: 7px;
+    }
+    #contentBody .leftContent .leftBottomContent .myPost{
+        font-size: 16px;
+    }
+}
+@media screen and (max-width: 480px){
+#gach_ngang{
+    height: 3px;
+}
+#nav_header{
+    padding-left: 48%;
+    padding-top: 10px;
+    }
+    #contentBody .leftContent .leftBottomContent .myPost, #contentBody .leftContent .leftTopContent .myPost{
+        font-size: 15px;
+    }
+    #contentBody .leftContent .leftTopContent .viewAll, #contentBody .leftContent .leftBottomContent .viewAll{
+        left: 70%;
+    }
+    #contentBody .leftContent .leftBottomContent .tatCa_chuaXem{
+        left: 45%;
+        font-size: 15px;
+    }
+    #contentBody .rightContent .rightTopContent .mail{
+        font-size: 10px;
+        top: 75px;
+    }
+    #contentBody .rightContent .rightTopContent .changeView{
+        font-size: 15px;
+        left: 15%;
+    }
+    #contentBody .rightContent .rightTopContent .exit{
+        left: 73%;
+        top: 302px;
+    }
+    #contentBody .leftContent{
+        margin-top: -20px;
+    }
+    #header img{
+        width: 120px;
+        height: auto;
+        margin-top: -15px;
+    }
+    #header{
+        height: 50px;
+    }
+    #gach_ngang{
+        margin-top: -15px;
+    }
+    #nav_header{
+        margin-top: -30px;
+        width: 180px;
+    }
+}
