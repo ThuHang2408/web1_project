@@ -1,336 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WorkZone</title>
-    <style>
-        html,body{
-    padding: 0;
-    margin: 0;
-}
-.container{
-    position: relative;
-    width: 100%;
-    height: 1500px;
-    background: #FFFFFF;
-    font-family: 'roboto';
-    z-index: 1;
-    background:  rgba(233, 233, 234, 1);
-}
-/* header */
-#header{
-    width: 100%;
-    height: 88px;background-color: #FFFFFF;
-}
-#header .logo img{
-    Width: 267px;
-    Height: 67.8px;
-    float: left;
-    padding-left: 21px;
-    padding-top: 9px;
-    
-}
-.content_timViec{
-    width: 11%;
-    min-width: 60px;
-    left: 26.5%;
-}
-.content_congViec{
-    width: 8%;
-    left: 34.5%;
-}
-.content_veWorkZone{
-    width: 10%;
-    left: 43.5%;
-}
-#content_header{
-    position: absolute;
-    top:40px;
-    height: 28px;
-    font-weight: 400;
-    font-size: 100%;
-    line-height: 18px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    float: left;
-}
-#header a{
-    text-decoration: none;
-    color: #000000;
-}
-#bt_header{
-    height: 80px;
-    width: 16%;
-    position: relative;
-    left: 57.5%;
-}
-.bt_nhaTuyenDung{
-    position: absolute ;
-    border-radius: 20px;
-    width: 12.5%;
-    height: 43px;
-    left: 86%;
-    top: 25px;
-    border: 1px solid rgba(36, 0, 255, 1);
-    font-style: normal;
-    font-weight: 700;
-    font-size: 90%;
-    line-height: 19px;
-    text-align: center;
-    color: #FFFFFF;
-    background-color: blue;
-}
-input.nameCompany{
-    position: absolute ;
-    border-radius: 25px;
-    border: 1px solid #000;
-    width: 98%;
-    min-width: 100px;
-    height: 43px;
-    top: 25px;
-    background-color: #FFFFFF;
-    font-weight: 600;
-    font-size: 90%;
-    line-height: 19px;
-    letter-spacing: 0.05em;
-    color: #000;
-    left: 68%;
-}
-#nameCompany img{
-    position: absolute;
-    width: 35px;
-    height: 35px;
-    left: 70% ;
-    top: 29px;
-}
-#gach_ngang{
-    position: relative;
-    width: 100%;
-    background-color: #48C0FD;
-    height: 3px;
-    top: 0px;
-}
-#nonNav_header .img{
-    position: absolute;
-    left: 165%;
-    top: 41px;
-    width: 15px;
-    height: 12px;
-}
-#nonNav_header hr{
-    background-color: #000000;
-}
-#nonNav_header ul{
-    left: 80%;
-    top: 53px;
-    height: 200px;
-    list-style-type: none;
-}
-#nonNav_header ul li{
-    position: relative;
-    z-index: 1;
-}
-#nonNav_header ul li a{
-    display: block;
-    text-decoration: none;
-    color: #000000;
-}
-#nonNav_header li a:hover{
-    font-weight: bolder;
-    color: blue;
-}
-#nonNav_header li ul{
-    position: absolute;
-    display: none;
-    width: 12em;
-    height: 14.5em;
-    border: 1px solid #000000;
-    border-radius: 8px;
-}
-#nonNav_header li:hover ul{
-    display:inline-block;
-    background-color: #FFFFFF;
-}
-#nonNav_header ul li ul div{
-    position: absolute;
-    width: 195px;
-    left: 3px;
-    top: 5px;
-}
-#nonNav_header ul li ul li {
-    width: 100%;
-    line-height: 35px;
-    left: 5px;
-}
-#nonNav_header ul li ul li img{
-    width: 30px;
-    height: 30px;
-    float: right;
-}
-#nav_header{
-    position: absolute;
-    padding-left: 70%;
-    padding-top: 0px;
-    width: 200px;
-    visibility: hidden;
-    z-index: 1;
-    top: 14px;
-}
-#nav_header img{
-    width: 30px;
-    height: 30px;
-    float: right;
-}
-#nav_header hr{
-    background-color: #000000;
-    margin-left: 0.6em;
-    width: 14em;
-}
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Search</title>
+    <link rel="stylesheet" href="./Search.css" />
+    <script type="text/javascript" src="./search.js"></script>
 
-#nav_header ul{
-    list-style-type: none;
-    background-color: #FFFFFF;
-}
-#nav_header ul li{
-    position: relative;
-}
-#nav_header ul li a{
-    display: block;
-    text-decoration: none;
-    color: #000000;
-}
-#nav_header li a:hover{
-    font-weight: bolder;
-    color: blue;
-}
-#nav_header li ul{
-    position: absolute;
-    display: none;
-    width: 15em;
-    height: 21.5em;
-    border: 1px solid #000000;
-    border-radius: 8px;
-    top: -2em;
-    left: -6em;
-}
-#nav_header li:hover ul{
-    display: block;
-}
-#nav_header ul li ul div{
-    width: 100%;
-    line-height: 5px;
-    margin-left: -15px;
-    padding-top: 20px;
-}
-#nav_header ul li ul li {
-    width: 100%;
-    line-height: 35px;
-    left: 5px;
-    font-size: 15px;
-}
-#nav_header ul li ul li a{
-    padding-left: 20px;
-}
-/*Responsive*/
-@media screen and (max-width: 990px){
-    #content_header, #bt_header, .bt_nhaTuyenDung{
-        visibility: hidden;
-        width: 2%;
-    }
-    #nav_header{
-        visibility: visible;
-    }
-    #content_header{
-    padding-left: 0%;
-    }
-}
-@media screen and (max-width: 768px){
-    #nav_header{
-    padding-left: 65%;
-    }
-}
-@media screen and (max-width: 650px){
-    #nav_header{
-    padding-left: 57%;
-    }
-}
-@media screen and (max-width: 580px){
-    #nav_header{
-    padding-left: 52%;
-    }
-}
-@media screen and (max-width: 480px){
-    #header{
-        width: 100%;
-        height: 70px;
-    }
-    #gach_ngang{
-        top: -18px;
-    }
-    #nav_header{
-    padding-left: 45%;
-    }
-#header .logo img{
-    width: 200px;
-    height: auto;
-}
-#nav_header{
-    padding-left: 48%;
-}
-}
-    </style>
-</head>
-<body>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900,900i&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./bootstrap.css" />
+  </head>
+  <body>
     <div class="container">
-        <!-- header -->
-        <div class="content" id="header">
-            <div class="logo"><a href="#"><img src="./media/logo.png" alt="logo"></a></div>
-            <div id="content_header" class="content_timViec"><a href="#">Tìm việc</a></div>
-            <div id="content_header" class="content_congViec"><a href="#">Công việc</a></div>
-            <div id="content_header" class="content_veWorkZone"><a href="#">Về WorkZone</a></div>
-            <div id="bt_header">
-                <div id="nameCompany"><input class="nameCompany" type="button" value="Tên người dùng"><img src="./media/account.png"></div>
-                <div id="nonNav_header">
-                <ul>
-                    <li> <a href="#"><img src="./media/menuNameCompany.png" class="img"></a>
-                        <ul><div>
-                            <li><a href="#"><img src="./media/hosoxinviec.png" style="padding-left: 5px; float: left;">Hồ sơ đã lưu</a></li>
-                            <li><a href="#"><img src="./media/viecLamdaluu.png" style="padding-left: 5px; float: left;">Việc làm đã lưu</a></li>
-                            <li><a href="#"><img src="./media/viecdaUngTuyen.png" style="padding-left: 5px; float: left;">Việc đã ứng tuyển</a></li>
-                            <li><a href="#"><img src="./media/thongBaoViecLam.png" style="padding-left: 5px; float: left;">Thông báo việc làm</a></li>
-                            <hr>
-                        <li><img src="./media/logo-company.png" style="padding-left: 5px; float: left;"><a href="#" style="font-weight: bolder; color: blue; font-size: 20px;">Tên công ty</a></li>
-                        <li><a href="#"><img src="./media/ddangxxuat.td.png" style="padding-left: 90px; float: left;">Đăng xuất</a></li>
-                        </div></ul>
-                    </li> 
-                    </ul>
-                </div></div>
-            <div><input class="bt_nhaTuyenDung" type="button" value="NHÀ TUYỂN DỤNG">
-            </div>
-            <div><hr id="gach_ngang"></div>
-    <div id="nav_header">  
-        <ul>
-        <li> <a href="#"><img src="./media/hamburger-menu-128.webp" ></a>
-            <ul><div>
-                <li><div><a href="#" style="font-size: 16px; ">Tìm việc</a></div></li>
-                <li><div><a href="#" style="font-size: 16px; ">Công việc</a></div></li>
-                <li><div><a href="#" style="font-size: 16px; ">Về WorkZone</a></div></li>
-                <hr>
-                <li><a href="#"><img src="./media/hosoxinviec.png" style="padding-left: 5px; float: left;">Hồ sơ đã lưu</a></li>
-                <li><a href="#"><img src="./media/viecLamdaluu.png" style="padding-left: 5px; float: left;">Việc làm đã lưu</a></li>
-                <li><a href="#"><img src="./media/viecdaUngTuyen.png" style="padding-left: 5px; float: left;">Việc đã ứng tuyển</a></li>
-                <li><a href="#"><img src="./media/thongBaoViecLam.png" style="padding-left: 5px; float: left;">Thông báo việc làm</a></li>
-               <hr>
-               <li><a href="#"><img src="./media/account.png" style="padding-left: 5px; float: left;"></a><a href="#" style="font-weight: bolder; font-size: 20px; color: blue;">Tên người dùng</a></li>
-               <li><a href="#"><img src="./media/ddangxxuat.td.png" style="padding-left: 120px; float: left; font-size: 15px;">Đăng xuất</a></li>
-            </div></ul>   
-        </li> 
-        </ul>
-    </div>  
+     <div class="main-menu">
+      <div class="left-main-menu">
+        <div class="row">
+          <div class="col-md-3">
+           <a class="logo" href="#"><img src="./Image/307595079_1436979406790740_7670366868843439347_n.png" alt="Logo"></a> 
+          </div>
+          <div class="col-md-5">
+            <ul class="nav-pc">
+              <li><a href="">Tìm việc</a></li>
+              <li><a href="">Công việc</a></li>
+              <li><a href="">Về WorkZone</a></li>
+
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="right-main-menu">
+        <button class="btn-menu is-display-none">ĐĂNG KÝ</button>
+        <button class="btn-menu is-display-none">ĐĂNG NHẬP</button>
+       
+        <div class="account" >
+          <i class="fa-regular fa-circle-user"></i><span>WorkZone</span>
+         <a onclick="menupc()" href="#"><i class="fa-solid fa-sort-down"></i></a> 
+        </div>
+
+        <button class="btn-menu ntd">NHÀ TUYỂN DỤNG</button>
+      
+      </div>
+     </div>
     </div>
-    </div>
-</body>
-</html>
+    
+      <ul class="list-menu-pc is-display-none" id="list-menu-pc">
+        <li>
+          <div class="menu-list-row" >
+            <a href="#">
+              <i class="fa-regular fa-file"></i>
+            <span> Hồ sơ xin việc</span> 
+            </a>
+          </div>
+          
+        </li>
+        <li>
+          <div class="menu-list-row">
+            <a href="">
+              <i class="fa-solid fa-heart"></i>
+              <span> Việc làm đã lưu</span> 
+            </a>
+          </div>
+         
+        </li>
+        <li>
+          <div class="menu-list-row">
+            <a href="">
+              <i class="fa-solid fa-paper-plane"></i>
+              <span>Việc làm đã ứng tuyển</span>
+            </a>
+          </div>
+          
+        </li>
+        <li>
+          <div class="menu-list-row"> <a href="">
+            <i class="fa-regular fa-bell"></i>
+            <span>Thông báo việc làm</span>
+          </a></div>
+         
+        </li>
+        <div class="border"></div>
+        <li>
+          <div class="menu-list-row name-account">
+            <a href="">
+              <i class="fa-regular fa-circle-user"></i>
+            </a> <span>WorkZone</span>
+          </div>
+         
+           
+        </li>
+        <li>
+          <div class=" log-out ">
+            <i class="fa-solid fa-arrow-right-from-bracket"></i>
+          <span>Đăng xuất</span>
+          </div>
+          
+        </li>
+      </ul>
