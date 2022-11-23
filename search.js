@@ -45,3 +45,8 @@ function menu() {
   var list = document.getElementById("list-menu");
   list.classList.toggle("is-left-default");
 }
+function menupc() {
+  var listpc = document.getElementById("list-menu-pc");
+  listpc.classList.toggle("display");
+}
+
