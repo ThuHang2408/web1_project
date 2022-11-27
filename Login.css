@@ -19,9 +19,7 @@ body {
   align-items: center;
   height: 118%;
 }
-.nav-pc li {
-  margin-right: 30px;
-}
+
 .right-main-menu {
   display: flex;
 }
@@ -70,9 +68,7 @@ body {
   left: -2000px;
   transition: 0.5s;
 }
-.list-menu-mb-login li {
-  margin-bottom: 10px;
-}
+
 .is-left-default {
   left: 0px !important;
 }
@@ -238,6 +234,7 @@ footer {
 
 .copyright {
   text-align: center;
+  margin-bottom: 0;
 }
 .content1_2 img {
   width: 150px;
