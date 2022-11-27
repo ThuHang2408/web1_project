@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Search</title>
+    <link rel="stylesheet" href="./Thongbao.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900,900i&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="./bootstrap.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="main-menu">
+        <div class="left-main-menu">
+          <div class="row">
+            <div class="col-md-3">
+              <a class="logo" href="#"
+                ><img
+                  src="./Image/307595079_1436979406790740_7670366868843439347_n.png"
+                  alt="Logo"
+              /></a>
+            </div>
+            <div class="col-md-5">
+              <ul class="nav-pc">
+                <li><a href="">Tìm việc</a></li>
+                <li><a href="">Công việc</a></li>
+                <li><a href="">Về WorkZone</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="right-main-menu">
+          <div class="account">
+            <i class="fa-regular fa-circle-user"></i><span>WorkZone</span>
+            <a onclick="menupc()" href="#"
+              ><i class="fa-solid fa-sort-down"></i
+            ></a>
+          </div>
+
+          <button class="btn-menu ntd">NHÀ TUYỂN DỤNG</button>
+        </div>
+      </div>
+    </div>
+    <div>
+      <ul class="list-menu-pc is-display-none" id="list-menu-pc">
+        <li>
+          <div class="menu-list-row">
+            <a href="#">
+              <i class="fa-regular fa-file"></i>
+              <span> Hồ sơ xin việc</span>
+            </a>
+          </div>
+        </li>
+        <li>
+          <div class="menu-list-row">
+            <a href="">
+              <i class="fa-solid fa-heart"></i>
+              <span> Việc làm đã lưu</span>
+            </a>
+          </div>
+        </li>
+        <li>
+          <div class="menu-list-row">
+            <a href="">
+              <i class="fa-solid fa-paper-plane"></i>
+              <span>Việc làm đã ứng tuyển</span>
+            </a>
+          </div>
+        </li>
+        <li>
+          <div class="menu-list-row">
+            <a href="">
+              <i class="fa-regular fa-bell"></i>
+              <span>Thông báo việc làm</span>
+            </a>
+          </div>
+        </li>
+        <div class="border"></div>
+        <li>
+          <div class="menu-list-row name-account">
+            <a href="">
+              <i class="fa-regular fa-circle-user"></i>
+            </a>
+            <span>WorkZone</span>
+          </div>
+        </li>
+        <li>
+          <div class="log-out">
+            <i class="fa-solid fa-arrow-right-from-bracket"></i>
+            <span>Đăng xuất</span>
+          </div>
+        </li>
+      </ul>
+      <div id="nav-mb">
+        <button onclick="menu()">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+    <ul id="list-menu-mb-login" class="list-menu-mb-login">
+      <li>
+        <div class="menu-list-row">
+          <a href="#">
+            <i class="fa-light fa-file"></i>
+            <span> Quản lý hồ sơ</span>
+          </a>
+        </div>
+      </li>
+      <li>
+        <div class="menu-list-row">
+          <a href="">
+            <i class="fa-solid fa-id-card"></i>
+            <span> Thanh toán</span>
+          </a>
+        </div>
+      </li>
+
+      <div class="border"></div>
+      <li>
+        <div class="menu-list-row name-account">
+          <a href="#">
+            <i class="fa-solid fa-buildings"></i>
+          </a>
+          <span>WorkZone Cop</span>
+        </div>
+      </li>
+      <div class="account">
+        <a href="#">
+          <i class="fa-solid fa-buildings"></i>
+        </a>
+        <span>WorkZone Cop</span>
+        <a onclick="menupc()" href="#"><i class="fa-solid fa-sort-down"></i></a>
+      </div>
+      <button class="btn-nav ntd">NGƯỜI TÌM VIỆC</button>
+      <li>
+        <div class="log-out">
+          <i class="fa-solid fa-arrow-right-from-bracket"></i>
+          <span>Đăng xuất</span>
+        </div>
+      </li>
+    </ul>
+
+    <!-- main -->
+    <!-- menu account -->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 col-12">
+          <ul class="emp-menu">
+            <div class="box-menu-pc">
+              <li><a href="">Tài khoản</a></li>
+              <li><a href="">Hồ sơ công việc</a></li>
+              <li><a href="">Việc đã lưu (0)</a></li>
+              <li><a href="">Việc đã ứng tuyển (0)</a></li>
+              <li><a href="">Thông báo việc làm (0)</a></li>
+            </div>
+
+            <div class="box-menu-mb is-display-none">
+              <span><a href="">Tài khoản</a></span>
+              <span><a href="">Hồ sơ công việc</a></span>
+              <span><a href="">Việc đã lưu (0)</a></span>
+              <span><a href="">Việc đã ứng tuyển (0)</a></span>
+              <span><a href="">Thông báo việc làm (0)</a></span>
+            </div>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="info">
+      <div class="head-row-info">
+        <span class="header-info">Thông báo việc làm </span>
+        <span class="all">Xem tất cả</span>
+      </div>
+      <span class="no-notify"> Chưa có thông báo nào </span>
+    </div>
+
+    <!-- footer -->
+    <footer>
+      <div class="container">
+        <div class="logo-footer">
+          <img
+            src="./Image/307595079_1436979406790740_7670366868843439347_n.png"
+            alt=""
+          />
+        </div>
+        <div class="row">
+          <div class="col-md-3 col-sm-6 col-12">
+            <div class="content_1">
+              <h3>
+                Kết nối với <span class="blue">Work</span>Z<span class="blue"
+                  >one</span
+                >
+              </h3>
+              <p>
+                <a href="">
+                  <img
+                    class="float"
+                    src="./Image/312480830_445641171038862_588506279940922481_n.png"
+                    width="27px"
+                    height="27px"
+                  />&nbsp; +123 456 7890</a
+                >
+              </p>
+              <p>
+                <a
+                  href="https://www.google.com/intl/vi/gmail/about/"
+                  target="_blank"
+                  ><img
+                    class="float"
+                    src="./Image/310964015_855906672231351_6598178213256060534_n.png"
+                    width="27px"
+                    height="27px"
+                  />&nbsp; <span class="hover">uel@workzone.com</span></a
+                >
+              </p>
+              <p>
+                <a
+                  href="https://www.google.com/maps/place/Tr%C6%B0%E1%BB%9Dng+%C4%90%E1%BA%A1i+h%E1%BB%8Dc+Kinh+t%E1%BA%BF+-+Lu%E1%BA%ADt,+%C4%90%E1%BA%A1i+h%E1%BB%8Dc+Qu%E1%BB%91c+gia+Th%C3%A0nh+ph%E1%BB%91+H%E1%BB%93+Ch%C3%AD+Minh/@10.8709374,106.7760666,17z/data=!3m1!4b1!4m6!3m5!1s0x3175277dbf11a271:0x4567e34b99494e3f!8m2!3d10.8709321!4d106.7782553!16s%2Fm%2F0ds8rvh?hl=vi"
+                  target="_blank"
+                  ><img
+                    class="float"
+                    src="./Image/308622022_530987852259477_4925536932211548467_n.png"
+                    width="27px"
+                    height="27px"
+                  />&nbsp;
+                  <span class="hover"
+                    >265, QL1A, Phường Linh Trung, Thủ Đức</span
+                  ></a
+                >
+              </p>
+              <p>
+                <a href="https://www.facebook.com/" target="_blank"
+                  ><img
+                    class="float"
+                    src="./Image/312632697_878874660161372_3449884327526693978_n.png"
+                    width="27px"
+                    height="27px"
+                  />&nbsp; <span class="hover">WorkZone</span></a
+                >
+              </p>
+              <p>
+                <a href="https://www.linkedin.com/" target="_blank"
+                  ><img
+                    class="float"
+                    src="./Image/310292843_684867426401356_3644814379716731370_n.png"
+                    width="27px"
+                    height="27px"
+                  />&nbsp;<span class="hover">linkedin.com/workzone</span>
+                </a>
+              </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 col-12">
+            <div class="content_2">
+              <h3>Công việc</h3>
+              <p class="hover"><a href="">Hot Job</a></p>
+              <p class="hover"><a href="">Latest Job</a></p>
+              <p class="hover"><a href="">Công ty hàng đầu</a></p>
+              <p class="hover"><a href="">Việc làm hấp dẫn</a></p>
+              <p class="hover"><a href="">Tin tức</a></p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 col-12">
+            <div class="content_3">
+              <h3>About us</h3>
+              <p class="hover">
+                <a href=""
+                  >Thông tin về <span class="blue">Work</span>Z<span
+                    class="blue"
+                    >one</span
+                  ></a
+                >
+              </p>
+              <p class="hover"><a href="">Điều khoản và dịch vụ</a></p>
+              <div class="content1_2">
+                <h3>Chứng nhận bởi</h3>
+                <a href="">
+                  <img
+                    src="./Image/313538651_1863950493959641_7846904227372209937_n.png"
+                    width="198px"
+                    height="89px"
+                /></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 col-12">
+            <div class="content_4">
+              <h3>Liên hệ</h3>
+              <p class="hover"><a href="">Liên hệ ngay</a></p>
+              <p class="hover"><a href="">Hỗ trợ</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="copyright">
+        Copyright &#169; 2022. <span class="blue">WorkZone</span> . All Right
+        Reserved
+      </p>
+    </footer>
+  </body>
+</html>
