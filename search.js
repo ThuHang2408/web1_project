@@ -42,11 +42,10 @@ function display4() {
   icon8.classList.toggle("is-display-none");
 }
 function menu() {
-  var list = document.getElementById("list-menu");
+  var list = document.getElementById("list-menu-mb-login");
   list.classList.toggle("is-left-default");
 }
 function menupc() {
   var listpc = document.getElementById("list-menu-pc");
   listpc.classList.toggle("display");
 }
-
