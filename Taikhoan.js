@@ -6,3 +6,7 @@ function tab() {
   tab2.classList.toggle("is-display-none");
   img.classList.toggle("is-display-none");
 }
+function menu() {
+  var list = document.getElementById("list-menu-mb-login");
+  list.classList.toggle("is-left-default");
+}
