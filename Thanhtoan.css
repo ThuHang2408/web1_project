@@ -1,6 +1,7 @@
-/* Header */
-.container {
-  border-bottom: 3px solid #48c0fd;
+html,
+body {
+  margin: 0;
+  padding: 0;
 }
 .main-menu {
   display: flex;
@@ -116,7 +117,7 @@
   background: white;
   font-size: 15px;
   text-align: center;
-  width: 100%;
+  width: 97%;
   height: 100vh;
   z-index: 1000;
   left: -2000px;
@@ -128,6 +129,13 @@
 .is-left-default {
   left: 0px !important;
 }
+.is-display-none {
+  display: none !important;
+}
+.display {
+  display: block !important;
+}
+
 /*Responsive*/
 #nav-mb button {
   display: none;
@@ -146,291 +154,220 @@
     top: 25px;
     right: 10px;
     font-size: 20px;
-
     display: block;
     color: #48c0fd;
     border: none;
     background: none;
   }
+  .main {
+    margin: 10px 5% !important;
+  }
+  .taikhoan {
+    margin: 0px !important;
+    border: none !important;
+  }
+  .method {
+    border-left: 1px solid black !important;
+  }
+  .emp-menu {
+    display: block !important;
+    width: 100%;
+    overflow-x: auto;
+  }
+  .box-menu-pc {
+    display: none !important;
+  }
+  .box-menu-mb {
+    display: block !important;
+    width: 823px;
+    margin-top: 10px;
+  }
+  .box-menu-mb > span {
+    margin: 0px 20px;
+  }
+  .user {
+    width: 81% !important;
+  }
+  .birth-input {
+    width: 26% !important;
+  }
+  .img-profile {
+    margin-top: 20px;
+  }
 }
-/* body */
-.container__payment {
-  margin: 40px 0;
+/* Header */
+
+/* menu-account */
+.pad-0 {
+  padding-right: 0px !important;
+  padding-left: 0px !important;
+}
+/* .width-100 {
+  width: 100% !important;
+} */
+.emp-menu {
+  height: 50px;
+  align-items: center;
+  background-color: #deefff;
+  border-top: 2px solid #48c0fd;
+}
+.box-menu-pc {
+  margin-top: 10px;
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-evenly;
 }
-.content__payment--left {
-  flex-basis: 50%;
+.main {
+  margin: 50px 5%;
 }
-.content__payment--right {
-  flex-basis: 40%;
-  margin-top: 5%;
+.method {
+  background-color: white;
+  margin: 5px 12px;
+  border: none;
+}
+.method > h5 {
+  text-align: left;
+  font-size: 15px;
+  margin-bottom: -8px;
+}
+.method > span {
+  font-size: 10px;
+}
+.taikhoan {
+  border-left: 1px solid black;
+  margin: 35% 10%;
+  padding-left: 5px;
+}
+.red {
+  color: red;
+}
+/* change--pass */
+
+.form-change-pass {
+  width: 100%;
+}
+.row-pass {
+  font-size: 12px;
+  font-weight: bold;
+}
+.input {
+  width: 100%;
+  border-radius: 2px;
+  border: 1px solid #b6c0c5;
+  margin-bottom: 10px;
+}
+.name-pass {
+  margin-bottom: 5px;
 }
 
-h2,
-h3 {
-  margin-left: 50px;
+.check {
+  width: 16px;
+  height: 16px;
 }
-h3 {
+.show-pass {
+  position: absolute;
+  top: 0px;
+  margin-left: 5px;
   font-weight: normal;
 }
-table {
-  border: 1px solid;
-  width: 90%;
-  margin: auto;
-}
-th,
-td {
-  padding: 20px;
-  /* padding-right: 30px; */
-  height: 70px;
-  border: 1px solid;
-}
-
-.tab__row {
-  text-align: center;
-  margin-top: 20px;
-}
-table img {
-  width: 160px;
-  float: right;
-}
-.payment__row {
-  margin-left: 5%;
-  margin-top: 20px;
-}
-.payment__row input {
-  padding-left: 15px;
-  border-radius: 5px;
-  height: 45px;
-}
-.input1 {
-  width: 90%;
-}
-.input2 {
-  width: 44%;
-}
-.input3 {
-  width: 44%;
-  margin-left: 3%;
-}
-.payment__row:nth-child(7),
-.payment__row:nth-child(6) {
-  padding-left: 20px;
-}
-.payment__row label {
-  min-width: 120px;
-}
-#telephone {
-  width: 55%;
-}
-#email {
-  width: 77%;
-}
-.radio-button {
-  height: 17px;
-  width: 17px;
-  margin-top: 25px;
-  margin-right: 20px;
-}
-#myBtn {
-  background: #48c0fd;
-  color: aliceblue;
-  font-size: 22px;
-  font-weight: bold;
-  border: none;
-  border-radius: 5px;
-  padding: 8px 30px;
-}
-#myBtn:hover {
-  color: blue;
-}
-.pay {
-  font-size: 20px;
-  font-weight: bold;
-}
-
-/* The Modal (background) */
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0, 0, 0); /* Fallback color */
-  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
-}
-
-/* Modal Content */
-.modal-content {
-  text-align: left;
-  position: relative;
-  background-color: #fefefe;
-  margin: auto;
-  padding: 0;
-  border: 1px solid #888;
-  width: 70%;
-  max-width: 600px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-.modal-content1 {
-  font-weight: bolder;
-  text-align: center;
-  position: relative;
-  background-color: #fefefe;
-  margin: auto;
-  padding-top: 70px;
-  border: 1px solid #888;
-  width: 70%;
-  max-width: 600px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-.modal-content:first-child {
-  -webkit-animation-name: animatetop;
-  -webkit-animation-duration: 0.4s;
-  animation-name: animatetop;
-  animation-duration: 0.4s;
-}
-/* Add Animation */
-@-webkit-keyframes animatetop {
-  from {
-    top: -300px;
-    opacity: 0;
-  }
-  to {
-    top: 0;
-    opacity: 1;
-  }
-}
-
-@keyframes animatetop {
-  from {
-    top: -300px;
-    opacity: 0;
-  }
-  to {
-    top: 0;
-    opacity: 1;
-  }
-}
-
-/* The Close Button */
-.close,
-.close1,
-.close2 {
+.btn-mk {
+  margin-top: 15px;
+  padding: 3px 12px;
+  border: 1px solid rgba(36, 0, 255, 1);
+  background-color: #2f55d4;
   color: white;
-  font-weight: bold;
-  margin-right: 10px;
-  border: none;
-  padding: 5px 10px;
-  background-color: #888;
-  border-radius: 5px;
+  border-radius: 2px;
 }
-
-.close:hover,
-.close1:hover,
-.close:focus,
-.close1:focus,
-.close2:hover,
-.close2:focus {
-  color: #000;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.modal-header {
-  padding: 10px 16px;
-  font-weight: bold;
-  border-bottom: 1px solid gray;
-}
-
-.modal-body {
-  padding: 20px 16px;
-  margin-left: 50px;
-}
-.modal-footer1 {
-  text-align: center;
-  padding: 40px 30px;
-}
-.modal-footer {
-  text-align: right;
-  padding: 20px 30px;
-}
-.modal-body label {
-  margin-left: 20px;
-}
-#myBtn1,
-#myBtn2 {
-  color: #fefefe;
-  background-color: #48c0fd;
-  border: none;
-  border-radius: 5px;
-  font-weight: bold;
-  padding: 5px 15px;
-}
-#myBtn1:hover,
-#myBtn2:hover {
-  color: blue;
-}
-#otp {
-  margin-left: 20px;
-  width: 40%;
-}
-#check__successful {
-  margin: auto;
-  display: block;
-  float: none;
-  width: 40px;
+.header-change-pass {
   margin-bottom: 20px;
 }
-
-@media (max-width: 500px) {
-  .container__payment {
-    flex-direction: column;
-  }
-  .modal-body,
-  .modal-header,
-  .modal-footer,
-  .modal-footer1 {
-    padding: 10px 15px;
-    margin-left: 10px;
-  }
-  .modal-content h2 {
-    margin-left: 10px;
-  }
+.method:hover {
+  cursor: pointer;
+  background-color: #edf9ff;
 }
-/* footer */
+.method::selection {
+}
+/* end-change-pass */
+.mr-bot {
+  margin-bottom: 15px;
+}
+/* user */
+.user {
+  width: 88%;
+  margin-right: 10px;
+}
+.save {
+  background-color: #48c0fd;
+  color: white;
+  width: 44px;
+  height: 22px;
+  text-align: center;
+  border-radius: 2px;
+  border: 0px;
+}
+.border-user {
+  content: "";
+  height: 1px;
+  width: 100%;
+  background-color: #ccc;
+  margin: 10px 0px;
+  display: block;
+}
+.big {
+  margin: 20px 0;
+  height: 2px;
+}
+.birth-input {
+  width: 29%;
+  border-radius: 2px;
+  border: 1px solid #b6c0c5;
+}
+.date-signup {
+  width: 100%;
+  text-align: center;
+  background-color: #f4f4f4;
+  color: #9b9b9b;
+  border: none;
+  padding: 5px 0px;
+}
+/* end-user */
+.img-profile {
+  width: 100%;
+}
+.img-profile > i {
+  margin: 0% 36%;
 
+  font-size: 70px;
+}
+.img-profile > p {
+  text-align: center;
+}
+
+/* footer */
 .logo-footer img {
   width: 296px;
   margin-bottom: 10px;
 }
 footer {
   margin-top: 30px;
+}
+.background {
   background-color: #2a363b;
 }
-
 .copyright {
   text-align: center;
+  margin-bottom: 0;
 }
 .content1_2 img {
   width: 150px;
   margin-left: -12px;
 }
+.white {
+  color: white;
+}
 .blue {
   color: #0075ff;
 }
-footer h3,
-footer p {
-  color: white;
-}
+
 .hover:hover {
   text-decoration: underline;
 }
