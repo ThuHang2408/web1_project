@@ -367,7 +367,4 @@ footer {
 .hover:hover {
   text-decoration: underline;
 }
-.none-mg {
-  margin-left: 0px !important;
-  margin-right: 0px !important;
-}
+
