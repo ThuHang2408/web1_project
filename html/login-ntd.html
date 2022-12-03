@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOG IN</title>
+    <link rel="stylesheet" href="./login-ntd.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./bootstrap.css">
+</head>
+<body>
+    <!-- header -->
+    <div class="container">
+      <div class="main-menu">
+        <div class="left-main-menu">
+          <div class="row">
+            <div class="col-md-3">
+              <a class="logo" href="#"
+                ><img src="./image/workzone.png" alt="Logo"
+              /></a>
+            </div>
+          </div>
+        </div>
+        <div class="right-main-menu">
+          <button class="btn-menu ntd">NGƯỜI TÌM VIỆC</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="nav-mb">
+      <button onclick="menu()">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+
+    <ul id="list-menu-mb-login" class="list-menu-mb-login">
+      <button class="btn-nav ntd">NHÀ TUYỂN DỤNG</button>
+    </ul>
+
+       <!-- body -->
+    <h2 class="title">ĐĂNG NHẬP TÀI KHOẢN NHÀ TUYỂN DỤNG</h2>
+    <div class="maxdiv">
+        <div class="input">
+            <form action="">
+                <input type="text" placeholder="Email *" id="input_emailmk">
+                <input type="password" name="" id="input_emailmk" placeholder="Mật khẩu *">
+                <div class="check">
+                    <div id="htmk">
+                        <input type="checkbox"><span> Hiển thị mật khẩu</span>
+                    </div>
+                    <span id="quenmatkhau"><a href="#">Quên mật khẩu?</a></span>
+                </div>
+                <div class="dangky">
+                    <span>Bạn chưa có tài khoản?</span>
+                    <a id="dangky" href="#">Đăng ký</a>
+                </div>
+                <input type="button" value="Đăng nhập" id="input_btn_dangnhap">
+            </form>
+        </div>
+        <div class="line">
+            <img id="line" src="./image/314547648_5547457202042340_4503172346235368999_n.png" alt="">
+        </div>
+        <div class="image">
+            <p class="txtwz">WorkZone</p>
+            <div>
+                <img class="imgwz" src="./image/imgdangnhap.png" alt="Lỗi" id="anh">
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <footer>
+      <div class="container">
+        <div class="logo-footer">
+          <img
+            src="./media/logo.png"
+            alt=""
+          />
+        </div>
+        <div class="row">
+          <div class="col-md-3 col-sm-6 col-12">
+            <div class="content_1">
+              <h3>
+                Kết nối với <span class="blue">Work</span>Z<span class="blue"
+                  >one</span
+                >
+              </h3>
+              <p>
+                <a href="">
+                  <img
+                    class="float"
+                    src="./media/phone.png"
+                    width="27px"
+                    height="27px"
+                  />&nbsp; <span class="hover">+123 456 7890</span></a
+                >
+              </p>
+              <p>
+                <a
+                  href="https://www.google.com/intl/vi/gmail/about/"
+                  target="_blank"
+                  ><img
+                    class="float"
+                    src="./media/mail.png"
+                    width="27px"
+                    height="27px"
+                  />&nbsp; <span class="hover">uel@workzone.com</span></a
+                >
+              </p>
+              <p>
+                <a
+                  href="https://www.google.com/maps/place/Tr%C6%B0%E1%BB%9Dng+%C4%90%E1%BA%A1i+h%E1%BB%8Dc+Kinh+t%E1%BA%BF+-+Lu%E1%BA%ADt,+%C4%90%E1%BA%A1i+h%E1%BB%8Dc+Qu%E1%BB%91c+gia+Th%C3%A0nh+ph%E1%BB%91+H%E1%BB%93+Ch%C3%AD+Minh/@10.8709374,106.7760666,17z/data=!3m1!4b1!4m6!3m5!1s0x3175277dbf11a271:0x4567e34b99494e3f!8m2!3d10.8709321!4d106.7782553!16s%2Fm%2F0ds8rvh?hl=vi"
+                  target="_blank"
+                  ><img
+                    class="float"
+                    src="./media/location.png"
+                    width="27px"
+                    height="27px"
+                  />&nbsp;
+                  <span class="hover"
+                    >265, QL1A, Phường Linh Trung, Thủ Đức</span
+                  ></a
+                >
+              </p>
+              <p>
+                <a href="https://www.facebook.com/" target="_blank"
+                  ><img
+                    class="float"
+                    src="./media/fb.png"
+                    width="27px"
+                    height="27px"
+                  />&nbsp; <span class="hover">WorkZone</span></a
+                >
+              </p>
+              <p>
+                <a href="https://www.linkedin.com/" target="_blank"
+                  ><img
+                    class="float"
+                    src="./media/in.png"
+                    width="27px"
+                    height="27px"
+                  />&nbsp;<span class="hover">linkedin.com/workzone</span>
+                </a>
+              </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 col-12">
+            <div class="content_2">
+                <h3>Nhà tuyển dụng</h3>
+                <p class="hover"><a href="">Tìm kiếm hồ sơ</a></p>
+                <p class="hover"><a href="">Đăng tin tuyển dụng</a></p>
+                <p class="hover"><a href="">Quản lý hồ sơ</a></p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 col-12">
+            <div class="content_3">
+              <h3>About us</h3>
+              <p class="hover">
+                <a href=""
+                  >Thông tin về <span class="blue">Work</span>Z<span
+                    class="blue"
+                    >one</span
+                  ></a
+                >
+              </p>
+              <p class="hover"><a href="">Điều khoản và dịch vụ</a></p>
+              <div class="content1_2">
+                <h3>Chứng nhận bởi</h3>
+                <a href="">
+                  <img
+                    src="./media/chứng nhận.png"
+                    width="198px"
+                    height="89px"
+                /></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 col-12">
+            <div class="content_4">
+              <h3>Liên hệ</h3>
+              <p class="hover"><a href="">Liên hệ ngay</a></p>
+              <p class="hover"><a href="">Hỗ trợ</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="copyright">
+        Copyright &#169; 2022. <span class="blue">WorkZone</span> . All Right
+        Reserved
+      </p>
+    </footer>
+    
+</body>
+</html>
