@@ -5,148 +5,123 @@ body {
 }
 
 /* header */
-#header {
+.main-menu {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.logo img {
   width: 100%;
-  height: 88px;
-  background-color: #ffffff;
 }
-#header .logo img {
-  width: 267px;
-  height: 67.8px;
-  float: left;
-  padding-left: 21px;
-  padding-top: 9px;
-}
-.content_timViec {
-  width: 25%;
-}
-.content_congViec {
-  width: 40%;
-}
-.content_veWorkZone {
-  width: 33%;
-}
-#content_header {
-  position: absolute;
-  top: 40px;
-  width: 30%;
-  left: 320px;
-  height: 28px;
-  font-weight: 400;
-  font-size: 100%;
-  line-height: 18px;
+.nav-pc {
   display: flex;
   align-items: center;
-  text-align: center;
-  float: left;
+  height: 118%;
 }
-#header a {
-  text-decoration: none;
-  color: #000000;
+.nav-pc li {
+  margin-right: 30px;
 }
-#bt_header {
-  position: relative;
-  height: 80px;
-  width: 33.8%;
-  position: relative;
-  left: 65.2%;
-  top: 26px;
+.right-main-menu {
+  display: flex;
 }
-.bt_nhaTuyenDung {
-  position: absolute;
-  border-radius: 20px;
-  width: 35%;
-  height: 43px;
-  left: 62%;
+.right-main-menu button {
+  margin-left: 10px;
+}
+.btn-menu {
+  border-radius: 12px;
   border: 1px solid rgba(36, 0, 255, 1);
-  font-weight: 700;
   font-size: 90%;
+  font-weight: bold;
   color: #ffffff;
-  background-color: blue;
-}
-.bt_Đăngky {
-  box-sizing: border-box;
-  position: absolute;
-  width: 28%;
-  height: 40px;
-  left: 0;
-  background: #48c0fd;
-  border: 1px solid #2400ff;
-  border-radius: 8px;
-  font-weight: 700;
-  font-size: 90%;
-  color: #ffffff;
-}
-.bt_Đăngnhap {
-  box-sizing: border-box;
-  position: absolute;
-  width: 28%;
-  height: 40px;
-  left: 31%;
-  background: #48c0fd;
-  border: 1px solid #2400ff;
-  border-radius: 8px;
-  font-weight: 700;
-  font-size: 90%;
-  color: #ffffff;
-}
-
-#nav-mb {
-  position: relative;
-}
-.dangKy {
-  width: 80%;
-  height: 30px;
-  margin-left: 12.5%;
-  background: #ffffff;
-  border: 1px solid #2400ff;
-  border-radius: 8px;
-  font-weight: 700;
-  font-size: 90%;
-  color: #000;
-  margin-top: -8px;
-}
-.dangNhap {
-  width: 80%;
-  height: 30px;
-  margin-left: 12.5%;
-  background: #ffffff;
-  border: 1px solid #2400ff;
-  border-radius: 8px;
-  font-weight: 700;
-  font-size: 90%;
-  color: #000;
-  margin-top: -5px;
-}
-.nhaTuyenDung {
-  width: 80%;
-  height: 30px;
-  margin-left: 12.5%;
-  background: #ffffff;
-  border: 1px solid #2400ff;
-  border-radius: 8px;
-  font-weight: 700;
-  font-size: 90%;
-  color: #000;
-  margin-top: -8px;
-}
-.dangKy:hover,
-.dangNhap:hover,
-.nhaTuyenDung:hover {
-  color: #ffffff;
+  width: 150px;
   background-color: #48c0fd;
+}
+.account {
+  width: 180px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  border: 1px solid black;
+}
+.account span {
+  margin: 0 25px;
+}
+.account .fa-circle-user {
+  font-size: 30px;
+  margin-left: -13px;
+}
+.account .fa-sort-down {
+  position: absolute;
+  top: 13px;
+  right: 9px;
 }
 .btn-nav {
   width: 50%;
+  font-weight: bold;
   background: #48c0fd;
   margin: 10px 10px;
   color: #fff;
-  border-radius: 8px;
+  border-radius: 12px;
+}
+.relative {
+  position: relative;
 }
 .ntd {
-  background: #2400ff;
+  border-radius: 12px;
+  border: 1px solid rgba(36, 0, 255, 1);
+  font-size: 90%;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: blue;
 }
-.list-menu {
+.list-menu-pc {
+  padding: 5px 0;
+  font-size: 12px;
+  border-radius: 12px;
+  background-color: white;
+  padding-left: 10px;
+  position: absolute;
+  right: 158px;
+  top: 69px;
+  width: 16%;
+  border: 1px solid black;
+  z-index: 1000;
+  margin-left: 10px;
+}
+.menu-list-row a i {
+  width: 15px;
+}
+.log-out {
+  margin-left: 50%;
+  margin-top: 5px;
+}
+.menu-list-row .fa-circle-user {
+  font-size: 20px;
+}
+.name-account {
+  font-size: 15px;
+  font-weight: bold;
+}
+.name-account span {
+  font-weight: bold;
+  color: #0075ff;
+}
+.list-menu-pc span {
+  padding-left: 8px;
+}
+
+.border {
+  margin: 4px 0;
+  border: 0.5px solid black;
+  width: 94%;
+  background: black;
+}
+
+.list-menu-mb-login {
+  padding-top: 10px;
   position: fixed;
   background: white;
   font-size: 15px;
@@ -157,23 +132,31 @@ body {
   left: -2000px;
   transition: 0.5s;
 }
+.list-menu-mb-login li {
+  margin-bottom: 10px;
+}
 .is-left-default {
-  left: 0 !important;
+  left: 0px !important;
 }
 /*Responsive*/
 #nav-mb button {
   display: none;
 }
 @media (max-width: 830px) {
-  #content_header,
-  #bt_header {
+  .nav-pc,
+  .btn-menu,
+  .account {
     display: none;
+  }
+  .logo img {
+    width: 43% !important;
   }
   #nav-mb button {
     position: absolute;
-    top: 27px;
+    top: 25px;
     right: 10px;
     font-size: 20px;
+
     display: block;
     color: #48c0fd;
     border: none;
@@ -195,7 +178,6 @@ body {
   }
   .job-logo {
     display: block !important;
-
     height: auto !important;
   }
   .job-logo img {
@@ -211,8 +193,6 @@ body {
 }
 /* Main */
 #abc {
-  position: absolute;
-  top: 92px;
   width: 100%;
   border-top: 5px solid #48c0fd;
 }
@@ -228,9 +208,9 @@ body {
   opacity: 0.35;
 }
 .banner-content {
-  width: 100%;
-  top: 0%;
   position: absolute;
+  top: 0;
+  width: 100%;
 }
 .title-banner {
   margin-top: 10px;
@@ -264,9 +244,7 @@ body {
   font-size: 15px;
   padding-left: 45px;
 }
-.relative {
-  position: relative;
-}
+
 #location {
   width: 100%;
   height: 50px;
@@ -397,10 +375,9 @@ a.btnf i {
   padding-bottom: 15px;
 }
 .display {
-  display: inline-block;
+  display: block !important;
 }
-
-a.filter-action {
+.a.filter-action {
   color: #676767 !important;
   font-size: 15px;
   display: inline-block;
@@ -438,6 +415,7 @@ span._fpblock._line {
   padding: 2px 9px;
 }
 span._fpblock._line p {
+  color: #676767;
   margin-top: 6px;
   margin-bottom: 0px;
 }
@@ -557,32 +535,9 @@ a.job-address {
 }
 footer {
   margin-top: 30px;
+  background-color: #2a363b;
 }
-.action-help {
-  background-image: url(./Image/tải\ xuống.jpg);
-  background-size: cover;
-  padding: 15px 0;
-  text-align: center;
-}
-.box-tele {
-  background: white;
-  border: 1px solid black;
-  border-radius: 5px;
-  width: 222px;
-}
-.box-tele input {
-  border: none;
-  background: none;
-}
-.box-tele span {
-  display: inline-block;
-  background-color: gray;
-  width: 30px;
-}
-.center-position {
-  display: flex;
-  justify-content: center;
-}
+
 .copyright {
   text-align: center;
 }
@@ -592,4 +547,12 @@ footer {
 }
 .blue {
   color: #0075ff;
+}
+
+h3,
+p {
+  color: white;
+}
+.hover:hover {
+  text-decoration: underline;
 }
