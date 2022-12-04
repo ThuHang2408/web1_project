@@ -3,744 +3,450 @@ body {
   padding: 0;
   margin: 0;
 }
-.container {
-  position: relative;
-  width: 100%;
-  height: 1500px;
-  background: #ffffff;
-  font-family: "roboto";
-  z-index: 1;
-  background: rgba(233, 233, 234, 1);
-}
 /* header */
-#header {
+.main-menu {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.logo img {
   width: 100%;
-  height: 88px;
-  background-color: #ffffff;
 }
-#header .logo img {
-  width: 267px;
-  height: 67.8px;
-  float: left;
-  padding-left: 21px;
-  padding-top: 9px;
-}
-.content_tuyendung {
-  width: 48%;
-}
-.content_timhoso {
-  width: 30%;
-}
-.content_lienhe {
-  width: 30%;
-}
-#content_header {
-  position: absolute;
-  top: 40px;
-  width: 30%;
-  left: 320px;
-  height: 28px;
-  font-weight: 400;
-  font-size: 100%;
-  line-height: 18px;
+.nav-pc {
   display: flex;
   align-items: center;
-  text-align: center;
-  float: left;
+  height: 118%;
 }
-#header a {
-  text-decoration: none;
-  color: #000000;
+.nav-pc li {
+  margin-right: 30px;
 }
-#bt_header {
-  position: relative;
-  height: 80px;
-  width: 34.375%;
-  position: relative;
-  left: 65.2%;
-  top: 26px;
+.right-main-menu {
+  display: flex;
 }
-.bt_Nguoitimviec {
-  position: absolute;
-  border-radius: 20px;
-  width: 34%;
-  height: 43px;
-  left: 64%;
+.right-main-menu button {
+  margin-left: 10px;
+}
+.btn-menu {
+  border-radius: 12px;
   border: 1px solid rgba(36, 0, 255, 1);
-  font-weight: 700;
   font-size: 90%;
+  font-weight: bold;
+  color: #ffffff;
+  width: 150px;
+  background-color: #48c0fd;
+}
+
+.btn-nav {
+  width: 50%;
+  font-weight: bold;
+  background: #48c0fd;
+  margin: 10px 10px;
+  color: #fff;
+  border-radius: 12px;
+}
+.relative {
+  position: relative;
+}
+.ntd {
+  border-radius: 12px;
+  border: 1px solid rgba(36, 0, 255, 1);
+  font-size: 90%;
+  font-weight: bold;
   color: #ffffff;
   background-color: blue;
 }
-.bt_Đăngky {
-  box-sizing: border-box;
-  position: absolute;
-  width: 30%;
-  height: 40px;
-  left: 0;
-  background: #48c0fd;
-  border: 1px solid #2400ff;
-  border-radius: 8px;
-  font-weight: 700;
-  font-size: 90%;
-  color: #ffffff;
-}
-.bt_Đăngnhap {
-  box-sizing: border-box;
-  position: absolute;
-  width: 30%;
-  left: 32%;
-  height: 40px;
-  background: #48c0fd;
-  border: 1px solid #2400ff;
-  border-radius: 8px;
-  font-weight: 700;
-  font-size: 90%;
-  color: #ffffff;
-}
-#gach_ngang {
-  position: relative;
+
+
+
+.list-menu-mb-login {
+  padding-top: 10px;
+  position: fixed;
+  background: white;
+  font-size: 15px;
+  text-align: center;
   width: 100%;
-  background-color: #48c0fd;
-  height: 3px;
-  top: 0px;
+  height: 100vh;
+  z-index: 1000;
+  left: -2000px;
+  transition: 0.5s;
 }
-#nav_header {
-  position: absolute;
-  padding-left: 70%;
-  padding-top: 0px;
-  width: 200px;
-  visibility: hidden;
-  z-index: 1;
-  top: 20px;
+.list-menu-mb-login li {
+  margin-bottom: 10px;
 }
-#nav_header .menu {
-  width: 30px;
-  height: 30px;
-  float: right;
-}
-#nav_header hr {
-  background-color: #000000;
-  margin-left: 0.6em;
-  width: 14em;
-}
-#nav_header ul {
-  list-style-type: none;
-  background-color: #ffffff;
-}
-#nav_header ul li {
-  position: relative;
-}
-#nav_header ul li a {
-  display: block;
-  text-decoration: none;
-  color: #000000;
-}
-#nav_header li a:hover {
-  font-weight: bolder;
-  color: blue;
-}
-#nav_header li ul {
-  position: absolute;
-  display: none;
-  width: 15em;
-  height: 19em;
-  border: 1px solid #000000;
-  border-radius: 8px;
-  top: -2em;
-  left: -6em;
-}
-#nav_header li:hover ul {
-  display: block;
-}
-#nav_header ul li ul div {
-  width: 100%;
-  line-height: 5px;
-  margin-left: -15px;
-  padding-top: 20px;
-}
-#nav_header ul li ul li {
-  width: 100%;
-  line-height: 35px;
-  left: 5px;
-}
-#nav_header ul li ul li a {
-  padding-left: 20px;
-}
-.dangKy {
-  width: 80%;
-  height: 30px;
-  margin-left: 12.5%;
-  background: #ffffff;
-  border: 1px solid #2400ff;
-  border-radius: 8px;
-  font-weight: 700;
-  font-size: 90%;
-  color: #000;
-  margin-top: -8px;
-}
-.dangNhap {
-  width: 80%;
-  height: 30px;
-  margin-left: 12.5%;
-  background: #ffffff;
-  border: 1px solid #2400ff;
-  border-radius: 8px;
-  font-weight: 700;
-  font-size: 90%;
-  color: #000;
-  margin-top: -5px;
-}
-.nguoiTimViec {
-  width: 80%;
-  height: 30px;
-  margin-left: 12.5%;
-  background: #ffffff;
-  border: 1px solid #2400ff;
-  border-radius: 8px;
-  font-weight: 700;
-  font-size: 90%;
-  color: #000;
-  margin-top: -8px;
-}
-.dangKy:hover,
-.dangNhap:hover,
-.nguoiTimViec:hover {
-  color: #ffffff;
-  background-color: #48c0fd;
+.is-left-default {
+  left: 0px !important;
 }
 /*Responsive*/
-@media screen and (max-width: 990px) {
-  #content_header,
-  #bt_header,
-  .bt_Nguoitimviec {
-    visibility: hidden;
-    width: 5%;
-    left: 10%;
-  }
-  #nav_header {
-    visibility: visible;
-  }
-  #content_header {
-    padding-left: 0%;
-  }
+#nav-mb button {
+  display: none;
 }
-@media screen and (max-width: 768px) {
-  #nav_header {
-    padding-left: 65%;
+@media (max-width: 830px) {
+  .nav-pc,
+  .btn-menu,
+  .account {
+    display: none;
   }
-}
-@media screen and (max-width: 650px) {
-  #nav_header {
-    padding-left: 57%;
+  .logo img {
+    width: 43% !important;
   }
-}
-@media screen and (max-width: 580px) {
-  #nav_header {
-    padding-left: 52%;
-  }
-}
-@media screen and (max-width: 480px) {
-  #header {
-    width: 100%;
-    height: 70px;
-  }
-  #gach_ngang {
-    top: -18px;
-  }
-  #header .logo img {
-    width: 200px;
-    height: auto;
-  }
-  #nav_header {
-    padding-left: 45%;
-  }
-  #nav_header li ul {
-    width: 13em;
-  }
-  #nav_header hr {
-    margin-left: 0.4em;
-    width: 12em;
+  #nav-mb button {
+    position: absolute;
+    top: 25px;
+    right: 10px;
+    font-size: 20px;
+    display: block;
+    color: #48c0fd;
+    border: none;
+    background: none;
   }
 }
 /* body */
-#vung_1 {
-  position: absolute;
-  width: 100%;
-  height: 298px;
-  top: 92.5px;
-  background: linear-gradient(180deg, #144c6e 0%, rgba(37, 196, 241, 0) 100%),
-    #d9d9d9;
+#vung_1{
+    position: relative;
+    width: 100%;
+    height: 298px;
+    margin-top: 30px;
+    background: linear-gradient(180deg, #144C6E 0%, rgba(37, 196, 241, 0) 100%), #D9D9D9;
 }
-#vung_1 .text {
-  color: #ffffff;
-  left: 8.2%;
-  font-weight: 700;
+#vung_1 .text{
+    color: #FFFFFF;
+    left: 8.2%;
+    font-weight: 700;
 }
-#vung_1 #text_1 {
-  position: absolute;
-  width: 36%;
-  height: 55px;
-  top: 32.3px;
-  font-size: 23.3px;
-  line-height: 27px;
+#vung_1 #text_1{
+    position: absolute;
+    width: 36%;
+    height: 55px;
+    top: 32.3px;
+    font-size: 23.3px;
+    line-height: 27px;
 }
-#vung_1 #text_2 {
-  position: absolute;
-  width: 36%;
-  height: 58px;
-  top: 100px;
-  font-size: 23.3px;
+#vung_1 #text_2{
+    position: absolute;
+    width: 36%;
+    height: 58px;
+    top: 100px;
+    font-size: 23.3px;
 }
-#vung_1 #text_3 {
-  position: absolute;
-  width: 45%;
-  height: 38px;
-  top: 165px;
-  font-size: 16px;
-  line-height: 20px;
-}
-#vung_1 img {
-  position: absolute;
-  width: 335px;
-  height: 298px;
-  left: 55%;
-  top: 1x;
-}
-.bt_muaNgay {
-  position: absolute;
-  width: 144px;
-  height: 37px;
-  left: 142px;
-  top: 232px;
-  background: #fff240;
-  border-radius: 8px;
-  border: yellow;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 20px;
-}
-#vung_2 {
-  position: absolute;
-  width: 100%;
-  height: 255px;
-  top: 415px;
-  background: #e7f2f6;
-}
-#text_4 {
-  position: absolute;
-  height: 30px;
-  left: 32.5%;
-  right: 16.25%;
-  top: 50px;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 25px;
-  color: #0075ff;
-  justify-content: center;
-  text-align: center;
-}
-.solieu {
-  position: absolute;
-  height: 40px;
-  top: 127px;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 33px;
-}
-#soLieu_1 {
-  left: 14%;
-}
-#soLieu_2 {
-  left: 45%;
-}
-#soLieu_3 {
-  left: 75%;
-}
-#vung_2 .text {
-  position: absolute;
-  height: 19px;
-  top: 182px;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  color: #000000;
-  width: 300px;
-  text-align: center;
-}
-#vung_2 #text_1 {
-  left: 8%;
-}
-#vung_2 #text_2 {
-  left: 39%;
-}
-#vung_2 #text_3 {
-  left: 71.5%;
-}
-#vung_3 {
-  position: absolute;
-  width: 100%;
-  height: 748px;
-  top: 702px;
-  background: linear-gradient(
-    180deg,
-    rgba(0, 144, 184, 0.8) 0%,
-    rgba(17, 60, 64, 0.8) 100%
-  );
-}
-#vung_3 img {
-  position: absolute;
-  width: 454px;
-  height: 318px;
-  left: 3%;
-  top: 20px;
-}
-#vung_3 #text_1 {
-  position: absolute;
-  width: 634px;
-  height: 25px;
-  left: 45%;
-  top: 36px;
-  font-weight: 700;
-  font-size: 21px;
-  color: #ffffff;
-}
-#vung_3 #text_2 {
-  position: absolute;
-  width: 560px;
-  height: 37px;
-  left: 45%;
-  top: 80px;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 19px;
-  color: #ffffff;
-}
-#vung_3 #thongTin {
-  position: absolute;
-  width: 29%;
-  min-width: 300px;
-  height: 276px;
-  top: 446px;
-  background: #ffffff;
-  border-radius: 8px;
-}
-.iobSearch {
-  left: 3%;
-}
-.recruitment {
-  left: 35%;
-}
-.managedTalend {
-  left: 67%;
-}
-#thongTin img {
-  position: absolute;
-  width: 160px;
-  height: 114px;
-  top: 10px;
-  left: 10px;
-}
-#thongTin .text_head {
-  position: absolute;
-  width: 16%;
-  height: 26px;
-  left: 169px;
-  top: 36px;
-  font-weight: 700;
-  font-size: 23px;
-  line-height: 23px;
-  color: #0090b8;
-}
-#thongTin .text {
-  position: absolute;
-  width: 27%px;
-  height: 38px;
-  left: 10px;
-  top: 136px;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 18px;
-  color: #000000;
-}
-#thongTin .bt_timHieu {
-  position: absolute;
-  width: 80%;
-  height: 40px;
-  left: 10%;
-  top: 208px;
-  background: #fff240;
-  border-radius: 8px;
-  border: #fff240;
-  font-weight: 700;
-  font-size: 16px;
-  justify-content: center;
-}
-/* footer */
-#footer {
-  background-color: #2a363b;
-  width: 100%;
-}
-#footer .logo {
-  padding-left: 50px;
-  padding-top: 30px;
-}
-#footer .float {
-  float: left;
-}
-#footer p {
-  font-size: 16px;
-
-  color: white;
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
-
-  line-height: 28px;
-  padding-left: 0px;
-}
-#footer h3 {
-  color: white;
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 35px;
-  padding-left: 0px;
-}
-#footer .content {
-  display: flex;
-  padding-left: 110px;
-}
-#footer .content_1 {
-  flex: 1.2;
-}
-#footer .content_2 {
-  flex: 1;
-  padding-left: 20px;
-}
-#footer .content_3 {
-  flex: 1;
-}
-#footer .content_4 {
-  flex: 1;
-}
-#footer .content1 {
-  display: flex;
-}
-#footer .content1_1 {
-  flex: 50%;
-  padding-left: 400px;
-}
-#footer .content1_2 {
-  flex: 50%;
-}
-#footer #input- {
-  width: 380px;
-  height: 40px;
-  color: #9c9898;
-  padding-left: 10px;
-  background: #ffffff;
-  border: 1px solid #ffffff;
-  border-radius: 12px;
-
-  background-color: white;
-}
-#footer .tele {
-  position: absolute;
-  width: 30px;
-  height: 30px;
-  top: 85vh;
-  left: 55vw;
-}
-#footer .float1 {
-  float: right;
-}
-#footer .blue {
-  color: #0075ff;
-}
-#footer .input-- {
-  color: rgb(165, 165, 165);
-  padding-bottom: 10px;
-}
-#footer .hover:hover {
-  text-decoration: underline;
-}
-@media screen and (max-width: 500px) {
-  #footer .content {
-    display: flex;
-    flex-direction: column;
-    padding-left: 50px;
-  }
-  #footer .content_2 {
-    padding-left: 0;
-  }
-  #footer .content1 {
-    display: flex;
-    flex-direction: column;
-    padding-left: 30px;
-  }
-  #footer .content1_1 {
-    padding-left: 20px;
-  }
-  #footer .content1_2 {
-    padding-left: 20px;
-  }
-  #footer .logo {
-    text-align: center;
-  }
-}
-#footer a {
-  text-decoration: none;
-  color: white;
-}
-/* reponsive */
-@media screen and (max-width: 990px) {
-  #content_header,
-  #bt_header {
-    visibility: hidden;
-  }
-  #nav_header {
-    visibility: visible;
-  }
-  #content_header {
-    padding-left: 0%;
-  }
-  #text_4 {
-    left: 24%;
-    font-size: 23px;
-  }
-  #vung_2 .text {
-    width: 200px;
-  }
-  #vung_3 {
-    height: 1120px;
-  }
-  #vung_3 #text_1 {
-    top: 380px;
-    left: 3%;
-    width: 90%;
-    line-height: 23px;
-  }
-  #vung_3 #text_2 {
-    top: 435px;
-    left: 3%;
-    width: 90%;
-  }
-  #vung_3 #thongTin {
-    width: 346px;
-    top: 515px;
-  }
-  .iobSearch {
-    left: 3%;
-    margin-top: 0px;
-  }
-  .recruitment {
-    left: 50%;
-    margin-top: 0px;
-  }
-  .managedTalend {
-    left: 27%;
-    margin-top: 300px;
-  }
-  #footer {
-    margin-top: 360px;
-  }
-}
-@media screen and (max-width: 768px) {
-  #nav_header {
-    padding-left: 65%;
-  }
-  #vung_1 img {
-    visibility: hidden;
-  }
-  #vung_1 #text_1,
-  #vung_1 #text_2,
-  #vung_1 #text_3 {
-    width: 80%;
-    font-size: 20px;
-  }
-  #vung_1 #text_3 {
+#vung_1 #text_3{
+    position: absolute;
+    width: 45%;
+    height: 38px;
+    top: 165px;
     font-size: 16px;
-  }
-  #text_4 {
-    left: 15%;
-    font-size: 22px;
-  }
-  #vung_2 .text {
-    width: 190px;
-  }
-  #vung_3 {
-    height: 1420px;
-  }
-  .iobSearch {
-    left: 3%;
-    margin-top: 0px;
-  }
-  .recruitment {
-    left: 3%;
-    margin-top: 300px;
-  }
-  .managedTalend {
-    left: 3%;
-    margin-top: 600px;
-  }
-  #footer {
-    margin-top: 660px;
-  }
+    line-height: 20px;
 }
-@media screen and (max-width: 650px) {
-  #nav_header {
-    padding-left: 57%;
-  }
-  #vung_2 .text {
-    width: 159px;
-  }
+#vung_1 img{
+    position: absolute;
+    width: 335px;
+    height: 298px;
+    left: 55%;
+    top: 1x;
 }
-@media screen and (max-width: 580px) {
-  #nav_header {
-    padding-left: 52%;
-  }
-  #text_4 {
-    left: 15%;
+.bt_muaNgay{
+    position: absolute;
+    width: 144px;
+    height: 37px;
+    left: 142px;
+    top: 232px;
+    background: #FFF240;
+    border-radius: 8px ;
+    border: yellow;
+    font-style: normal;
+    font-weight: 700;
     font-size: 20px;
-  }
-  #vung_2 .text {
-    width: 135px;
-  }
-  .solieu {
-    font-size: 28px;
-  }
 }
-@media screen and (max-width: 480px) {
-  #header img {
-    width: 200px;
-    height: auto;
-    float: left;
-    padding-left: 21px;
-    padding-top: 9px;
-  }
-  #nav_header {
-    padding-left: 48%;
-    padding-top: 10px;
-  }
-  #text_4 {
-    left: 10%;
-    font-size: 18px;
-  }
-  #vung_2 .text {
-    width: 100px;
-  }
-  #vung_3 img {
-    width: 375px;
-    height: auto;
-    left: 0px;
-  }
-  .solieu {
+#vung_2{
+    position: relative;
+    width: 100%;
+    height: 255px;
+    margin-top:30px;
+    background: #E7F2F6;
+}
+#text_4{
+    position: absolute;
+    height: 30px;
+    left: 32.5%;
+    right: 16.25%;
+    top: 50px;
+    font-style: normal;
+    font-weight: 700;
     font-size: 25px;
-  }
-  #thongTin img {
+    color: #0075FF;
+    justify-content: center;
+    text-align: center;
+}
+.solieu{
+    position: absolute;
+    height: 40px;
+    top: 127px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 33px;
+}
+#soLieu_1{
+    left: 14%;
+}
+#soLieu_2{
+    left: 45%;
+}
+#soLieu_3{
+    left: 75%;
+}
+#vung_2 .text{
+    position: absolute;
+    height: 19px;
+    top: 182px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: #000000;
+    width: 300px;
+    text-align: center;
+}
+#vung_2 #text_1{
+    left: 8%;
+}
+#vung_2 #text_2{
+    left: 39%;
+}
+#vung_2 #text_3{
+    left: 71.5%;
+}
+#vung_3{
+    position: relative;
+    width: 100%;
+    height: 748px;
+    margin-top: 30px;
+    background: linear-gradient(180deg, rgba(0, 144, 184, 0.8) 0%, rgba(17, 60, 64, 0.8) 100%);
+}
+#vung_3 img{
+    position: absolute;
+    width: 454px;
+    height: 318px;
+    left: 3%;
+    top: 20px;
+}
+#vung_3 #text_1{
+    position: absolute;
+    width: 634px;
+    height: 25px;
+    left: 45%;
+    top: 36px;
+    font-weight: 700;
+    font-size: 21px;
+    color: #FFFFFF;
+}
+#vung_3 #text_2{
+    position: absolute;
+    width: 560px;
+    height: 37px;
+    left: 45%;
+    top: 80px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+}
+#vung_3 #thongTin{
+    position: absolute;
+    width: 29%;
+    min-width: 300px;
+    height: 276px;
+    top: 446px;
+    background: #FFFFFF;
+    border-radius: 8px;
+}
+.iobSearch{
+    left: 3%;
+}
+.recruitment{
+    left: 35%;
+}
+.managedTalend{
+    left: 67%;
+}
+#thongTin img{
+    position: absolute;
     width: 160px;
     height: 114px;
+    top: 10px;
+    left: 10px;
+}
+#thongTin .text_head{
+    position: absolute;
+    width: 16%;
+    height: 26px;
+    left: 169px;
+    top: 36px;
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 23px;
+    color: #0090B8;
+}
+#thongTin .text{
+    position: absolute;
+    width: 27%px;
+    height: 38px;
+    left: 10px;
+    top: 136px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    color: #000000;
+}
+#thongTin .bt_timHieu{
+    position: absolute;
+    width: 80%;
+    height: 40px;
+    left: 10%;
+    top: 208px;
+    background: #FFF240;
+    border-radius: 8px;
+    border: #FFF240;
+    font-weight: 700;
+    font-size: 16px;
+    justify-content: center;
+}
+/* footer */
+.logo-footer img {
+    width: 296px;
+    margin-bottom: 10px;
   }
+  footer {
+    margin-top: 40px;
+    background-color: #2A363B;
+  }
+  
+  .copyright {
+    text-align: center;
+  }
+  .content1_2 img {
+    width: 150px;
+    margin-left: -12px;
+  }
+  .blue {
+    color: #0075ff;
+  }
+  h3,p{
+      color: white;
+  }
+  .hover:hover{
+      text-decoration: underline;
+  }
+/* reponsive */
+@media screen and (max-width: 990px){
+    #text_4{
+        left: 24%;
+        font-size: 23px;
+    }
+    #vung_2 .text{
+        width: 200px;
+    }
+    #vung_3{
+        height: 1120px;
+    }
+    #vung_3 #text_1{
+        top: 380px ;
+        left: 3%;
+        width: 90%;
+        line-height: 23px;
+    }
+    #vung_3 #text_2{
+        top: 435px ;
+        left: 3%;
+        width: 90%;
+    }
+    #vung_3 #thongTin{
+        width: 346px;
+        top: 515px;
+    }
+    .iobSearch{
+        left: 3%;
+        margin-top: 0px;
+    }
+    .recruitment{
+        left: 50%;
+        margin-top: 0px;
+    }
+    .managedTalend{
+        left: 27%;
+        margin-top: 300px;
+    }
+}
+@media screen and (max-width: 768px){
+    #vung_1 img{
+        display: none;
+    }
+    #vung_1 #text_1, #vung_1 #text_2,#vung_1 #text_3  {
+        width: 80%;
+        font-size: 20px;
+    }
+    #vung_1 #text_3{
+        font-size: 16px;
+    }
+    #text_4{
+        left: 15%;
+        font-size: 22px;
+    }
+    #vung_2 .text{
+        width: 190px;
+    }
+    #vung_3{
+        height: 1420px;
+    }
+    .iobSearch{
+        left: 3%;
+        margin-top: 0px;
+    }
+    .recruitment{
+        left: 3%;
+        margin-top: 300px;
+    }
+    .managedTalend{
+        left: 3%;
+        margin-top: 600px;
+    }
+    #footer {
+        margin-top: 660px;
+    }
+}
+@media screen and (max-width: 650px){
+    #vung_2 .text{
+        width: 159px;
+    }
+}
+@media screen and (max-width: 580px){
+    #text_4{
+        left: 15%;
+        font-size: 20px;
+    }
+    #vung_2 .text{
+        width: 135px;
+    }
+    .solieu{
+        font-size: 28px;
+    }
+}
+@media screen and (max-width: 480px){
+#text_4{
+        left: 10%;
+        font-size: 18px;
+    }
+#vung_2 .text{
+        width: 100px;
+    }
+ #vung_3 img{
+        width:375px ;
+        height: auto;
+        left: 0px;
+    }
+.solieu{
+        font-size: 25px;
+    }
+#thongTin img{
+        width: 160px;
+        height: 114px;
+    }
 }
