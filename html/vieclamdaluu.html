@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WorkZone/Hồ sơ xin việc </title>
+    <title>WorkZone/Account/Việc làm đã lưuu </title>
     <link rel="stylesheet" href="./vieclamdaluu.css" />
-    <script type="text/javascript" src="../javaScrip.js"></script>
+    <script type="text/javascript" src="./javaScrip.js"></script>
 
     <link
       href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900,900i&display=swap"
@@ -20,7 +20,7 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="../bootstrap.css" />
+    <link rel="stylesheet" href="./bootstrap.css" />
 </head>
 <body>
     <!-- header -->
@@ -29,7 +29,7 @@
          <div class="left-main-menu">
            <div class="row">
              <div class="col-md-3">
-              <a class="logo" href="#"><img src="../media/logo.png" alt="Logo"></a> 
+              <a class="logo" href="#"><img src="./media/logo.png" alt="Logo"></a> 
              </div>
              <div class="col-md-5">
                <ul class="nav-pc">
@@ -146,18 +146,18 @@
           <ul class="emp-menu">
             <div class="box-menu-pc">
               <li><a href="">Tài khoản</a></li>
-              <li><a href="">Hồ sơ công việc</a></li>
-              <li><a href="">Việc đã lưu (5)</a></li>
+              <li><a href="./hosoxinviec.html">Hồ sơ công việc (3)</a></li>
+              <li class="under-link"><a href=""><b>Việc đã lưu (5)</b></a></li>
               <li><a href="">Việc đã ứng tuyển (7)</a></li>
               <li><a href="">Thông báo việc làm (0)</a></li>
             </div>
 
             <div class="box-menu-mb is-display-none">
               <span><a href="">Tài khoản</a></span>
-              <span><a href="">Hồ sơ công việc</a></span>
+              <span><a href="./hosoxinviec.html">Hồ sơ công việc (3)</a></span>
               <span><a href="">Việc đã lưu (5)</a></span>
               <span><a href="">Việc đã ứng tuyển (7)</a></span>
-              <span><a href="">Thông báo việc làm (0)</a></span>
+              <span><a href="">Thông báo (0)</a></span>
             </div>
           </ul>
         </div>
@@ -165,8 +165,8 @@
     <div id="body">
       <div id="body_left">
         <div id="content_body_left">
-          <div id="file_created"> <p style="color: #ffffff;">Việc làm đã lưu 
-            <br><span style="font-weight: 300;"> Xem lại danh sách những việc làm mà bạn đã lưu trước đó. Ứng tuyển ngay để không bỏ lỡ cơ hội nghề nghiệp dành cho bạn.</span>
+          <div id="file_created"> <p>Việc làm đã lưu 
+            <br><span> Xem lại danh sách những việc làm mà bạn đã lưu trước đó. Ứng tuyển ngay để không bỏ lỡ cơ hội nghề nghiệp dành cho bạn.</span>
           </p> </div>
           <div id="you_create_file"> <p>Danh sách 05 việc làm đã lưu</p> </div>
           <div id="xapsep"> <p>Ưu tiên hiển thị:
@@ -179,81 +179,100 @@
             </select></p> 
           </div>
           <div id="line">
+          <div id="line_1">
             <div id="left">
-            <img src="../media/316492123_842569413662629_6094256720064380266_n.png" alt="" style="float: left; width: 100px;"> 
+            <img src="./media/AIA.png" alt=""> 
             <div class="line_job">Chuyên Viên Quan Hệ Khách Hàng Kênh Aia Exchange (Lương Cơ Bản 14 Triệu + Hoa Hồng)</div>
             <div class="line_company">CÔNG TY TNHH BẢO HIỂM NHÂN THỌ AIA (VIỆT NAM)</div>
-            <div class="line_button" style="float: left;">14-16 triệu</div> <div class="line_button" style="float: left;">Hồ Chí Minh</div><div class="line_button">1 giờ trước</div></div>
+            <div class="line_button">14-16 triệu</div> <div class="line_button">Hồ Chí Minh</div><div class="line_button">1 giờ trước</div></div>
             <div id="right">
             <div class="line_save">Đã lưu: 04/11/2022 - 15:12</div>
-            <div class="line_no-save"><a href="#">Bỏ lưu</a></div>
-          </div></div>
+            <div class="line_no-save" onclick="boluu_1()"><a href="#">Bỏ lưu</a></div>
+          </div></div></div>
           <div id="line">
+          <div id="line_2">
             <div id="left">
-            <img src="../media/316301520_1613055919148524_2951123501076706148_n.png" alt="" style="float: left; width: 100px;"> 
+            <img src="./media/Tuat123.png" alt=""> 
             <div class="line_job">Chuyên Viên Kinh Doanh Bất Động Sản (Không Yêu Cầu Kinh Nghiệm, Hoa Hồng Công Ty 3%, Chuyên Viên Chốt Nhà Nhận Ngay 1,5%)</div>
             <div class="line_company">CÔNG TY CỔ PHẦN TUẤN 123/BẤT ĐỘNG SẢN TUẤN 123
             </div>
-            <div class="line_button" style="float: left;">10-50 triệu</div> <div class="line_button" style="float: left;">Hồ Chí Minh</div><div class="line_button">2 giờ trước</div></div>
+            <div class="line_button">10-50 triệu</div> <div class="line_button">Hồ Chí Minh</div><div class="line_button">2 giờ trước</div></div>
             <div id="right">
             <div class="line_save">Đã lưu: 27/10/2022 - 14:03</div>
-            <div class="line_no-save"><a href="#">Bỏ lưu</a> </div>
-          </div></div>
+            <div class="line_no-save" onclick="boluu_2()"><a href="#">Bỏ lưu</a></div>
+          </div></div></div>
           <div id="line">
+          <div id="line_3">
             <div id="left">
-            <img src="../media/316611231_463196799255383_987330909273361130_n.png" alt="" style="float: left; width: 100px;"> 
+            <img src="./media/OJRT.png" alt=""> 
             <div class="line_job">Nhân Viên Tư Vấn Bán Hàng (Thu Nhập Tới 20 Triệu/Tháng) - Đi Làm Ngay
             </div>
             <div class="line_company">CÔNG TY CỔ PHẦN OJRT BEAUTY
             </div>
-            <div class="line_button" style="float: left;">Tới 20 triệu</div> <div class="line_button" style="float: left;">Hồ Chí Minh</div><div class="line_button">3 giờ trước</div></div>
+            <div class="line_button">Tới 20 triệu</div> <div class="line_button">Hồ Chí Minh</div><div class="line_button">3 giờ trước</div></div>
             <div id="right">
             <div class="line_save">Đã lưu: 02/11/2022 - 08:43
             </div>
-            <div class="line_no-save"><a href="#">Bỏ lưu</a></div>
-          </div></div>
+            <div class="line_no-save" onclick="boluu_3()"><a href="#">Bỏ lưu</a></div>
+          </div></div></div>
           <div id="line">
+          <div id="line_4">
             <div id="left">
-            <img src="../media/315289079_5354726344639338_2332296187220006663_n.png" alt="" style="float: left; width: 100px;"> 
+            <img src="./media/ADBRO.png" alt=""> 
             <div class="line_job">Accountant Cum HR (Kế Toán Viên)
             </div>
             <div class="line_company">CÔNG TY TNHH ADBRO VIỆT NAM
             </div>
-            <div class="line_button" style="float: left;">11-14 triệu</div> <div class="line_button" style="float: left;">Hồ Chí Minh</div><div class="line_button">6 giờ trước</div></div>
+            <div class="line_button">11-14 triệu</div> <div class="line_button">Hồ Chí Minh</div><div class="line_button">6 giờ trước</div></div>
             <div id="right">
             <div class="line_save">Đã lưu: 13/08/2022 - 14:02
             </div>
-            <div class="line_no-save"><a href="#">Bỏ lưu</a></div>
-          </div></div>
+            <div class="line_no-save" onclick="boluu_4()"><a href="#">Bỏ lưu</a></div>
+          </div></div></div>
           <div id="line">
+          <div id="line_5">
             <div id="left">
-            <img src="../media/316586005_924441085607607_2461502591257810921_n.png" alt="" style="float: left; width: 100px;"> 
+            <img src="./media/Sam.png" alt=""> 
             <div class="line_job">Nhân Viên Content Writer (Tiếng Anh) Full-Time
             </div>
             <div class="line_company">CÔNG TY TNHH SAM DIGITAL CONNECTIONS
             </div>
-            <div class="line_button" style="float: left;">trên 10 triệu</div> <div class="line_button" style="float: left;">Hồ Chí Minh</div><div class="line_button">7 giờ trước</div></div>
+            <div class="line_button">trên 10 triệu</div> <div class="line_button">Hồ Chí Minh</div><div class="line_button">7 giờ trước</div></div>
             <div id="right">
             <div class="line_save">Đã lưu: 03/11/2022 - 08:12
             </div>
-            <div class="line_no-save"><a href="#">Bỏ lưu</a></div>
-          </div></div>
+            <div class="line_no-save" onclick="boluu_5()"><a href="#">Bỏ lưu</a></div>
+          </div></div></div>
       </div>
       </div>
       <div id="body_right">
-          <div><b>Có thể bạn quan tâm</b>  </div>
-          <img src="../media/317025632_426402342878315_2750852693828431047_n.png" style="width: 90%; margin-left: 5%;"  alt="">
-          <div style="color: rgba(0, 0, 0, 0.53);font-weight: bolder;">Công ty Cho thuê tài chính TNHH MTV Quốc tế Chailease
+        <div id="body_right-top">
+          <div class="content">
+          <div class="content_text_1"><b>Có thể bạn quan tâm</b>  </div>
+          <img src="./media/chaileast.png " style="width: 92%;"  alt="">
+          <div class="content_text_2">Công ty Cho thuê tài chính TNHH MTV Quốc tế Chailease
           </div> <hr>
-          <div style="color: rgba(0, 0, 0, 0.53);">Credit Intern (Thực Tập Sinh Thẩm Định)
-          </div> <hr>
-          <div style="color: rgba(0, 0, 0, 0.53);">Thực Tập Sinh Tài Chính
-          </div> <hr>
-          <div style="width: 50%; background-color: rgba(72, 192, 253, 1)
-          ; color: #ffffff; border-radius: 8px; text-align: center; margin-left: 25%;">Tìm hiểu ngay</div>
-          <div><img src="../media/Screenshot 2022-11-28 023935.png" alt="" style="margin-left: 10%; margin-top: 20px;"></div>
-      </div>
-      
+          <div><div class="name_cv">Credit Intern (Thực Tập Sinh Thẩm Định)</div>
+          <div class="sa_ti"><i class="bi bi-cash-coin"></i> Tới 5 triệu</div> 
+          <div class="sa_ti"><i class="bi bi-alarm"></i> 03/12/2022</div></div><hr>
+          <div><div class="name_cv">Thực Tập Sinh Tài Chính </div>
+            <div class="sa_ti"><i class="bi bi-cash-coin"></i> Tới 5 triệu</div> 
+            <div class="sa_ti"><i class="bi bi-alarm"></i> 03/12/2022</div></div><hr>
+            <form action="https://www.chailease.com.vn/" method="get">
+              <button class="bt_timHieu">TÌM HIỂU NGAY</button>
+            </form>
+      </div></div>
+      <div id="body_right-bottom">
+        <img src="./media/logo.png" alt="">
+        <div class="content_1">ENGLISH FOR</div>
+        <div class="content_2">JOB INTERVIEW</div>
+        <div class="content_3">TỰ TIN PHỎNG VẤN BẰNG TIẾNG ANH</div>
+        <img src="./media/EngForJobEn.png" alt="">
+        <div class="content_4">SẴN SÀNG CHIẾN THẮNG VÒNG PHỎNG VẤN</div>
+        <form action="https://learnenglish.britishcouncil.org/business-english/business-magazine/job-interviews" method="get">
+          <button class="bt_timHieu">XEM CHI TIẾT</button>
+        </form>
+      </div></div>
       </div>
     </div>
 
@@ -262,7 +281,7 @@
         <div class="container">
           <div class="logo-footer">
             <img
-              src="../media/logo.png"
+              src="./media/logo.png"
               alt=""
             />
           </div>
@@ -277,7 +296,7 @@
                   <a href="">
                     <img
                       class="float"
-                      src="../media/phone.png"
+                      src="./media/phone.png"
                       width="27px"
                       height="27px"
                     />&nbsp; <span class="hover">+123 456 7890</span></a>
@@ -288,7 +307,7 @@
                     target="_blank"
                     ><img
                       class="float"
-                      src="../media/gmail.png"
+                      src="./media/mail.png"
                       width="27px"
                       height="27px"
                     />&nbsp; <span class="hover">uel@workzone.com</span></a>
@@ -299,7 +318,7 @@
                     target="_blank"
                     ><img
                       class="float"
-                      src="../media/address.png"
+                      src="./media/location.png"
                       width="27px"
                       height="27px"
                     />&nbsp;
@@ -311,7 +330,7 @@
                   <a href="https://www.facebook.com/" target="_blank"
                     ><img
                       class="float"
-                      src="../media/fb.png"
+                      src="./media/fb.png"
                       width="27px"
                       height="27px"
                     />&nbsp; <span class="hover">WorkZone</span></a>
@@ -320,7 +339,7 @@
                   <a href="https://www.linkedin.com/" target="_blank"
                     ><img
                       class="float"
-                      src="../media/linkin.png"
+                      src="./media/in.png"
                       width="27px"
                       height="27px"
                     />&nbsp;<span class="hover">linkedin.com/workzone</span>
@@ -351,7 +370,7 @@
                   <h3>Chứng nhận bởi</h3>
                   <a href="">
                     <img
-                      src="../media/chungnhan.png"
+                      src="./media/chứng nhận.png"
                       width="250px"
                       height="89px"
                   /></a>
