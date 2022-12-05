@@ -75,3 +75,15 @@ function display() {
     var listpc = document.getElementById("line_5");
     listpc.classList.toggle("is-display-none");
   }
+  function tab() {
+    var tab1 = document.getElementById("form-user");
+    var tab2 = document.getElementById("form-change-pass");
+    var img = document.getElementById("img-profile");
+    tab1.classList.toggle("is-display-none");
+    tab2.classList.toggle("is-display-none");
+    img.classList.toggle("is-display-none");
+  }
+  function show() {
+    var show = document.getElementById("abi-mb");
+    show.classList.toggle("display-flex");
+  }
