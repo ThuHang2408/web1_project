@@ -158,6 +158,7 @@ input {
   letter-spacing: 0.05em;
   width: 50px;
   color: #000000;
+  border: none;
 }
 #timkiem {
   background: #00a9ff;
@@ -171,6 +172,7 @@ input {
   letter-spacing: 0.05em;
   width: 80px;
   color: #ffffff;
+  border: none;
 }
 #timkiem:hover {
   background-color: #9e9fa0;
@@ -203,6 +205,12 @@ input {
   }
   #huy {
     margin-left: 170px;
+  }
+}
+@media screen and (max-width:480px){
+  .rec29{
+    position: absolute;
+    top: 10vh;
   }
 }
 /* Footer */
