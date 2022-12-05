@@ -207,3 +207,7 @@ footer {
 .hover:hover {
   text-decoration: underline;
 }
+
+.divmax  p {
+  color: #2A363B;
+}
