@@ -5,10 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
-    rel="shortcut icon"
-    type="image/png"
-    href="./media/logo-tab-icon.png"
-  />
+      rel="shortcut icon"
+      type="image/png"
+      href="./media/logo-tab-icon.png"
+    />
     <title>WorkZone - Tạo hồ sơ</title>
     <link rel="stylesheet" href="./taohoso.css" />
     <script src="./javascript.js"></script>
@@ -26,134 +26,161 @@
   <body>
     <div class="container">
       <div class="main-menu">
-       <div class="left-main-menu">
-         <div class="row">
-           <div class="col-md-3">
-            <a class="logo" href="trangchu_nguoitimviec_login.html"><img src="./media/logo.png" alt="Logo"></a> 
-           </div>
-           <div class="col-md-5">
-             <ul class="nav-pc">
-               <li><a href="timkiemvieclam.html">Tìm việc</a></li>
-               <li><a href="trangchu_nguoitimviec_login">Công việc</a></li>
-               <li><a href="thongtin.html">Về WorkZone</a></li>
- 
-             </ul>
-           </div>
-         </div>
-       </div>
-       <div class="right-main-menu">
-         <div class="account" >
-           <a href="#">
-           <i class="fa-regular fa-circle-user"></i><span >WorkZone</span>
-           </a>
-          <a onclick="menupc()" ><i class="fa-solid fa-sort-down"></i></a> 
-         </div>
-         <form action="trangchu_nhatuyendung.html" target="_blank">
-         <button class="btn-menu ntd">NHÀ TUYỂN DỤNG</button></form>
-       </div>
+        <div class="left-main-menu">
+          <div class="row">
+            <div class="col-md-3">
+              <a class="logo" href="trangchu_nguoitimviec_login.html"
+                ><img src="./media/logo.png" alt="Logo"
+              /></a>
+            </div>
+            <div class="col-md-5">
+              <ul class="nav-pc">
+                <li><a href="timkiemvieclam.html">Tìm việc</a></li>
+                <li><a href="trangchu_nguoitimviec_login#hot">Công việc</a></li>
+                <li><a href="thongtin.html">Về WorkZone</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="right-main-menu">
+          <div class="account">
+            <i class="fa-regular fa-circle-user"></i><span>WorkZone</span>
+            <a onclick="menupc()" href="#"
+              ><i class="fa-solid fa-sort-down"></i
+            ></a>
+          </div>
+          <form action="./trangchu_nhatuyendung.html" target="_blank">
+            <button class="btn-menu ntd">NHÀ TUYỂN DỤNG</button>
+          </form>
+        </div>
       </div>
-     </div>
-       <ul class="list-menu-pc is-display-none" id="list-menu-pc">
-         <li>
-           <div class="menu-list-row" >
-             <a href="hosoxinviec.html">
-               <i class="fa-regular fa-file"></i>
-             <span> Hồ sơ xin việc</span> 
-             </a>
-           </div>
-         </li>
-         <li>
-           <div class="menu-list-row">
-             <a href="vieclamdaluu.html">
-               <i class="fa-solid fa-heart"></i>
-               <span> Việc làm đã lưu</span> 
-             </a>
-           </div>
-         </li>
-         <li>
-           <div class="menu-list-row">
-             <a href="viecdaungtuyen.html">
-               <i class="fa-solid fa-paper-plane"></i>
-               <span>Việc làm đã ứng tuyển</span>
-             </a>
-           </div>
-         </li>
-         <li>
-           <div class="menu-list-row"> <a href="thongbaovieclam.html">
-             <i class="fa-regular fa-bell"></i>
-             <span>Thông báo việc làm</span>
-           </a></div>
-         </li>
-         <div class="border"></div>
-         <li>
-           <div class="menu-list-row name-account">
-             <a href="#">
-               <i class="fa-regular fa-circle-user"></i>
-            <span>WorkZone</span>  </a>
-           </div>
-         </li>
-         <li>
-           <div class=" log-out "> <a href="trangchu_nguoitimviec.html">
-             <i class="fa-solid fa-arrow-right-from-bracket"></i>
-           <span>Đăng xuất</span></a>
-           </div>
-         </li>
-       </ul>
-        <div id="nav-mb">
-         <button onclick="menu()">
-           <i class="fa-solid fa-bars"></i>
-         </button>
-       </div>
-     </div>
-     <ul id="list-menu-mb-login" class="list-menu-mb-login">
-       <li> <div class="menu-list-row" >
-             <a href="hosoxinviec.html">
-              <i class="fa-regular fa-file"></i>
-             <span> Hồ sơ xin việc </span> 
-             </a>
-           </div></li>
-           <li> <div class="menu-list-row" >
-            <a href="viecdaluu.html">
-             <i class="fa-solid fa-heart"></i>
-            <span> Việc làm đã lưu </span> 
-            </a>
-          </div></li>
-       <li><div class="menu-list-row">
-             <a href="viecdaungtuyen.html">
+    </div>
+    <ul class="list-menu-pc is-display-none" id="list-menu-pc">
+      <li>
+        <div class="menu-list-row">
+          <a href="hosoxinviec.html">
+            <i class="fa-regular fa-file"></i>
+            <span> Hồ sơ xin việc</span>
+          </a>
+        </div>
+      </li>
+      <li>
+        <div class="menu-list-row">
+          <a href="vieclamdaluu.html">
+            <i class="fa-solid fa-heart"></i>
+            <span> Việc làm đã lưu</span>
+          </a>
+        </div>
+      </li>
+      <li>
+        <div class="menu-list-row">
+          <a href="viecdaungtuyen.html">
             <i class="fa-solid fa-paper-plane"></i>
-               <span> Việc làm đã ứng tuyển</span> 
-             </a>
-           </div></li>
-           <li><div class="menu-list-row">
-            <a href="viecdaungtuyen.html">
-           <i class="fa-solid fa-id-card"></i>
-              <span> Thông báo việc làm</span> 
-            </a>
-          </div></li>
-       <div class="border"></div>
-         <li>
-           <div class="menu-list-row name-account">
-             <a href="trangchu_nguoitimviec.html">
-               <i class="fa-solid fa-buildings"></i>
-             </a> <span>WorkZone</span>
-           </div>
-         </li>
-        <div class="account" >
-            <a href="trangchu_nguoitimviec_login.html">
-               <i class="fa-regular fa-circle-user"></i>
-              <span>WorkZone</span></a>
-          <a onclick="menupc()" href="trangchu_nguoitimviec_login"><i class="fa-solid fa-sort-down"></i></a> 
-         </div>
-         <form action="trangchu_nhatuyendung.html" target="_blank" >
-       <button class="btn-nav ntd">NHÀ TUYỂN DỤNG</button></form>
-         <li>
-           <div class=" log-out "><a href="tranchu_nguoitimviec">
-             <i class="fa-solid fa-arrow-right-from-bracket"></i>
-           <span>Đăng xuất</span>
-           </a></div>
-         </li>
-     </ul>
-   
+            <span>Việc làm đã ứng tuyển</span>
+          </a>
+        </div>
+      </li>
+      <li>
+        <div class="menu-list-row">
+          <a href="thongbaovieclam.html">
+            <i class="fa-regular fa-bell"></i>
+            <span>Thông báo việc làm</span>
+          </a>
+        </div>
+      </li>
+      <div class="border"></div>
+      <li>
+        <div class="menu-list-row name-account">
+          <a href="trangchu_nguoitimviec_login.html">
+            <i class="fa-regular fa-circle-user"></i>
+          </a>
+          <span>WorkZone</span>
+        </div>
+      </li>
+      <li>
+        <div class="log-out">
+          <a href="trangchu_nguoitimviec.html">
+            <i class="fa-solid fa-arrow-right-from-bracket"></i>
+            <span>Đăng xuất</span></a
+          >
+        </div>
+      </li>
+    </ul>
+    <div id="nav-mb">
+      <button onclick="menu()">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+
+    <ul id="list-menu-mb-login" class="list-menu-mb-login">
+      <li>
+        <div class="menu-list-row">
+          <a href="hosoxinviec.html">
+            <i class="fa-regular fa-file"></i>
+            <span> Hồ sơ xin việc </span>
+          </a>
+        </div>
+      </li>
+      <li>
+        <div class="menu-list-row">
+          <a href="viecdaluu.html">
+            <i class="fa-solid fa-heart"></i>
+            <span> Việc làm đã lưu </span>
+          </a>
+        </div>
+      </li>
+      <li>
+        <div class="menu-list-row">
+          <a href="viecdaungtuyen.html">
+            <i class="fa-solid fa-paper-plane"></i>
+            <span> Việc làm đã ứng tuyển</span>
+          </a>
+        </div>
+      </li>
+      <li>
+        <div class="menu-list-row">
+          <a href="viecdaungtuyen.html">
+            <i class="fa-solid fa-id-card"></i>
+            <span> Thông báo việc làm</span>
+          </a>
+        </div>
+      </li>
+      <div class="border"></div>
+      <li>
+        <div class="menu-list-row name-account">
+          <a href="trangchu_nguoitimviec.html">
+            <i class="fa-solid fa-buildings"></i>
+          </a>
+          <span>WorkZone</span>
+        </div>
+      </li>
+      <div class="menu-list-row">
+        <ul class="non-nav-pc">
+          <li><a href="timkiemvieclam.html">Tìm việc</a></li>
+          <li><a href="trangchu_nguoitimviec_login">Công việc</a></li>
+          <li><a href="thongtin.html">Về WorkZone</a></li>
+        </ul>
+      </div>
+      <div class="account">
+        <i class="fa-solid fa-buildings"></i>
+        <span>WorkZone Cop</span>
+        <a onclick="menupc()" href="trangchu_nguoitimviec_login"
+          ><i class="fa-solid fa-sort-down"></i
+        ></a>
+      </div>
+      <form action="trangchu_nhatuyendung.html" target="_blank">
+        <button class="btn-nav ntd">NHÀ TUYỂN DỤNG</button>
+      </form>
+      <li>
+        <div class="log-out">
+          <a href="trangchu_nguoitimviec.html">
+            <i class="fa-solid fa-arrow-right-from-bracket"></i>
+            <span>Đăng xuất</span>
+          </a>
+        </div>
+      </li>
+    </ul>
+
     <!-- header-end -->
 
     <!-- main -->
@@ -431,11 +458,25 @@
           <div class="col-md-3 col-sm-6 col-12">
             <div class="content_2">
               <h3>Công việc</h3>
-              <p class="hover"><a href="trangchu_nguoitimviec.html#hotjob">Hot Job</a></p>
-              <p class="hover"><a href="trangchu_nguoitimviec.html#lastestjob">Latest Job</a></p>
-              <p class="hover"><a href="trangchu_nguoitimviec.html#congtyhangdau">Công ty hàng đầu</a></p>
-              <p class="hover"><a href="trangchu_nguoitimviec.html#vieclamhapdan">Việc làm hấp dẫn</a></p>
-              <p class="hover"><a href="trangchu_nguoitimviec.html#tintuc">Tin tức</a></p>
+              <p class="hover">
+                <a href="trangchu_nguoitimviec.html#hotjob">Hot Job</a>
+              </p>
+              <p class="hover">
+                <a href="trangchu_nguoitimviec.html#lastetjob">Latest Job</a>
+              </p>
+              <p class="hover">
+                <a href="trangchu_nguoitimviec.html#congtyhangdau"
+                  >Công ty hàng đầu</a
+                >
+              </p>
+              <p class="hover">
+                <a href="trangchu_nguoitimviec.html#vieclamhapdan"
+                  >Việc làm hấp dẫn</a
+                >
+              </p>
+              <p class="hover">
+                <a href="trangchu_nguoitimviec.html#tintuc">Tin tức</a>
+              </p>
             </div>
           </div>
           <div class="col-md-3 col-sm-6 col-12">
