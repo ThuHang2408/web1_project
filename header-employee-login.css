@@ -1,10 +1,3 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-}
-
-/* header */
 .main-menu {
   display: flex;
   justify-content: space-between;
@@ -35,10 +28,30 @@ body {
   font-weight: bold;
   color: #ffffff;
   width: 150px;
-  height: 47px;
   background-color: #48c0fd;
+  height: 47px;
 }
-
+.account {
+  width: 180px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  border: 1px solid black;
+}
+.account span {
+  margin: 0 25px;
+}
+.account .fa-circle-user {
+  font-size: 30px;
+  margin-left: -13px;
+}
+.account .fa-sort-down {
+  position: absolute;
+  top: 13px;
+  right: 9px;
+}
 .btn-nav {
   width: 50%;
   font-weight: bold;
@@ -54,13 +67,40 @@ body {
   border-radius: 12px;
   border: 1px solid rgba(36, 0, 255, 1);
   font-size: 90%;
-  height: 47px;
   font-weight: bold;
   color: #ffffff;
+  height: 47px;
   background-color: blue;
 }
 
+.menu-list-row a i {
+  width: 15px;
+}
+.log-out {
+  margin-left: 50%;
+  margin-top: 5px;
+}
+.menu-list-row .fa-circle-user {
+  font-size: 20px;
+}
+.name-account {
+  font-size: 15px;
+  font-weight: bold;
+}
+.name-account span {
+  font-weight: bold;
+  color: #0075ff;
+}
+.list-menu-pc span {
+  padding-left: 8px;
+}
 
+.border {
+  margin: 4px 0;
+  border: 0.5px solid black;
+  width: 94%;
+  background: black;
+}
 
 .list-menu-mb-login {
   padding-top: 10px;
@@ -80,11 +120,10 @@ body {
 .is-left-default {
   left: 0px !important;
 }
-/*Responsive*/
 #nav-mb button {
   display: none;
 }
-@media (max-width: 830px) {
+@media (max-width: 480px) {
   .nav-pc,
   .btn-menu,
   .account {
@@ -98,11 +137,17 @@ body {
     top: 25px;
     right: 10px;
     font-size: 20px;
+
     display: block;
     color: #48c0fd;
     border: none;
     background: none;
   }
-  
+  .input {
+    margin-bottom: 10px;
+  }
+  .banner-image img {
+    height: 300px !important;
+  }
   
 }
