@@ -213,13 +213,15 @@ body {
 }
 #input {
   border-radius: 10px;
-  width: 80%;
+  width: 90%;
   height: 30px;
 }
 #input1 {
   border-radius: 10px;
-  width: 80%;
+  width: 82%;
   height: 130px;
+  border: 1px solid;
+  margin-left: 9%;
 }
 .send {
   background: #48c0fd;
@@ -333,5 +335,8 @@ footer {
   #contact{
     position: absolute;
     top: 5vh;
+  }
+  #input1{
+    margin-left: 11%;
   }
 }
