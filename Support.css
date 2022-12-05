@@ -354,16 +354,11 @@ h2 {
   }
 }
 @media screen and (max-width: 480px) {
-  .content-1 {
+  .content-1{
     position: absolute;
-    top: 8vh;
+    top: -4.2vh;
   }
-  .line {
-    position: absolute;
-    left: 67.6vw;
-    top: 13.3vh;
-    width: 15vw;
-  }
+  
   h1 {
     font-size: 40px;
   }
@@ -394,7 +389,10 @@ h2 {
   #support p {
     font-size: 12px;
   }
-
+  .content-3{
+    position: absolute;
+    top: 30vh;
+  }
   .content_3-1 {
     margin-left: 0;
     height: 120px;
@@ -420,7 +418,13 @@ h2 {
   }
   #support {
     position: absolute;
-    top: 20vh;
+    top: 6vh;
+  }
+  .line {
+    position: absolute;
+    left: 67.6vw;
+    top: 5vh;
+    width: 15vw;
   }
 }
 .space {
@@ -484,10 +488,6 @@ p {
   #support p {
     font-size: 14px;
   }
-  .line {
-    position: absolute;
-    top: 7.5vh;
-  }
   .content-1 {
     margin-top: -32px;
   }
@@ -495,7 +495,12 @@ p {
 @media screen and (max-width: 480px) {
   footer {
     position: absolute;
-    top: 180vh;
+    top: 65vh;
     padding-top: 10px;
+  }
+  .content-3{
+    position: absolute;
+    top: -60vh;
+    width: 100%;
   }
 }
