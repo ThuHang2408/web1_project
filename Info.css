@@ -1,283 +1,376 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./Info.css">
-    <link rel="stylesheet" href="./bootstrap.css" />
-    <script type="text/javascript" src="./Contact.js"></script>
-    <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
-    rel="stylesheet"
-  />
-  <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-    />
-</head>
-<body>
-    <div class="container">
-        <div class="main-menu">
-         <div class="left-main-menu">
-           <div class="row">
-             <div class="col-md-3">
-              <a class="logo" href="#"><img src="./media/logo.png" alt="Logo"></a> 
-             </div>
-             <div class="col-md-5">
-               <ul class="nav-pc">
-                 <li><a href="">Đăng tuyển dụng</a></li>
-                 <li><a href="">Tìm hồ sơ</a></li>
-                 <li><a href="">Liên hệ</a></li>
-               </ul>
-             </div>
-           </div>
-         </div>
-         <div class="right-main-menu">
-           <button class="btn-menu">ĐĂNG KÝ</button>
-           <button class="btn-menu">ĐĂNG NHẬP</button>
-           <button class="btn-menu ntd">NGƯỜI TÌM VIỆC</button>
-         
-         </div>
-        </div>
-       </div>
-   
-         <div id="nav-mb">
-           <button onclick="menu()">
-             <i class="fa-solid fa-bars"></i>
-           </button>
-         </div>
-       </div>
-       <ul id="list-menu-mb-login" class="list-menu-mb-login">
-         <li><a href="#">Đăng tuyển dụng</a></li>
-         <li><a href="#">Tìm hồ sơ</a></li>
-         <li><a href="#">Liên hệ</a></li>
-   
-         <button class="btn-nav">ĐĂNG KÝ</button>
-         <button class="btn-nav">ĐĂNG NHẬP</button>
-         <button class="btn-nav ntd">NGƯỜI TÌM VIỆC</button>
-       </ul>
-       <!-- Info -->
-       <div class="rec466">
-        <div class="veWorkZone">Về WorkZone</div>
-        <div class="line"></div>
-        <div class="dieukhoan">Điều khoản và dịch vụ</div>
-      </div>
-      <div class="staff">
-      <img src="./media/Staff.png" width="100%" >
-        </div>
-        <div class="Workzone">
-            <img src="./media/Workzone.png" width="100%">
-        </div>
-        <hr/>
-        <div class="vechungtoi">
-            <h2>VỀ CHÚNG TÔI</h2> 
-        </div>
-        <div class="vechungtoi1">
-            <div class="vechungtoi1_1">
-                <p>Bằng công nghệ, chúng tôi tạo ra nền tảng cho phép người lao động có thể tìm việc, tìm hiểu về các công ty và tương tác với các nhà tuyển dụng.</p>
-            </div>
-            <div class="vechungtoi1_2">
-                <img class="img" src="./media/Staff1.png">
-            </div>
-        </div>
-        <div class="vechungtoi2">
-            <div class="vechungtoi2_1">
-                <p>Tập trung vào trải nghiệm dành của ứng viên khi đi tìm việc, mục tiêu của WorkZone là mang đến một nền tảng toàn diện, giúp ứng viên phát triển được các kỹ năng cá nhân, xây dựng hình ảnh chuyên nghiệp trong mắt nhà tuyển dụng và tiếp cận với các cơ hội việc làm phù hợp</p>
-            </div>
-            <div class="vechungtoi2_2">
-                <img class="img" src="./media/Staff2.png" >
-            </div>
-        </div>
-        <br/>
-        <br/>
-        <hr/>
-        <div class="vechungtoi">
-            <h2>CƠ SỞ VẬT CHẤT</h2> 
-        </div>
-        <div class="coso">
-            <div class="coso_1">
-                <img class="img1" src="./media/csvc1.png">
-            </div>
-            <div class="coso_2">
-                <img class="img1" src="./media/csvc2.png">
-            </div>
-        </div>
-        <div class="coso1">
-            <div class="coso1_1">
-                <img class="img1" src="./media/csvc3.png">
-            </div>
-            <div class="coso1_2">
-                <img class="img1" src="./media/csvc4.png">
-            </div>
-        </div>
-        <br/>
-        <br/>
-        <hr/>
-        <div class="vechungtoi">
-            <h2>NHÂN SỰ</h2> 
-        </div>
-        <div class="nhansu">
-            <div class="rec">
-                <div class="ava_1"><img class="img2" src="./media/ava1.png"></div>
-                <div class="ava_2">
-                    <h3>ÂU LẠC NHI</h3>
-                    <h4>Team Leader</h4>
-                </div>
-            </div>
-            <div class="rec">
-              <div class="ava_1"><img class="img2" src="./media/ava2.png"></div>
-              <div class="ava_2">
-                  <h3>NGUYỄN THU HẰNG</h3>
-                  <h4>Team Member</h4>
-              </div>
-            </div>
-            </div>
-            <div class="rec">
-              <div class="ava_1"><img class="img2" src="./media/ava3.png"></div>
-                <div class="ava_2">
-                    <h3>LÊ TRỌNG SƠN</h3>
-                    <h4>Team Member</h4>
-                </div>
-            </div>
-            <div class="rec">
-              <div class="ava_1"><img class="img2" src="./media/ava4.png"></div>
-              <div class="ava_2">
-                  <h3>TRẦN NHẬT HÀN LÂM</h3>
-                  <h4>Team Member</h4>
-              </div>
-            </div>
-            <div class="rec"><div class="ava_1"><img class="img2" src="./media/ava5.png"></div>
-            <div class="ava_2">
-                <h3>NGUYỄN PHƯỚC THỊNH</h3>
-                <h4>Team Member</h4>
-            </div></div>
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
 
-        </div>
-        <footer>
-      
-          <div class="container1">
-            <div class="logo-footer">
-              <img
-                src="./media/logo.png"
-                alt=""
-              />
-              
-            </div>
-            <div class="row">
-              <div class="col-md-3 col-sm-6 col-12">
-                <div class="content_1">
-                  <h3>
-                    Kết nối với <span class="blue">Work</span>Z<span class="blue"
-                      >one</span
-                    >
-                  </h3>
-                  <p>
-                    <a href="">
-                      <img
-                        class="float1"
-                        src="./media/phone.png"
-                        width="27px"
-                        height="27px"
-                      />&nbsp; <span class="hover">+123 456 7890</span></a
-                    >
-                  </p>
-                  <p>
-                    <a
-                      href="https://www.google.com/intl/vi/gmail/about/"
-                      target="_blank"
-                      ><img
-                        class="float1"
-                        src="./media/mail.png"
-                        width="27px"
-                        height="27px"
-                      />&nbsp; <span class="hover">uel@workzone.com</span></a
-                    >
-                  </p>
-                  <p>
-                    <a
-                      href="https://www.google.com/maps/place/Tr%C6%B0%E1%BB%9Dng+%C4%90%E1%BA%A1i+h%E1%BB%8Dc+Kinh+t%E1%BA%BF+-+Lu%E1%BA%ADt,+%C4%90%E1%BA%A1i+h%E1%BB%8Dc+Qu%E1%BB%91c+gia+Th%C3%A0nh+ph%E1%BB%91+H%E1%BB%93+Ch%C3%AD+Minh/@10.8709374,106.7760666,17z/data=!3m1!4b1!4m6!3m5!1s0x3175277dbf11a271:0x4567e34b99494e3f!8m2!3d10.8709321!4d106.7782553!16s%2Fm%2F0ds8rvh?hl=vi"
-                      target="_blank"
-                      ><img
-                        class="float1"
-                        src="./media/location.png"
-                        width="27px"
-                        height="27px"
-                      />&nbsp;
-                      <span class="hover"
-                        >265, QL1A, Phường Linh Trung, Thủ Đức</span
-                      ></a
-                    >
-                  </p>
-                  <p>
-                    <a href="https://www.facebook.com/" target="_blank"
-                      ><img
-                        class="float1"
-                        src="./media/fb.png"
-                        width="27px"
-                        height="27px"
-                      />&nbsp; <span class="hover">WorkZone</span></a
-                    >
-                  </p>
-                  <p>
-                    <a href="https://www.linkedin.com/" target="_blank"
-                      ><img
-                        class="float1"
-                        src="./media/in.png"
-                        width="27px"
-                        height="27px"
-                      />&nbsp;<span class="hover">linkedin.com/workzone</span>
-                    </a>
-                  </p>
-                </div>
-              </div>
-              <div class="col-md-3 col-sm-6 col-12">
-                <div class="content_2">
-                    <h3>Nhà tuyển dụng</h3>
-                    <p class="hover"><a href="">Tìm kiếm hồ sơ</a></p>
-                    <p class="hover"><a href="">Đăng tin tuyển dụng</a></p>
-                    <p class="hover"><a href="">Quản lý hồ sơ</a></p>
-                </div>
-              </div>
-              <div class="col-md-3 col-sm-6 col-12">
-                <div class="content_3">
-                  <h3>About us</h3>
-                  <p class="hover">
-                    <a href=""
-                      >Thông tin về <span class="blue">Work</span>Z<span
-                        class="blue"
-                        >one</span
-                      ></a
-                    >
-                  </p>
-                  <p class="hover"><a href="">Điều khoản và dịch vụ</a></p>
-                  <div class="content1_2">
-                    <h3>Chứng nhận bởi</h3>
-                    <a href="">
-                      <img
-                        src="./media/chứng nhận.png"
-                        width="198px"
-                        height="89px"
-                    /></a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-3 col-sm-6 col-12">
-                <div class="content_4">
-                  <h3>Liên hệ</h3>
-                  <p class="hover"><a href="">Liên hệ ngay</a></p>
-                  <p class="hover"><a href="">Hỗ trợ</a></p>
-                </div>
-              </div>
-            </div>
-            <p class="copyright">
-              Copyright &#169; 2022. <span class="blue">WorkZone</span> . All Right
-              Reserved
-            </p>
-          </div>
-          
-       
-        </footer>
-</body>
-</html>
+/* header */
+.main-menu {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.logo img {
+  width: 100%;
+}
+.nav-pc {
+  display: flex;
+  align-items: center;
+  height: 118%;
+  width: 30vw;
+}
+.nav-pc li {
+  margin-right: 30px;
+}
+.right-main-menu {
+  display: flex;
+}
+.right-main-menu button {
+  margin-left: 10px;
+}
+.btn-menu {
+  border-radius: 12px;
+  border: 1px solid rgba(36, 0, 255, 1);
+  font-size: 90%;
+  font-weight: bold;
+  color: #ffffff;
+  width: 150px;
+  background-color: #48c0fd;
+}
+
+.btn-nav {
+  width: 50%;
+  font-weight: bold;
+  background: #48c0fd;
+  margin: 10px 10px;
+  color: #fff;
+  border-radius: 12px;
+}
+.relative {
+  position: relative;
+}
+.ntd {
+  border-radius: 12px;
+  border: 1px solid rgba(36, 0, 255, 1);
+  font-size: 90%;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: blue;
+}
+
+.list-menu-mb-login {
+  padding-top: 10px;
+  position: fixed;
+  background: white;
+  font-size: 15px;
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+  z-index: 1000;
+  left: -2000px;
+  transition: 0.5s;
+}
+.list-menu-mb-login li {
+  margin-bottom: 10px;
+}
+.is-left-default {
+  left: 0px !important;
+}
+/*Responsive*/
+#nav-mb button {
+  display: none;
+}
+@media (max-width: 830px) {
+  .nav-pc,
+  .btn-menu,
+  .account {
+    display: none;
+  }
+  .logo img {
+    width: 43% !important;
+  }
+  #nav-mb button {
+    position: absolute;
+    top: 25px;
+    right: 10px;
+    font-size: 20px;
+    display: block;
+    color: #48c0fd;
+    border: none;
+    background: none;
+  }
+}
+/* INFO */
+.rec466 {
+  display: flex;
+  background-color: #deefff;
+  height: 66.7px;
+}
+.dieukhoan {
+  flex: 1;
+  text-align: center;
+  padding-top: 33px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 35px;
+}
+.dieukhoan:hover {
+  color: #2f55d4;
+  font-weight: 700;
+}
+.veWorkZone {
+  flex: 1;
+  text-align: center;
+  padding-top: 33px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 35px;
+  color: #2f55d4;
+}
+.line {
+  position: absolute;
+  width: 9%;
+  height: 0px;
+  left: 20vw;
+  top: 15.7vh;
+  background-color: #48c0fd;
+  border: 3px solid #48c0fd;
+}
+.vechungtoi {
+  margin-top: 30px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 35px;
+  line-height: 55px;
+
+  text-align: center;
+
+  color: #0075ff;
+}
+.img {
+  width: 450px;
+  height: auto;
+  padding-left: 30px;
+}
+.vechungtoi1 {
+  display: flex;
+  margin-top: 30px;
+}
+.vechungtoi1_1 {
+  flex: 70%;
+  width: 100px;
+  padding-left: 20px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 39px;
+  text-align: justify;
+  margin-right: 10px;
+}
+.vechungtoi1_2 {
+  flex: 30%;
+}
+.vechungtoi2 {
+  display: flex;
+  margin-top: 30px;
+}
+.vechungtoi2_1 {
+  flex: 70%;
+  width: 100px;
+  padding-left: 20px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 39px;
+  text-align: justify;
+  margin-right: 10px;
+}
+.vechungtoi2_2 {
+  flex: 30%;
+}
+.coso {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 50px;
+}
+.coso1 {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 50px;
+}
+.img1 {
+  width: 600px;
+  height: auto;
+}
+hr {
+  margin-top: 0px;
+  background-color: #0075ff;
+  border: 3px solid #0075ff;
+}
+.nhansu {
+  margin-top: 50px;
+}
+.rec {
+  width: 80%;
+  height: 333px;
+  background: #48c0fd;
+  border-radius: 30px;
+  margin-left: 10%;
+  margin-top: 30px;
+}
+.rec {
+  display: flex;
+  padding-top: 70px;
+}
+.ava_1 {
+  flex: 1;
+  padding-left: 15%;
+}
+.ava_2 {
+  flex: 1;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 30px;
+  line-height: 35px;
+  color: white;
+}
+@media screen and (max-width: 480px) {
+  .veWorkZone,
+  .dieukhoan {
+    font-size: 13px;
+  }
+  .img {
+    width: 200px;
+    height: auto;
+    margin-right: 20px;
+  }
+  p {
+    font-size: 10px;
+    line-height: 15px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  .line {
+    position: absolute;
+    width: 26vw;
+    top: 18.5vh;
+    left: 12vw;
+  }
+  .img1 {
+    width: 200px;
+  }
+  .rec {
+    height: 150px;
+  }
+  .img2 {
+    width: 100px;
+    height: auto;
+    margin-top: -45px;
+  }
+  h3 {
+    font-size: 15px;
+  }
+  h4 {
+    font-size: 13px;
+  }
+  .ava_2 {
+    flex: 1.5;
+    text-align: center;
+    line-height: 15px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .veWorkZone,
+  .dieukhoan {
+    font-size: 13px;
+  }
+  .img {
+    width: 250px;
+    height: auto;
+    margin-right: 20px;
+  }
+  p {
+    font-size: 15px;
+    line-height: 18px;
+  }
+  h2 {
+    font-size: 25px;
+  }
+  .line {
+    position: absolute;
+    width: 26vw;
+    top: 17.2vh;
+    left: 12vw;
+  }
+  .img1 {
+    width: 250px;
+    height: auto;
+  }
+  .rec {
+    height: 150px;
+  }
+  .img2 {
+    width: 100px;
+    height: auto;
+    margin-top: -45px;
+  }
+  h3 {
+    font-size: 18px;
+  }
+  h4 {
+    font-size: 15px;
+  }
+  .ava_2 {
+    flex: 1.5;
+    text-align: center;
+    line-height: 15px;
+  }
+}
+/* footer */
+.logo-footer img {
+  width: 296px;
+  margin-bottom: 10px;
+  padding-left: 5%;
+}
+footer {
+  margin-top: 30px;
+  width: 100%;
+  padding-top: 20px;
+  background-color: #2a363b;
+  padding-left: 20px;
+}
+.container1 {
+  background-color: #2a363b;
+}
+.row {
+  padding-left: 10%;
+}
+.copyright {
+  text-align: center;
+}
+.content1_2 img {
+  width: 150px;
+  margin-left: -12px;
+}
+.blue {
+  color: #0075ff;
+}
+h3 {
+  color: white;
+}
+footer p {
+  color: white;
+}
+.hover:hover {
+  text-decoration: underline;
+}
