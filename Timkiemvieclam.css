@@ -79,20 +79,7 @@ body {
   height: 47px;
   background-color: blue;
 }
-.list-menu-pc {
-  padding: 5px 0;
-  font-size: 12px;
-  border-radius: 12px;
-  background-color: white;
-  padding-left: 10px;
-  position: absolute;
-  right: 158px;
-  top: 69px;
-  width: 16%;
-  border: 1px solid black;
-  z-index: 1000;
-  margin-left: 10px;
-}
+
 .menu-list-row a i {
   width: 15px;
 }
