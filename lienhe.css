@@ -323,7 +323,7 @@ footer {
 @media screen and (max-width: 480px){
   footer{
     position: absolute;
-    top: 130vh;
+    top: 120vh;
   }
   .line{
     position: absolute;
@@ -332,6 +332,6 @@ footer {
   }
   #contact{
     position: absolute;
-    top: 17vh;
+    top: 5vh;
   }
 }
