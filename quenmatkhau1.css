@@ -106,7 +106,7 @@
   left: 35vw;
   box-sizing: border-box;
   width: 428px;
-  height: 265px;
+  height: 255px;
   background: #ffffff;
   border-radius: 18px;
 
@@ -136,6 +136,7 @@ h4 {
 hr {
   margin-top: 20px;
 }
+
 .input- {
   text-align: center;
 }
@@ -156,10 +157,12 @@ hr {
   font-size: 13px;
   line-height: 25px;
   letter-spacing: 0.05em;
-  width: 50px;
+  width: 60px;
   color: #000000;
+  border: none;
 }
 #timkiem {
+  width: 80px;
   background: #00a9ff;
   border-radius: 6px;
   margin-left: 8px;
@@ -169,7 +172,7 @@ hr {
   font-size: 13px;
   line-height: 25px;
   letter-spacing: 0.05em;
-
+border: none;
   color: #ffffff;
 }
 #timkiem:hover {
@@ -203,6 +206,12 @@ hr {
   }
   #huy {
     margin-left: 170px;
+  }
+}
+@media screen and (max-width:480px){
+  .rec29{
+    position: absolute;
+    top: 12vh;
   }
 }
 /* Footer */
