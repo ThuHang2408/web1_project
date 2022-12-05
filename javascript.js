@@ -83,7 +83,29 @@ function display() {
     tab2.classList.toggle("is-display-none");
     img.classList.toggle("is-display-none");
   }
-  function show() {
-    var show = document.getElementById("abi-mb");
-    show.classList.toggle("display-flex");
-  }
+  function show1() {
+  var show1 = document.getElementById("abi-mb-1");
+  show1.classList.toggle("display-flex");
+}
+
+function show2() {
+  var show2 = document.getElementById("abi-mb-2");
+  show2.classList.toggle("display-flex");
+}
+function show3() {
+  var show3 = document.getElementById("abi-mb-3");
+  show3.classList.toggle("display-flex");
+}
+function show4() {
+  var show4 = document.getElementById("abi-mb-4");
+  show4.classList.toggle("display-flex");
+}
+function show5() {
+  var show5 = document.getElementById("abi-mb-5");
+  show5.classList.toggle("display-flex");
+}
+function show6() {
+  var show6 = document.getElementById("abi-mb-6");
+  show6.classList.toggle("display-flex");
+}
+
