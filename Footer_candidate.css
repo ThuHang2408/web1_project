@@ -3,6 +3,9 @@
   width: 296px;
   margin-bottom: 10px;
 }
+.pd-left {
+  padding-left: 45px !important;
+}
 footer {
   margin-top: 30px;
   background-color: #2a363b;
@@ -29,4 +32,10 @@ p {
 }
 .hover:hover {
   text-decoration: underline;
+}
+
+@media (max-width: 480px) {
+.pd-left {
+    padding-left: 15px !important;
+  }
 }
