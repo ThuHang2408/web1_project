@@ -72,37 +72,7 @@ body {
 .is-left-default {
   left: 0px !important;
 }
-/*Responsive*/
-#nav-mb button {
-  display: none;
-}
-@media (max-width: 830px) {
-  .nav-pc,
-  .btn-menu,
-  .account {
-    display: none;
-  }
-  .logo img {
-    width: 43% !important;
-  }
-  #nav-mb button {
-    position: absolute;
-    top: 25px;
-    right: 10px;
-    font-size: 20px;
-    display: block;
-    color: #48c0fd;
-    border: none;
-    background: none;
-  }
-  .login-main {
-    width: 100%;
-    margin: 0 !important;
-  }
-  .left-lg {
-    display: none;
-  }
-}
+
 /* Headedr */
 .is-display-none {
   display: none !important;
@@ -223,9 +193,13 @@ body {
   padding-right: 5px;
 }
 /* footer */
+/* footer */
 .logo-footer img {
   width: 296px;
   margin-bottom: 10px;
+}
+.pd-left {
+  padding-left: 45px !important;
 }
 footer {
   margin-top: 30px;
@@ -234,19 +208,55 @@ footer {
 
 .copyright {
   text-align: center;
-  margin-bottom: 0;
+  font-size: 13px;
+  margin-bottom: 0px;
 }
 .content1_2 img {
   width: 150px;
   margin-left: -12px;
 }
-.white {
-  color: white;
-}
 .blue {
   color: #0075ff;
+}
+.white {
+  color: white;
 }
 
 .hover:hover {
   text-decoration: underline;
+}
+
+/*Responsive*/
+#nav-mb button {
+  display: none;
+}
+@media (max-width: 480px) {
+  .nav-pc,
+  .btn-menu,
+  .account {
+    display: none;
+  }
+  .logo img {
+    width: 43% !important;
+  }
+  #nav-mb button {
+    position: absolute;
+    top: 25px;
+    right: 10px;
+    font-size: 20px;
+    display: block;
+    color: #48c0fd;
+    border: none;
+    background: none;
+  }
+  .login-main {
+    width: 100%;
+    margin: 0 !important;
+  }
+  .left-lg {
+    display: none;
+  }
+  .pd-left {
+    padding-left: 15px !important;
+  }
 }
