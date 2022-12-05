@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Search</title>
-    <link rel="stylesheet" href="./Search.css" />
-    <script type="text/javascript" src="./search.js"></script>
+    <link rel="stylesheet" href="./header-employer-loged.css" />
+    <script type="text/javascript" src="./javascript.js"></script>
 
     <link
       href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900,900i&display=swap"
@@ -25,7 +25,7 @@
         <div class="left-main-menu">
           <div class="row">
             <div class="col-md-3">
-              <a class="logo" href="#"
+              <a class="logo" href="trangchu_nhatuyendung_login.html"
                 ><img
                   src="./Image/307595079_1436979406790740_7670366868843439347_n.png"
                   alt="Logo"
@@ -33,9 +33,9 @@
             </div>
             <div class="col-md-5">
               <ul class="nav-pc">
-                <li><a href="">Đăng tuyển dụng</a></li>
-                <li><a href="">Tìm hồ sơ</a></li>
-                <li><a href="">Liên hệ</a></li>
+                <li><a href="dangtuyen.html" >Đăng tuyển dụng</a></li>
+                <li><a href="timkiemungvien.html">Tìm hồ sơ</a></li>
+                <li><a href="lienhe.html">Liên hệ</a></li>
               </ul>
             </div>
           </div>
@@ -43,12 +43,12 @@
         <div class="right-main-menu">
           <div class="account">
             <i class="fa-regular fa-circle-user"></i><span>WorkZone</span>
-            <a onclick="menupc()" href="#"
+            <a onclick="menupc()" href="trangchu_nhatuyendung_login.html"
               ><i class="fa-solid fa-sort-down"></i
             ></a>
           </div>
-
-          <button class="btn-menu ntd">NGƯỜI TÌM VIỆC</button>
+          <form action="trangchu_nguoitimviec.html" target="_blank">
+          <button class="btn-menu ntd">NGƯỜI TÌM VIỆC</button></form>
         </div>
       </div>
     </div>
@@ -56,7 +56,7 @@
       <ul class="list-menu-pc is-display-none" id="list-menu-pc">
         <li>
           <div class="menu-list-row">
-            <a href="#">
+            <a href="quanlyhoso.html">
               <i class="fa-solid fa-id-card"></i>
               <span> Quản lý hồ sơ</span>
             </a>
@@ -64,7 +64,7 @@
         </li>
         <li>
           <div class="menu-list-row">
-            <a href="">
+            <a href="thanhtoan.html">
               <i class="fa-solid fa-heart"></i>
               <span> Thanh toán</span>
             </a>
@@ -74,7 +74,7 @@
         <div class="border"></div>
         <li>
           <div class="menu-list-row name-account">
-            <a href="">
+            <a href="trangchu_nhatuyendung_login.html">
               <i class="fa-regular fa-buildings"></i>
             </a>
             <span>WorkZone Cop</span>
@@ -82,8 +82,10 @@
         </li>
         <li>
           <div class="log-out">
-            <i class="fa-solid fa-arrow-right-from-bracket"></i>
-            <span>Đăng xuất</span>
+            <a href="trangchu_nhatuyendung.html">
+              <i class="fa-solid fa-arrow-right-from-bracket"></i>
+              <span>Đăng xuất</span>
+            </a>
           </div>
         </li>
       </ul>
@@ -96,7 +98,7 @@
     <ul id="list-menu-mb-login" class="list-menu-mb-login">
       <li>
         <div class="menu-list-row">
-          <a href="#">
+          <a href="quanlyhoso.html">
             <i class="fa-light fa-file"></i>
             <span> Quản lý hồ sơ</span>
           </a>
@@ -104,7 +106,7 @@
       </li>
       <li>
         <div class="menu-list-row">
-          <a href="">
+          <a href="thanhtoan.html">
             <i class="fa-solid fa-id-card"></i>
             <span> Thanh toán</span>
           </a>
@@ -114,7 +116,7 @@
       <div class="border"></div>
       <li>
         <div class="menu-list-row name-account">
-          <a href="#">
+          <a href="trangchu_nhatuyendung_login.html">
             <i class="fa-solid fa-buildings"></i>
           </a>
           <span>WorkZone Cop</span>
@@ -127,11 +129,13 @@
         <span>WorkZone Cop</span>
         <a onclick="menupc()" href="#"><i class="fa-solid fa-sort-down"></i></a>
       </div>
-      <button class="btn-nav ntd">NGƯỜI TÌM VIỆC</button>
+      <form action="trangchu_nguoitimviec.html">
+      <button class="btn-nav ntd">NGƯỜI TÌM VIỆC</button></form>
       <li>
         <div class="log-out">
-          <i class="fa-solid fa-arrow-right-from-bracket"></i>
-          <span>Đăng xuất</span>
+          <a href="trangchu_nhatuyendung.html"
+            ><i class="fa-solid fa-arrow-right-from-bracket"></i>
+            <span>Đăng xuất</span></a>
         </div>
       </li>
     </ul>
