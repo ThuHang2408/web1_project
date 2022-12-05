@@ -551,45 +551,28 @@ a.job-address {
 }
 
 /* footer */
-.logo-footer img {
-  width: 296px;
-  margin-bottom: 10px;
-}
 footer {
   margin-top: 30px;
 }
-.action-help {
-  background-image: url(./Image/tải\ xuống.jpg);
-  background-size: cover;
-  padding: 15px 0;
-  text-align: center;
-}
-.box-tele {
-  background: white;
-  border: 1px solid black;
-  border-radius: 5px;
-  width: 222px;
-}
-.box-tele input {
-  border: none;
-  background: none;
-}
-.box-tele span {
-  display: inline-block;
-  background-color: gray;
-  width: 30px;
-}
-.center-position {
-  display: flex;
-  justify-content: center;
+.background {
+  background-color: #2a363b;
 }
 .copyright {
   text-align: center;
+  margin-bottom: 0;
+  font-size: 13px;
 }
 .content1_2 img {
   width: 150px;
   margin-left: -12px;
 }
+.white {
+  color: white;
+}
 .blue {
   color: #0075ff;
+}
+
+.hover:hover {
+  text-decoration: underline;
 }
