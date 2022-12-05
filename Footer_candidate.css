@@ -1,29 +1,32 @@
+/* footer */
 .logo-footer img {
   width: 296px;
   margin-bottom: 10px;
 }
 footer {
   margin-top: 30px;
-}
-.background {
   background-color: #2a363b;
 }
+
 .copyright {
   text-align: center;
-  margin-bottom: 0;
+  font-size: 13px;
+  margin-bottom: 0px;
 }
 .content1_2 img {
   width: 150px;
   margin-left: -12px;
 }
-.white {
-  color: white;
-}
 .blue {
   color: #0075ff;
 }
-
+.white {
+  color: white;
+}
+h3,
+p {
+  color: white;
+}
 .hover:hover {
   text-decoration: underline;
 }
-
