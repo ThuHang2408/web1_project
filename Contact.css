@@ -323,11 +323,11 @@ footer {
 @media screen and (max-width: 480px){
   footer{
     position: absolute;
-    top: 330vh;
+    top: 130vh;
   }
   .line{
     position: absolute;
-    top: 13.3vh;
+    top: 5vh;
     width: 18vw;
   }
   #contact{
