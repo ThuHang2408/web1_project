@@ -207,6 +207,7 @@ hr {
   letter-spacing: 0.05em;
   width: 140px;
   color: #000000;
+  border: none;
 }
 #timkiem {
   background: #00a9ff;
@@ -218,7 +219,7 @@ hr {
   font-size: 13px;
   line-height: 25px;
   letter-spacing: 0.05em;
-
+border: none;
   color: #ffffff;
 }
 #timkiem:hover {
@@ -249,6 +250,12 @@ hr {
   #huy {
     margin-left: 15px;
     width: 135px;
+  }
+}
+@media screen and (max-width:480px){
+  .rec29{
+    position: absolute;
+    top: 10vh;
   }
 }
 /* Footer */
