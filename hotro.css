@@ -503,4 +503,9 @@ p {
     top: -60vh;
     width: 100%;
   }
+  #search_icon{
+    position: absolute;
+    top: 15.8vh;
+    left: 16vw;
+  }
 }
