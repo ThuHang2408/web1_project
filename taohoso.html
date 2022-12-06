@@ -45,7 +45,7 @@
         <div class="right-main-menu">
           <div class="account">
             <i class="fa-regular fa-circle-user"></i><span>WorkZone</span>
-            <a onclick="menupc()" href="#"
+            <a onclick="menupc()" 
               ><i class="fa-solid fa-sort-down"></i
             ></a>
           </div>
@@ -186,32 +186,37 @@
     <!-- main -->
     <!-- menu-account -->
     <div class="container">
-      <div class="row">
+      <div class="row relative">
         <div class="col-md-12 col-12 pad-0">
           <ul class="emp-menu">
             <div class="box-menu-pc">
-              <li><a href="">Tài khoản</a></li>
-              <li><a href="">Hồ sơ công việc</a></li>
-              <li><a href="">Việc đã lưu (0)</a></li>
-              <li><a href="">Việc đã ứng tuyển (0)</a></li>
-              <li><a href="">Thông báo việc làm (0)</a></li>
+              <li><a href="#taikhoan">Tài khoản</a></li>
+              <li><a href="hosoxinviec.html">Hồ sơ xin việc (3)</a></li>
+              <li><a href="vieclamdaluu.html">Việc đã lưu (5)</a></li>
+              <li><a href="viecdaungtuyen.html">Việc đã ứng tuyển (7)</a></li>
+              <li><a href="thongbaovieclam.html">Thông báo việc làm (0)</a></li>
             </div>
 
             <div class="box-menu-mb is-display-none">
-              <span><a href="">Tài khoản</a></span>
-              <span><a href="">Hồ sơ công việc</a></span>
-              <span><a href="">Việc đã lưu (0)</a></span>
-              <span><a href="">Việc đã ứng tuyển (0)</a></span>
-              <span><a href="">Thông báo việc làm (0)</a></span>
+              <span><a href="#taikhoan">Tài khoản</a></span>
+              <span><a href="hosoxinviec.html">Hồ sơ xin việc (3)</a></span>
+              <span><a href="vieclamdaluu.html">Việc đã lưu (5)</a></span>
+              <span
+                ><a href="viecdaungtuyen.html">Việc đã ứng tuyển (7)</a></span
+              >
+              <span
+                ><a href="thongbaovieclam.html">Thông báo việc làm (0)</a></span
+              >
             </div>
           </ul>
         </div>
+        <div class="border-menu"></div>
       </div>
     </div>
     <div class="main">
       <div class="row">
         <div class="col-md-3 col-12">
-          <div class="taikhoan">
+          <div class="taikhoan" id="taikhoan">
             <button class="method" onclick="tab()">
               <h5>Tài khoản</h5>
               <span>Tùy chỉnh thông tin cá nhân</span>
@@ -229,16 +234,19 @@
             </div>
             <div class="row-pass">
               <div class="name-pass">Họ và tên <span class="red">*</span></div>
-              <input type="text" class="input user" />
-              <button class="save">Lưu</button>
+              <input type="text" class="input user" value="WorkZone" disabled />
             </div>
             <div class="border-user"></div>
             <div class="row-pass">
               <div class="name-pass">
                 Địa chỉ email <span class="red">*</span>
               </div>
-              <input type="email" class="input user" />
-              <button class="save">Lưu</button>
+              <input
+                type="email"
+                class="input user"
+                value="workZone@gmail.com"
+                disabled
+              />
             </div>
             <div class="border-user"></div>
             <div class="row-pass">
@@ -319,8 +327,12 @@
             <div class="border-user"></div>
             <div class="row-pass">
               <div class="name-pass">Số điện thoại</div>
-              <input type="number" class="input user" />
-              <button class="save">Lưu</button>
+              <input
+                type="tel"
+                class="input user"
+                value="09876256152"
+                disabled
+              />
             </div>
             <div class="border-user big"></div>
             <div class="row-pass mr-bot">
@@ -332,7 +344,7 @@
               <button class="save">Lưu</button>
             </div>
             <div class="row-pass">
-              <div class="name-pass">Quận/Huyện <span class="red">*</span></div>
+              <div class="name-pass">Quận/Huyện</div>
               <input type="text" class="input user" />
               <button class="save">Lưu</button>
             </div>
