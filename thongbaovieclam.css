@@ -61,7 +61,7 @@
   font-size: 90%;
   font-weight: bold;
   color: #ffffff;
-  padding: 15px 0px;
+  height: 47px;
   background-color: blue;
 }
 .list-menu-pc {
@@ -176,6 +176,18 @@
   top: 50%;
   left: 41%;
 }
+.border-menu {
+  content: "";
+  background-color: #48c0fd;
+  position: absolute;
+  top: 48px;
+  right: 110px;
+  height: 2px;
+  width: 180px;
+}
+.emp-menu > div > li:last-child {
+  font-weight: bold;
+}
 /* footer */
 /* footer */
 .logo-footer img {
@@ -266,5 +278,8 @@ p {
   }
   .pd-left {
     padding-left: 15px !important;
+  }
+  .border-menu {
+    display: none;
   }
 }
