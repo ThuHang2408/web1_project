@@ -34,6 +34,7 @@ body {
     font-weight: bold;
     color: #ffffff;
     width: 150px;
+    padding: 15px 0px;
     background-color: #48c0fd;
   }
   .account {
@@ -69,6 +70,7 @@ body {
   }
   .ntd {
     border-radius: 12px;
+    padding: 15px 0px;
     border: 1px solid #0075ff;
     font-size: 90%;
     padding: 15px 0px ;
