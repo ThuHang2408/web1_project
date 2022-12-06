@@ -127,6 +127,13 @@
 .is-left-default {
   left: 0px !important;
 }
+.is-display-none {
+  display: none !important;
+}
+.display {
+  display: block !important;
+}
+
 /*Responsive*/
 #nav-mb button {
   display: none;
