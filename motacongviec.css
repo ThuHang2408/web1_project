@@ -41,17 +41,31 @@ html {
   font-weight: bold;
   color: #ffffff;
   width: 150px;
+  height: 48px;
   background-color: #48c0fd;
 }
-
-.btn-nav {
-  width: 50%;
-  font-weight: bold;
-  background: #48c0fd;
-  margin: 10px 10px;
-  color: #fff;
-  border-radius: 12px;
+.account {
+  width: 180px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  border: 1px solid black;
 }
+.account span {
+  margin: 0 25px;
+}
+.account .fa-circle-user {
+  font-size: 30px;
+  margin-left: -13px;
+}
+.account .fa-sort-down {
+  position: absolute;
+  top: 13px;
+  right: 9px;
+}
+
 .relative {
   position: relative;
 }
@@ -61,7 +75,50 @@ html {
   font-size: 90%;
   font-weight: bold;
   color: #ffffff;
+  height: 47px;
   background-color: blue;
+}
+.list-menu-pc {
+  padding: 5px 0;
+  font-size: 12px;
+  border-radius: 12px;
+  background-color: white;
+  padding-left: 10px;
+  position: absolute;
+  right: 158px;
+  top: 69px;
+  width: 16%;
+  border: 1px solid black;
+  z-index: 1000;
+  margin-left: 10px;
+}
+.menu-list-row a i {
+  width: 15px;
+}
+.log-out {
+  margin-left: 50%;
+  margin-top: 5px;
+}
+.menu-list-row .fa-circle-user {
+  font-size: 20px;
+}
+.name-account {
+  font-size: 15px;
+  font-weight: bold;
+}
+.name-account span {
+  font-weight: bold;
+  color: #0075ff;
+}
+.list-menu-pc span {
+  padding-left: 8px;
+}
+
+.border {
+  margin: 4px 0;
+  border: 0.5px solid black;
+  width: 94%;
+  background: black;
 }
 
 .list-menu-mb-login {
@@ -79,8 +136,14 @@ html {
 .list-menu-mb-login li {
   margin-bottom: 10px;
 }
+.is-display-none {
+  display: none !important;
+}
 .is-left-default {
   left: 0px !important;
+}
+.display {
+  display: block !important;
 }
 /*Responsive*/
 #nav-mb button {
@@ -100,13 +163,13 @@ html {
     top: 25px;
     right: 10px;
     font-size: 20px;
+
     display: block;
     color: #48c0fd;
     border: none;
     background: none;
   }
 }
-
 /* body */
 .container__motacongviec {
   width: 90%;
@@ -380,12 +443,12 @@ h2 > span {
   }
 }
 /* footer */
-#footer a {
-  color: white;
-}
 .logo-footer img {
   width: 296px;
   margin-bottom: 10px;
+}
+.pd-left {
+  padding-left: 45px !important;
 }
 footer {
   margin-top: 30px;
@@ -394,7 +457,8 @@ footer {
 
 .copyright {
   text-align: center;
-  margin-bottom: 0;
+  font-size: 13px;
+  margin-bottom: 0px;
 }
 .content1_2 img {
   width: 150px;
@@ -403,10 +467,19 @@ footer {
 .blue {
   color: #0075ff;
 }
+.white {
+  color: white;
+}
 footer h3,
 footer p {
   color: white;
 }
 .hover:hover {
   text-decoration: underline;
+}
+
+@media (max-width: 480px) {
+  .pd-left {
+    padding-left: 15px !important;
+  }
 }
