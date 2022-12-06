@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Thanh toán</title>
-    <link rel="stylesheet" href="./Thanhtoan.css" />
+    <title>WorkZone - Thanh toán</title>
+    <link rel="stylesheet" href="./thanhtoan.css" />
     <script type="text/javascript" src="./javascript.js" defer></script>
     <link
       href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900,900i&display=swap"
@@ -28,20 +28,20 @@
   </head>
   <body>
     <!-- Header -->
-    <div class="container">
+    <div class="container op">
       <div class="main-menu">
         <div class="left-main-menu">
           <div class="row">
             <div class="col-md-3">
-              <a class="logo" href="#"
+              <a class="logo" href="trangchu_nhatuyendung_login.html"
                 ><img src="./media/logo.png" alt="Logo"
               /></a>
             </div>
             <div class="col-md-5">
               <ul class="nav-pc">
-                <li><a href="">Tìm việc</a></li>
-                <li><a href="">Công việc</a></li>
-                <li><a href="">Về WorkZone</a></li>
+                <li><a href="dangtuyen.html">Đăng tuyển dụng</a></li>
+                <li><a href="timkiemungvien.html">Tìm hồ sơ</a></li>
+                <li><a href="lienhe.html">Liên hệ</a></li>
               </ul>
             </div>
           </div>
@@ -49,12 +49,11 @@
         <div class="right-main-menu">
           <div class="account">
             <i class="fa-regular fa-circle-user"></i><span>WorkZone</span>
-            <a onclick="menupc()" href="#"
-              ><i class="fa-solid fa-sort-down"></i
-            ></a>
+            <a onclick="menupc()"><i class="fa-solid fa-sort-down"></i></a>
           </div>
-
-          <button class="btn-menu ntd">NHÀ TUYỂN DỤNG</button>
+          <form action="trangchu_nguoitimviec.html" target="_blank">
+            <button class="btn-menu ntd">NGƯỜI TÌM VIỆC</button>
+          </form>
         </div>
       </div>
     </div>
@@ -62,49 +61,36 @@
       <ul class="list-menu-pc is-display-none" id="list-menu-pc">
         <li>
           <div class="menu-list-row">
-            <a href="#">
-              <i class="fa-regular fa-file"></i>
-              <span> Hồ sơ xin việc</span>
+            <a href="quanlyhoso.html">
+              <i class="fa-solid fa-id-card"></i>
+              <span> Quản lý hồ sơ</span>
             </a>
           </div>
         </li>
         <li>
           <div class="menu-list-row">
-            <a href="">
+            <a href="thanhtoan.html">
               <i class="fa-solid fa-heart"></i>
-              <span> Việc làm đã lưu</span>
+              <span> Thanh toán</span>
             </a>
           </div>
         </li>
-        <li>
-          <div class="menu-list-row">
-            <a href="">
-              <i class="fa-solid fa-paper-plane"></i>
-              <span>Việc làm đã ứng tuyển</span>
-            </a>
-          </div>
-        </li>
-        <li>
-          <div class="menu-list-row">
-            <a href="">
-              <i class="fa-regular fa-bell"></i>
-              <span>Thông báo việc làm</span>
-            </a>
-          </div>
-        </li>
+
         <div class="border"></div>
         <li>
           <div class="menu-list-row name-account">
-            <a href="">
-              <i class="fa-regular fa-circle-user"></i>
+            <a href="trangchu_nhatuyendung_login.html">
+              <i class="fa-regular fa-buildings"></i>
             </a>
-            <span>WorkZone</span>
+            <span>WorkZone Cop</span>
           </div>
         </li>
         <li>
           <div class="log-out">
-            <i class="fa-solid fa-arrow-right-from-bracket"></i>
-            <span>Đăng xuất</span>
+            <a href="trangchu_nhatuyendung.html">
+              <i class="fa-solid fa-arrow-right-from-bracket"></i>
+              <span>Đăng xuất</span>
+            </a>
           </div>
         </li>
       </ul>
@@ -117,7 +103,7 @@
     <ul id="list-menu-mb-login" class="list-menu-mb-login">
       <li>
         <div class="menu-list-row">
-          <a href="#">
+          <a href="quanlyhoso.html">
             <i class="fa-light fa-file"></i>
             <span> Quản lý hồ sơ</span>
           </a>
@@ -125,7 +111,7 @@
       </li>
       <li>
         <div class="menu-list-row">
-          <a href="">
+          <a href="thanhtoan.html">
             <i class="fa-solid fa-id-card"></i>
             <span> Thanh toán</span>
           </a>
@@ -135,7 +121,7 @@
       <div class="border"></div>
       <li>
         <div class="menu-list-row name-account">
-          <a href="#">
+          <a href="trangchu_nhatuyendung_login.html">
             <i class="fa-solid fa-buildings"></i>
           </a>
           <span>WorkZone Cop</span>
@@ -148,11 +134,22 @@
         <span>WorkZone Cop</span>
         <a onclick="menupc()" href="#"><i class="fa-solid fa-sort-down"></i></a>
       </div>
-      <button class="btn-nav ntd">NGƯỜI TÌM VIỆC</button>
+      <div class="menu-list-row">
+        <ul class="non-nav-pc">
+          <li><a href="dangtuyen.html">Đăng tuyển dụng</a></li>
+          <li><a href="timkiemungvien.html">Tìm hồ sơ</a></li>
+          <li><a href="lienhe.html">Liên hệ</a></li>
+        </ul>
+      </div>
+      <form action="trangchu_nguoitimviec.html">
+        <button class="btn-nav ntd">NGƯỜI TÌM VIỆC</button>
+      </form>
       <li>
         <div class="log-out">
-          <i class="fa-solid fa-arrow-right-from-bracket"></i>
-          <span>Đăng xuất</span>
+          <a href="trangchu_nhatuyendung.html"
+            ><i class="fa-solid fa-arrow-right-from-bracket"></i>
+            <span>Đăng xuất</span></a
+          >
         </div>
       </li>
     </ul>
@@ -160,9 +157,9 @@
     <br />
     <h2>CHI TIẾT THANH TOÁN</h2>
     <h3>Chúng tôi đảm bảo thông tin của bạn là bảo mật</h3>
-    <div class="container__payment">
+    <div class="container__payment"> 
       <div class="content__payment--left">
-        <form action="">
+        <form >
           <table>
             <tr>
               <td>
@@ -205,12 +202,18 @@
           </div>
           <div class="payment__row">
             <label for="telephone">Số điện thoại:</label>
-            <input type="tel" name="telephone" id="telephone" value="+84" />
+            <input type="tel" name="telephone" id="telephone" value="+84" required/>
           </div>
           <div class="payment__row">
-            <input type="email" name="email" id="email" placeholder="Email" />
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Email"
+              
+            />
           </div>
-        </form>
+       
       </div>
       <div class="content__payment--right">
         <table>
@@ -226,12 +229,13 @@
             <td style="text-align: right">Tổng:</td>
             <td>2.000.000 VNĐ</td>
           </tr>
-        </table>
-
-        <div class="tab__row">
+        </table>   
+        
+      </form>
+      
+          <!-- POPUP 1 --><div class="tab__row">
           <!-- Trigger/Open The Modal -->
-          <button id="myBtn">Next</button>
-          <!-- POPUP 1 -->
+          <input type="submit" id="myBtn" value="Next"></input></div>
           <!-- The Modal -->
           <div id="myModal" class="modal">
             <!-- Modal content -->
@@ -286,7 +290,7 @@
               </div>
             </div>
           </div>
-        </div>
+    
       </div>
     </div>
 
@@ -327,6 +331,7 @@
       };
       span1.onclick = function () {
         modal1.style.display = "none";
+        modal.style.display = "block";
       };
 
       //   popup3
@@ -345,12 +350,16 @@
 
     <!-- Footer -->
     <footer>
-      <div class="containerr">
-        <div class="logo-footer">
-          <img src="./media/logo.png" alt="" />
-        </div>
-        <div class="row">
-          <div class="col-md-3 col-sm-6 col-12">
+      <div class="container white">
+        <div class="row background">
+          <div class="col-md-12 col-sm-12 col-12">
+            <div class="logo-footer">
+              <a href="trangchu_nhatuyendung_login.html" target="_blank">
+                <img src="./media/logo.png" alt=""
+              /></a>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 col-12 pd-left">
             <div class="content_1">
               <h3>
                 Kết nối với <span class="blue">Work</span>Z<span class="blue"
@@ -360,11 +369,10 @@
               <p>
                 <a href="">
                   <img
-                    class="float"
                     src="./media/phone.png"
                     width="27px"
                     height="27px"
-                  />&nbsp; <span class="hover">+123 456 7890</span></a
+                  />&nbsp; +123 456 7890</a
                 >
               </p>
               <p>
@@ -372,7 +380,6 @@
                   href="https://www.google.com/intl/vi/gmail/about/"
                   target="_blank"
                   ><img
-                    class="float"
                     src="./media/mail.png"
                     width="27px"
                     height="27px"
@@ -384,7 +391,6 @@
                   href="https://www.google.com/maps/place/Tr%C6%B0%E1%BB%9Dng+%C4%90%E1%BA%A1i+h%E1%BB%8Dc+Kinh+t%E1%BA%BF+-+Lu%E1%BA%ADt,+%C4%90%E1%BA%A1i+h%E1%BB%8Dc+Qu%E1%BB%91c+gia+Th%C3%A0nh+ph%E1%BB%91+H%E1%BB%93+Ch%C3%AD+Minh/@10.8709374,106.7760666,17z/data=!3m1!4b1!4m6!3m5!1s0x3175277dbf11a271:0x4567e34b99494e3f!8m2!3d10.8709321!4d106.7782553!16s%2Fm%2F0ds8rvh?hl=vi"
                   target="_blank"
                   ><img
-                    class="float"
                     src="./media/location.png"
                     width="27px"
                     height="27px"
@@ -396,18 +402,13 @@
               </p>
               <p>
                 <a href="https://www.facebook.com/" target="_blank"
-                  ><img
-                    class="float"
-                    src="./media/fb.png"
-                    width="27px"
-                    height="27px"
-                  />&nbsp; <span class="hover">WorkZone</span></a
+                  ><img src="./media/fb.png" width="27px" height="27px" />&nbsp;
+                  <span class="hover">WorkZone</span></a
                 >
               </p>
               <p>
                 <a href="https://www.linkedin.com/" target="_blank"
                   ><img
-                    class="float"
                     src="./media/in.png"
                     width="27px"
                     height="27px"
@@ -419,44 +420,60 @@
           <div class="col-md-3 col-sm-6 col-12">
             <div class="content_2">
               <h3>Nhà tuyển dụng</h3>
-              <p class="hover"><a href="">Tìm kiếm hồ sơ</a></p>
-              <p class="hover"><a href="">Đăng tin tuyển dụng</a></p>
-              <p class="hover"><a href="">Quản lý hồ sơ</a></p>
+              <p class="hover">
+                <a href="timkiemungvien.html" target="_blank">Tìm kiếm hồ sơ</a>
+              </p>
+              <p class="hover">
+                <a href="dangtuyen.html" target="_blank">Đăng tin tuyển dụng</a>
+              </p>
+              <p class="hover">
+                <a href="quanlyhoso.html" target="_blank">Quản lý hồ sơ</a>
+              </p>
             </div>
           </div>
           <div class="col-md-3 col-sm-6 col-12">
             <div class="content_3">
-              <h3>About us</h3>
+              <h3>Về WorkZone</h3>
               <p class="hover">
-                <a href=""
+                <a href="thongtin.html" target="_blank"
                   >Thông tin về <span class="blue">Work</span>Z<span
                     class="blue"
                     >one</span
                   ></a
                 >
               </p>
-              <p class="hover"><a href="">Điều khoản và dịch vụ</a></p>
+              <p class="hover">
+                <a href="dieukhoandichvu.html" target="_blank"
+                  >Điều khoản và dịch vụ</a
+                >
+              </p>
               <div class="content1_2">
                 <h3>Chứng nhận bởi</h3>
-                <a href="">
+                <a href="#">
                   <img src="./media/chứng nhận.png" width="198px" height="89px"
                 /></a>
               </div>
             </div>
           </div>
-          <div class="col-md-3 col-sm-6 col-12">
+          <div class="col-md-2 col-sm-6 col-12 pd-left">
             <div class="content_4">
               <h3>Liên hệ</h3>
-              <p class="hover"><a href="">Liên hệ ngay</a></p>
-              <p class="hover"><a href="">Hỗ trợ</a></p>
+              <p class="hover">
+                <a href="lienhe.html" target="_blank">Liên hệ ngay</a>
+              </p>
+              <p class="hover">
+                <a href="hotro.html" target="_blank">Hỗ trợ</a>
+              </p>
             </div>
+          </div>
+          <div class="col-md-12 col-sm-12 col-12">
+            <p class="copyright white">
+              Copyright &#169; 2022. <span class="blue">WorkZone</span> . All
+              Right Reserved
+            </p>
           </div>
         </div>
       </div>
-      <p class="copyright">
-        Copyright &#169; 2022. <span class="blue">WorkZone</span> . All Right
-        Reserved
-      </p>
     </footer>
   </body>
 </html>
