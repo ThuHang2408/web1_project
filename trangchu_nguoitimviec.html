@@ -4,89 +4,98 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Trang Chủ</title>
+    <title>WorkZone - Trang Chủ - Người tìm việc</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./bootstrap.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./trangchu_nguoitimviec.css" />
+
+    <script type="text/javascript" src="./javascript.js" defer></script>
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900,900i&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
     />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./Trang chủ.css" />
+    <link rel="stylesheet" href="./bootstrap.css" />
+    <link rel="stylesheet" href="./javascript.js" />
   </head>
   <body>
-    <!-- header -->
-
-    <!-- Header -->
-
-    <div class="container">
-      <div class="content" id="header">
-        <div class="logo">
-          <a href="#"><img src="./media/logo.png" alt="logo" /></a>
-        </div>
-        <div id="content_header">
-          <div class="content_timViec"><a href="#">Tìm việc</a></div>
-          <div class="content_congViec"><a href="#">Công việc</a></div>
-          <div class="content_veWorkZone"><a href="#">Về WorkZone</a></div>
-        </div>
-        <div id="bt_header">
-          <div><input class="bt_Đăngky" type="button" value="ĐĂNG KÝ" /></div>
-          <div>
-            <input class="bt_Đăngnhap" type="button" value="ĐĂNG NHẬP" />
-          </div>
-          <div>
-            <input
-              class="bt_nhaTuyenDung"
-              type="button"
-              value="NHÀ TUYỂN DỤNG"
-            />
-          </div>
-        </div>
-        <div><hr id="gach_ngang" /></div>
-        <div id="nav_header">
-          <ul>
-            <li>
-              <a href="#"><img src="./media/menu.gif" /></a>
-              <ul>
-                <div>
-                  <li>
-                    <div>
-                      <input class="dangKy" type="button" value="ĐĂNG KÝ" />
-                    </div>
-                  </li>
-                  <li>
-                    <div>
-                      <input class="dangNhap" type="button" value="ĐĂNG NHẬP" />
-                    </div>
-                  </li>
-                  <hr />
-                  <li><a href="#" style="font-size: 15px">Tìm việc</a></li>
-                  <li><a href="#" style="font-size: 15px">Công việc</a></li>
-                  <li><a href="#" style="font-size: 15px">Về WorkZone</a></li>
-                  <hr />
-                  <li>
-                    <div>
-                      <input
-                        class="nhaTuyenDung"
-                        type="button"
-                        value="NHÀ TUYỂN DỤNG"
-                      />
-                    </div>
-                  </li>
-                </div>
+    <!-- HEADER -->
+    <div class="container op">
+      <div class="main-menu">
+        <div class="left-main-menu">
+          <div class="row">
+            <div class="col-md-3">
+              <a class="logo" href="#"
+                ><img src="./media/logo.png" alt="Logo"
+              /></a>
+            </div>
+            <div class="col-md-6">
+              <ul class="nav-pc">
+                <li><a href="timkiemvieclam.html">Tìm việc</a></li>
+                <li><a href="#">Công việc</a></li>
+                <li><a href="thongtin.html">Về WorkZone</a></li>
               </ul>
-            </li>
-          </ul>
+            </div>
+          </div>
+        </div>
+        <div class="right-main-menu">
+          <form action="dangky_nguoitimviec.html">
+            <button class="btn-menu">ĐĂNG KÝ</button>
+          </form>
+          <form action="dangnhap_nguoitimviec.html">
+            <button class="btn-menu">ĐĂNG NHẬP</button>
+          </form>
+          <form action="trangchu_nhatuyendung.html" target="_blank">
+            <button class="btn-menu ntd">NHÀ TUYỂN DỤNG</button>
+          </form>
         </div>
       </div>
-      <!-- body -->
+    </div>
+
+    <div id="nav-mb">
+      <button onclick="menu()">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+
+    <ul id="list-menu-mb-login" class="list-menu-mb-login">
+      <li><a href="timkiemvieclam.html">Tìm việc</a></li>
+      <li><a href="#">Công việc</a></li>
+      <li><a href="thongtin.html">Về WorkZone</a></li>
+      <form action="dangky_nguoitimviec.html">
+        <button class="btn-nav">ĐĂNG KÝ</button>
+      </form>
+      <form action="dangnhap_nguoitimviec.html">
+        <button class="btn-nav">ĐĂNG NHẬP</button>
+      </form>
+      <form action="trangchu_nhatuyendung.html" target="_blank">
+        <button class="btn-nav ntd">NHÀ TUYỂN DỤNG</button>
+      </form>
+    </ul>
+    <!-- body -->
+    <div class="po">
       <div class="main-banner">
         <div class="banner-image">
           <img src="./media/banner2.jpg" alt="Banner" />
         </div>
       </div>
-
+    </div>
+    <div>
       <div class="banner-content">
         <h2>Nơi tìm kiếm việc làm uy tín - chất lượng nhất</h2>
 
@@ -123,21 +132,26 @@
 
         <div class="box-content">
           <div class="box-content_left">
-            <div class="head">TUYỂN GẤP</div>
+            <div class="head" id="hotjob">HOT</div>
 
             <div class="content-hot">
               <div class="content-img">
-                <a href=""><img src="./media/fpt-logo.png" alt="FPT-logo" /></a>
+                <a href="motacongviec.html" target="_bank"
+                  ><img src="./media/fpt-logo.png" alt="FPT-logo"
+                /></a>
               </div>
               <div class="content-hot-infor">
-                <a href="">
+                <a href="motacongviec.html" target="_bank">
                   <div class="comp">
                     [HCM] 02 Solution Architects-Up to $2000
                   </div></a
                 >
                 <div>
-                  <a href="" class="hover1">Fpt Software</a> |
-                  <a href="" class="hover2"
+                  <a href="motacongviec.html" target="_bank" class="hover1"
+                    >Fpt Software</a
+                  >
+                  |
+                  <a href="timkiemvieclam.html" target="_bank" class="hover2"
                     ><i class="bi bi-geo-alt-fill"></i> TP Hồ Chí Minh</a
                   >
                 </div>
@@ -148,24 +162,27 @@
                 </div>
               </div>
               <div class="content-hot-input">
-                <input type="submit" value="Apply Now" id="apply" />
+                <button id="apply">Apply Now</button>
               </div>
             </div>
             <hr />
 
             <div class="content-hot">
               <div class="content-img">
-                <a href="">
+                <a href="motacongviec.html" target="_bank">
                   <img src="./media/hdbank-logo.png" alt="HD-Bank-logo"
                 /></a>
               </div>
               <div class="content-hot-infor">
-                <a href=""
+                <a href="motacongviec.html" target="_bank"
                   ><div class="comp">[HCM] Business Development Manager</div></a
                 >
                 <div>
-                  <a href="" class="hover1">HD Bank</a> |
-                  <a href="" class="hover2"
+                  <a href="motacongviec.html" target="_bank" class="hover1"
+                    >HD Bank</a
+                  >
+                  |
+                  <a href="timkiemvieclam.html" target="_bank" class="hover2"
                     ><i class="bi bi-geo-alt-fill"></i> TP Hồ Chí Minh</a
                   >
                 </div>
@@ -176,22 +193,27 @@
                 </div>
               </div>
               <div class="content-hot-input">
-                <input type="submit" value="Apply Now" id="apply" />
+                <button id="apply">Apply Now</button>
               </div>
             </div>
             <hr />
 
             <div class="content-hot">
               <div class="content-img">
-                <a href="">
+                <a href="motacongviec.html" target="_bank">
                   <img src="./media/grab-vietnam.png" alt="Grab-logo"
                 /></a>
               </div>
               <div class="content-hot-infor">
-                <a href=""> <div class="comp">[HN] Data Analyst</div></a>
+                <a href="motacongviec.html" target="_bank">
+                  <div class="comp">[HN] Data Analyst</div></a
+                >
                 <div>
-                  <a href="" class="hover1"> Grab Ltd</a> |
-                  <a href="" class="hover2"
+                  <a href="motacongviec.html" target="_bank" class="hover1">
+                    Grab Ltd</a
+                  >
+                  |
+                  <a href="timkiemvieclam.html" target="_bank" class="hover2"
                     ><i class="bi bi-geo-alt-fill"></i> Hà Nội</a
                   >
                 </div>
@@ -202,22 +224,27 @@
                 </div>
               </div>
               <div class="content-hot-input">
-                <input type="submit" value="Apply Now" id="apply" />
+                <button id="apply">Apply Now</button>
               </div>
             </div>
             <hr />
 
             <div class="content-hot">
               <div class="content-img">
-                <a href="">
+                <a href="motacongviec.html" target="_bank">
                   <img src="./media/fitech-logo.jpg" alt="Fitech-logo"
                 /></a>
               </div>
               <div class="content-hot-infor">
-                <a href=""> <div class="comp">[Remote] PHP Developer</div></a>
+                <a href="motacongviec.html" target="_bank">
+                  <div class="comp">[Remote] PHP Developer</div></a
+                >
                 <div>
-                  <a href="" class="hover1"> Fitech Comp</a> |
-                  <a href="" class="hover2"
+                  <a href="motacongviec.html" target="_bank" class="hover1">
+                    Fitech Comp</a
+                  >
+                  |
+                  <a href="timkiemvieclam.html" target="_bank" class="hover2"
                     ><i class="bi bi-geo-alt-fill"></i> TP Hồ Chí Minh, Hà
                     Nội</a
                   >
@@ -229,26 +256,29 @@
                 </div>
               </div>
               <div class="content-hot-input">
-                <input type="submit" value="Apply Now" id="apply" />
+                <button id="apply">Apply Now</button>
               </div>
             </div>
             <hr />
 
             <div class="content-hot">
               <div class="content-img">
-                <a href="">
+                <a href="motacongviec.html" target="_bank">
                   <img src="./media/alipay-logo.png" alt="Alipay-logo"
                 /></a>
               </div>
               <div class="content-hot-infor">
-                <a href="">
+                <a href="motacongviec.html" target="_bank">
                   <div class="comp">
                     Fullstack .NET Developer (Angular/React)
                   </div></a
                 >
                 <div>
-                  <a href="" class="hover1"> Orient Software</a> |
-                  <a href="" class="hover2"
+                  <a href="motacongviec.html" target="_bank" class="hover1">
+                    Orient Software</a
+                  >
+                  |
+                  <a href="timkiemvieclam.html" target="_bank" class="hover2"
                     ><i class="bi bi-geo-alt-fill"></i> Hà Nội</a
                   >
                 </div>
@@ -259,26 +289,28 @@
                 </div>
               </div>
               <div class="content-hot-input">
-                <input type="submit" value="Apply Now" id="apply" />
+                <button id="apply">Apply Now</button>
               </div>
             </div>
             <hr />
 
             <div class="content-hot">
               <div class="content-img">
-                <a href="">
+                <a href="motacongviec.html" target="_bank">
                   <img src="./media/luxoft-vietnam-logo.png" alt="Luxoft-logo"
                 /></a>
               </div>
               <div class="content-hot-infor">
-                <a href="">
+                <a href="motacongviec.html" target="_bank">
                   <div class="comp">
                     Frontend Developer (JavaScript, ReactJS)
                   </div></a
                 >
                 <div>
-                  <a href="" class="hover1"> Luxoft Software </a>|
-                  <a href="" class="hover2"
+                  <a href="motacongviec.html" target="_bank" class="hover1">
+                    Luxoft Software </a
+                  >|
+                  <a href="timkiemvieclam.html" target="_bank" class="hover2"
                     ><i class="bi bi-geo-alt-fill"></i> Đà Nẵng</a
                   >
                 </div>
@@ -289,22 +321,24 @@
                 </div>
               </div>
               <div class="content-hot-input">
-                <input type="submit" value="Apply Now" id="apply" />
+                <button id="apply">Apply Now</button>
               </div>
             </div>
             <hr />
 
             <div class="content-hot">
               <div class="content-img">
-                <a href="">
+                <a href="motacongviec.html" target="_bank">
                   <img src="./media/nvg-logo.png" alt="NVG-logo"
                 /></a>
               </div>
               <div class="content-hot-infor">
                 <a href=""> <div class="comp">IVI System Test Engineer</div></a>
                 <div>
-                  <a href="" class="hover1"> NVG TECHNOLOGY </a>|
-                  <a href="" class="hover2"
+                  <a href="motacongviec.html" target="_bank" class="hover1">
+                    NVG TECHNOLOGY </a
+                  >|
+                  <a href="timkiemvieclam.html" target="_bank" class="hover2"
                     ><i class="bi bi-geo-alt-fill"></i> Đà Nẵng</a
                   >
                 </div>
@@ -315,13 +349,15 @@
                 </div>
               </div>
               <div class="content-hot-input">
-                <input type="submit" value="Apply Now" id="apply" />
+                <button id="apply">Apply Now</button>
               </div>
             </div>
             <hr />
 
             <br />
-            <a href=""><div class="more">Xem tất cả</div></a><br />
+            <a href="timkiemvieclam.html" target="_bank"
+              ><div class="more">Xem tất cả</div></a
+            ><br />
           </div>
 
           <div class="box-content_right">
@@ -331,37 +367,37 @@
               <div class="catelog-list">
                 <ul>
                   <li>
-                    <a href=""
+                    <a href="timkiemvieclam.html" target="_bank"
                       ><span class="cate-left">Lập trình viên</span
                       ><span class="cate-right">(1100)</span></a
                     >
                   </li>
                   <li>
-                    <a href=""
+                    <a href="timkiemvieclam.html" target="_bank"
                       ><span class="cate-left">BA</span
                       ><span class="cate-right">(1500)</span></a
                     >
                   </li>
                   <li>
-                    <a href=""
+                    <a href="timkiemvieclam.html" target="_bank"
                       ><span class="cate-left">Nhân viên kiểm thử</span
                       ><span class="cate-right">(230)</span></a
                     >
                   </li>
                   <li>
-                    <a href=""
+                    <a href="timkiemvieclam.html" target="_bank"
                       ><span class="cate-left">Kỹ sư cầu nối</span
                       ><span class="cate-right">(110)</span></a
                     >
                   </li>
                   <li>
-                    <a href=""
+                    <a href="timkiemvieclam.html" target="_bank"
                       ><span class="cate-left">Designer</span
                       ><span class="cate-right">(2300)</span></a
                     >
                   </li>
                   <li>
-                    <a href=""
+                    <a href="timkiemvieclam.html" target="_bank"
                       ><span class="cate-left">Digital Marketing</span
                       ><span class="cate-right">(300)</span></a
                     >
@@ -369,48 +405,52 @@
                   <!-- <span id="dots">...</span> -->
                   <span id="more-view">
                     <li>
-                      <a href=""
+                      <a href="timkiemvieclam.html" target="_bank"
                         ><span class="cate-left">Recruiter</span
                         ><span class="cate-right">(109)</span></a
                       >
                     </li>
                     <li>
-                      <a href=""
+                      <a href="timkiemvieclam.html" target="_bank"
                         ><span class="cate-left">Lập trình viên</span
                         ><span class="cate-right">(1100)</span></a
                       >
                     </li>
                     <li>
-                      <a href=""
+                      <a href="timkiemvieclam.html" target="_bank"
                         ><span class="cate-left">Lập trình viên</span
                         ><span class="cate-right">(1100)</span></a
                       >
                     </li>
                     <li>
-                      <a href=""
+                      <a href="timkiemvieclam.html" target="_bank"
                         ><span class="cate-left">Lập trình viên</span
                         ><span class="cate-right">(1100)</span></a
                       >
                     </li>
                     <li>
-                      <a href=""
+                      <a href="timkiemvieclam.html" target="_bank"
                         ><span class="cate-left">Lập trình viên</span
                         ><span class="cate-right">(1100)</span></a
                       >
                     </li>
                     <li>
-                      <a href=""
+                      <a href="timkiemvieclam.html" target="_bank"
                         ><span class="cate-left">Lập trình viên</span
                         ><span class="cate-right">(1100)</span></a
                       >
                     </li>
                     <li>
-                      <a href=""
+                      <a href="timkiemvieclam.html" target="_bank"
                         ><span class="cate-left">Lập trình viên</span
                         ><span class="cate-right">(1100)</span></a
                       >
                     </li>
-                    <li><a href="" class="more">Xem tất cả</a></li>
+                    <li>
+                      <a href="timkiemvieclam.html" target="_bank" class="more"
+                        >Xem tất cả</a
+                      >
+                    </li>
                   </span>
                 </ul>
               </div>
@@ -421,7 +461,7 @@
 
               <script>
                 function myFunction() {
-                  var dots = document.getElementById("dots");
+                  // var dots = document.getElementById("dots");
                   var moreText = document.getElementById("more-view");
                   var btnText = document.getElementById("myBtn");
 
@@ -446,10 +486,12 @@
 
         <div class="container-row">
           <div class="container-row-top">
-            <div class="top-head">NHÀ TUYỂN DỤNG HÀNG ĐẦU</div>
+            <div class="top-head" id="congtyhangdau">
+              NHỮNG CÔNG TY HÀNG ĐẦU
+            </div>
             <div class="top-cent">
               <div class="box1">
-                <a href="">
+                <a href="timkiemvieclam.html" target="_bank">
                   <div class="img">
                     <img src="./media/grab-logo.png" alt="Grab-logo" />
                   </div>
@@ -458,7 +500,7 @@
               </div>
 
               <div class="box1">
-                <a href="">
+                <a href="timkiemvieclam.html" target="_bank">
                   <div class="img">
                     <img src="./media/fpt-logo.png" alt="FPT-logo" />
                   </div>
@@ -467,7 +509,7 @@
               </div>
 
               <div class="box1">
-                <a href="">
+                <a href="timkiemvieclam.html" target="_bank">
                   <div class="img">
                     <img src="./media/toshiba-logo.png" alt="Toshiba-logo" />
                   </div>
@@ -476,7 +518,7 @@
               </div>
 
               <div class="box1">
-                <a href="">
+                <a href="timkiemvieclam.html" target="_bank">
                   <div class="img">
                     <img
                       src="./media/luxoft-vietnam-logo.png"
@@ -488,7 +530,7 @@
               </div>
 
               <div class="box1">
-                <a href="">
+                <a href="timkiemvieclam.html" target="_bank">
                   <div class="img">
                     <img
                       src="./media/techcombank-logo.png"
@@ -500,7 +542,7 @@
               </div>
 
               <div class="box1">
-                <a href="">
+                <a href="timkiemvieclam.html" target="_bank">
                   <div class="img">
                     <img src="./media/logo-SMC-1.gif" alt="SCS-logo" />
                   </div>
@@ -509,7 +551,7 @@
               </div>
 
               <div class="box1">
-                <a href="">
+                <a href="timkiemvieclam.html" target="_bank">
                   <div class="img">
                     <img
                       src="./media/home-credit-logo.png"
@@ -521,7 +563,7 @@
               </div>
 
               <div class="box1">
-                <a href="">
+                <a href="timkiemvieclam.html" target="_bank">
                   <div class="img">
                     <img src="./media/alipay.png" alt="Alipay-logo" />
                   </div>
@@ -532,23 +574,313 @@
           </div>
           <br />
           <div class="container-row-top1">
-            <div class="head2">
+            <div class="head2" id="vieclamhapdan">
               <i class="bi bi-briefcase-fill"></i> Việc làm hấp dẫn
             </div>
 
             <div class="content-row">
               <div class="box2">
                 <div class="box2-item">
-                  <a href="">
+                  <a href="timkiemvieclam.html" target="_bank">
                     <img src="./media/fitech-logo.jpg" alt="Fitech-logo"
                   /></a>
                 </div>
 
                 <div class="box2-item">
                   <div>
-                    <a href=""> .NET/C# developer($1,000-$1,500 net)</a>
+                    <a href="motacongviec.html" target="_bank">
+                      .NET/C# developer($1,000-$1,500 net)</a
+                    >
+                  </div>
+                  <div>
+                    <a href="motacongviec.html" target="_bank">Fitech</a>
+                  </div>
+                </div>
+
+                <div class="box2-item">
+                  <div><i class="bi bi-cash"></i> 10-20 triệu</div>
+                  <div><i class="bi bi-geo-alt-fill"></i> Hà Nội</div>
+                </div>
+              </div>
+
+              <div class="box2">
+                <div class="box2-item">
+                  <a href="motacongviec.html" target="_bank">
+                    <img src="./media/fitech-logo.jpg" alt="Fitech-logo"
+                  /></a>
+                </div>
+
+                <div class="box2-item">
+                  <div>
+                    <a href="motacongviec.html" target="_bank">
+                      .NET/C# developer($1,000-$1,500 net)</a
+                    >
                   </div>
                   <div><a href="">Fitech</a></div>
+                </div>
+
+                <div class="box2-item">
+                  <div><i class="bi bi-cash"></i> 10-20 triệu</div>
+                  <div><i class="bi bi-geo-alt-fill"></i> Hà Nội</div>
+                </div>
+              </div>
+
+              <div class="box2">
+                <div class="box2-item">
+                  <a href="motacongviec.html" target="_bank">
+                    <img src="./media/fitech-logo.jpg" alt="Fitech-logo"
+                  /></a>
+                </div>
+
+                <div class="box2-item">
+                  <div>
+                    <a href="motacongviec.html" target="_bank">
+                      .NET/C# developer($1,000-$1,500 net)</a
+                    >
+                  </div>
+                  <div>
+                    <a href="motacongviec.html" target="_bank">Fitech</a>
+                  </div>
+                </div>
+
+                <div class="box2-item">
+                  <div><i class="bi bi-cash"></i> 10-20 triệu</div>
+                  <div><i class="bi bi-geo-alt-fill"></i> Hà Nội</div>
+                </div>
+              </div>
+
+              <div class="box2">
+                <div class="box2-item">
+                  <a href="motacongviec.html" target="_bank">
+                    <img src="./media/fitech-logo.jpg" alt="Fitech-logo"
+                  /></a>
+                </div>
+
+                <div class="box2-item">
+                  <div>
+                    <a href="motacongviec.html" target="_bank">
+                      .NET/C# developer($1,000-$1,500 net)</a
+                    >
+                  </div>
+                  <div>
+                    <a href="motacongviec.html" target="_bank">Fitech</a>
+                  </div>
+                </div>
+
+                <div class="box2-item">
+                  <div><i class="bi bi-cash"></i> 10-20 triệu</div>
+                  <div><i class="bi bi-geo-alt-fill"></i> Hà Nội</div>
+                </div>
+              </div>
+
+              <div class="box2">
+                <div class="box2-item">
+                  <a href="motacongviec.html" target="_bank">
+                    <img src="./media/fitech-logo.jpg" alt="Fitech-logo"
+                  /></a>
+                </div>
+
+                <div class="box2-item">
+                  <div>
+                    <a href="motacongviec.html" target="_bank">
+                      .NET/C# developer($1,000-$1,500 net)</a
+                    >
+                  </div>
+                  <div>
+                    <a href="motacongviec.html" target="_bank">Fitech</a>
+                  </div>
+                </div>
+
+                <div class="box2-item">
+                  <div><i class="bi bi-cash"></i> 10-20 triệu</div>
+                  <div><i class="bi bi-geo-alt-fill"></i> Hà Nội</div>
+                </div>
+              </div>
+
+              <div class="box2">
+                <div class="box2-item">
+                  <a href="motacongviec.html" target="_bank">
+                    <img src="./media/fitech-logo.jpg" alt="Fitech-logo"
+                  /></a>
+                </div>
+
+                <div class="box2-item">
+                  <div>
+                    <a href="motacongviec.html" target="_bank">
+                      .NET/C# developer($1,000-$1,500 net)</a
+                    >
+                  </div>
+                  <div>
+                    <a href="motacongviec.html" target="_bank">Fitech</a>
+                  </div>
+                </div>
+
+                <div class="box2-item">
+                  <div><i class="bi bi-cash"></i> 10-20 triệu</div>
+                  <div><i class="bi bi-geo-alt-fill"></i> Hà Nội</div>
+                </div>
+              </div>
+
+              <div class="box2">
+                <div class="box2-item">
+                  <a href="motacongviec.html" target="_bank">
+                    <img src="./media/fitech-logo.jpg" alt="Fitech-logo"
+                  /></a>
+                </div>
+
+                <div class="box2-item">
+                  <div>
+                    <a href="motacongviec.html" target="_bank">
+                      .NET/C# developer($1,000-$1,500 net)</a
+                    >
+                  </div>
+                  <div>
+                    <a href="motacongviec.html" target="_bank">Fitech</a>
+                  </div>
+                </div>
+
+                <div class="box2-item">
+                  <div><i class="bi bi-cash"></i> 10-20 triệu</div>
+                  <div><i class="bi bi-geo-alt-fill"></i> Hà Nội</div>
+                </div>
+              </div>
+
+              <div class="box2">
+                <div class="box2-item">
+                  <a href="motacongviec.html" target="_bank">
+                    <img src="./media/fitech-logo.jpg" alt="Fitech-logo"
+                  /></a>
+                </div>
+
+                <div class="box2-item">
+                  <div>
+                    <a href="motacongviec.html" target="_bank">
+                      .NET/C# developer($1,000-$1,500 net)</a
+                    >
+                  </div>
+                  <div>
+                    <a href="motacongviec.html" target="_bank">Fitech</a>
+                  </div>
+                </div>
+
+                <div class="box2-item">
+                  <div><i class="bi bi-cash"></i> 10-20 triệu</div>
+                  <div><i class="bi bi-geo-alt-fill"></i> Hà Nội</div>
+                </div>
+              </div>
+
+              <div class="box2">
+                <div class="box2-item">
+                  <a href="motacongviec.html" target="_bank">
+                    <img src="./media/fitech-logo.jpg" alt="Fitech-logo"
+                  /></a>
+                </div>
+
+                <div class="box2-item">
+                  <div>
+                    <a href="motacongviec.html" target="_bank">
+                      .NET/C# developer($1,000-$1,500 net)</a
+                    >
+                  </div>
+                  <div>
+                    <a href="motacongviec.html" target="_bank">Fitech</a>
+                  </div>
+                </div>
+
+                <div class="box2-item">
+                  <div><i class="bi bi-cash"></i> 10-20 triệu</div>
+                  <div><i class="bi bi-geo-alt-fill"></i> Hà Nội</div>
+                </div>
+              </div>
+
+              <div class="box2">
+                <div class="box2-item">
+                  <a href="motacongviec.html" target="_bank">
+                    <img src="./media/fitech-logo.jpg" alt="Fitech-logo"
+                  /></a>
+                </div>
+
+                <div class="box2-item">
+                  <div>
+                    <a href="motacongviec.html" target="_bank">
+                      .NET/C# developer($1,000-$1,500 net)</a
+                    >
+                  </div>
+                  <div>
+                    <a href="motacongviec.html" target="_bank">Fitech</a>
+                  </div>
+                </div>
+
+                <div class="box2-item">
+                  <div><i class="bi bi-cash"></i> 10-20 triệu</div>
+                  <div><i class="bi bi-geo-alt-fill"></i> Hà Nội</div>
+                </div>
+              </div>
+
+              <div class="box2">
+                <div class="box2-item">
+                  <a href="motacongviec.html" target="_bank">
+                    <img src="./media/fitech-logo.jpg" alt="Fitech-logo"
+                  /></a>
+                </div>
+
+                <div class="box2-item">
+                  <div>
+                    <a href="motacongviec.html" target="_bank">
+                      .NET/C# developer($1,000-$1,500 net)</a
+                    >
+                  </div>
+                  <div>
+                    <a href="motacongviec.html" target="_bank">Fitech</a>
+                  </div>
+                </div>
+
+                <div class="box2-item">
+                  <div><i class="bi bi-cash"></i> 10-20 triệu</div>
+                  <div><i class="bi bi-geo-alt-fill"></i> Hà Nội</div>
+                </div>
+              </div>
+
+              <div class="box2">
+                <div class="box2-item">
+                  <a href="motacongviec.html" target="_bank">
+                    <img src="./media/fitech-logo.jpg" alt="Fitech-logo"
+                  /></a>
+                </div>
+
+                <div class="box2-item">
+                  <div>
+                    <a href="motacongviec.html" target="_bank">
+                      .NET/C# developer($1,000-$1,500 net)</a
+                    >
+                  </div>
+                  <div>
+                    <a href="motacongviec.html" target="_bank">Fitech</a>
+                  </div>
+                </div>
+
+                <div class="box2-item">
+                  <div><i class="bi bi-cash"></i> 10-20 triệu</div>
+                  <div><i class="bi bi-geo-alt-fill"></i> Hà Nội</div>
+                </div>
+              </div>
+
+              <div class="box2">
+                <div class="box2-item">
+                  <a href="motacongviec.html" target="_bank">
+                    <img src="./media/fitech-logo.jpg" alt="Fitech-logo"
+                  /></a>
+                </div>
+
+                <div class="box2-item">
+                  <div>
+                    <a href="motacongviec.html" target="_bank">
+                      .NET/C# developer($1,000-$1,500 net)</a
+                    >
+                  </div>
+                  <div>
+                    <a href="motacongviec.html" target="_bank">Fitech</a>
+                  </div>
                 </div>
 
                 <div class="box2-item">
@@ -566,249 +898,13 @@
 
                 <div class="box2-item">
                   <div>
-                    <a href=""> .NET/C# developer($1,000-$1,500 net)</a>
+                    <a href="motacongviec.html" target="_bank">
+                      .NET/C# developer($1,000-$1,500 net)</a
+                    >
                   </div>
-                  <div><a href="">Fitech</a></div>
-                </div>
-
-                <div class="box2-item">
-                  <div><i class="bi bi-cash"></i> 10-20 triệu</div>
-                  <div><i class="bi bi-geo-alt-fill"></i> Hà Nội</div>
-                </div>
-              </div>
-
-              <div class="box2">
-                <div class="box2-item">
-                  <a href="">
-                    <img src="./media/fitech-logo.jpg" alt="Fitech-logo"
-                  /></a>
-                </div>
-
-                <div class="box2-item">
                   <div>
-                    <a href=""> .NET/C# developer($1,000-$1,500 net)</a>
+                    <a href="motacongviec.html" target="_bank">Fitech</a>
                   </div>
-                  <div><a href="">Fitech</a></div>
-                </div>
-
-                <div class="box2-item">
-                  <div><i class="bi bi-cash"></i> 10-20 triệu</div>
-                  <div><i class="bi bi-geo-alt-fill"></i> Hà Nội</div>
-                </div>
-              </div>
-
-              <div class="box2">
-                <div class="box2-item">
-                  <a href="">
-                    <img src="./media/fitech-logo.jpg" alt="Fitech-logo"
-                  /></a>
-                </div>
-
-                <div class="box2-item">
-                  <div>
-                    <a href=""> .NET/C# developer($1,000-$1,500 net)</a>
-                  </div>
-                  <div><a href="">Fitech</a></div>
-                </div>
-
-                <div class="box2-item">
-                  <div><i class="bi bi-cash"></i> 10-20 triệu</div>
-                  <div><i class="bi bi-geo-alt-fill"></i> Hà Nội</div>
-                </div>
-              </div>
-
-              <div class="box2">
-                <div class="box2-item">
-                  <a href="">
-                    <img src="./media/fitech-logo.jpg" alt="Fitech-logo"
-                  /></a>
-                </div>
-
-                <div class="box2-item">
-                  <div>
-                    <a href=""> .NET/C# developer($1,000-$1,500 net)</a>
-                  </div>
-                  <div><a href="">Fitech</a></div>
-                </div>
-
-                <div class="box2-item">
-                  <div><i class="bi bi-cash"></i> 10-20 triệu</div>
-                  <div><i class="bi bi-geo-alt-fill"></i> Hà Nội</div>
-                </div>
-              </div>
-
-              <div class="box2">
-                <div class="box2-item">
-                  <a href="">
-                    <img src="./media/fitech-logo.jpg" alt="Fitech-logo"
-                  /></a>
-                </div>
-
-                <div class="box2-item">
-                  <div>
-                    <a href=""> .NET/C# developer($1,000-$1,500 net)</a>
-                  </div>
-                  <div><a href="">Fitech</a></div>
-                </div>
-
-                <div class="box2-item">
-                  <div><i class="bi bi-cash"></i> 10-20 triệu</div>
-                  <div><i class="bi bi-geo-alt-fill"></i> Hà Nội</div>
-                </div>
-              </div>
-
-              <div class="box2">
-                <div class="box2-item">
-                  <a href="">
-                    <img src="./media/fitech-logo.jpg" alt="Fitech-logo"
-                  /></a>
-                </div>
-
-                <div class="box2-item">
-                  <div>
-                    <a href=""> .NET/C# developer($1,000-$1,500 net)</a>
-                  </div>
-                  <div><a href="">Fitech</a></div>
-                </div>
-
-                <div class="box2-item">
-                  <div><i class="bi bi-cash"></i> 10-20 triệu</div>
-                  <div><i class="bi bi-geo-alt-fill"></i> Hà Nội</div>
-                </div>
-              </div>
-
-              <div class="box2">
-                <div class="box2-item">
-                  <a href="">
-                    <img src="./media/fitech-logo.jpg" alt="Fitech-logo"
-                  /></a>
-                </div>
-
-                <div class="box2-item">
-                  <div>
-                    <a href=""> .NET/C# developer($1,000-$1,500 net)</a>
-                  </div>
-                  <div><a href="">Fitech</a></div>
-                </div>
-
-                <div class="box2-item">
-                  <div><i class="bi bi-cash"></i> 10-20 triệu</div>
-                  <div><i class="bi bi-geo-alt-fill"></i> Hà Nội</div>
-                </div>
-              </div>
-
-              <div class="box2">
-                <div class="box2-item">
-                  <a href="">
-                    <img src="./media/fitech-logo.jpg" alt="Fitech-logo"
-                  /></a>
-                </div>
-
-                <div class="box2-item">
-                  <div>
-                    <a href=""> .NET/C# developer($1,000-$1,500 net)</a>
-                  </div>
-                  <div><a href="">Fitech</a></div>
-                </div>
-
-                <div class="box2-item">
-                  <div><i class="bi bi-cash"></i> 10-20 triệu</div>
-                  <div><i class="bi bi-geo-alt-fill"></i> Hà Nội</div>
-                </div>
-              </div>
-
-              <div class="box2">
-                <div class="box2-item">
-                  <a href="">
-                    <img src="./media/fitech-logo.jpg" alt="Fitech-logo"
-                  /></a>
-                </div>
-
-                <div class="box2-item">
-                  <div>
-                    <a href=""> .NET/C# developer($1,000-$1,500 net)</a>
-                  </div>
-                  <div><a href="">Fitech</a></div>
-                </div>
-
-                <div class="box2-item">
-                  <div><i class="bi bi-cash"></i> 10-20 triệu</div>
-                  <div><i class="bi bi-geo-alt-fill"></i> Hà Nội</div>
-                </div>
-              </div>
-
-              <div class="box2">
-                <div class="box2-item">
-                  <a href="">
-                    <img src="./media/fitech-logo.jpg" alt="Fitech-logo"
-                  /></a>
-                </div>
-
-                <div class="box2-item">
-                  <div>
-                    <a href=""> .NET/C# developer($1,000-$1,500 net)</a>
-                  </div>
-                  <div><a href="">Fitech</a></div>
-                </div>
-
-                <div class="box2-item">
-                  <div><i class="bi bi-cash"></i> 10-20 triệu</div>
-                  <div><i class="bi bi-geo-alt-fill"></i> Hà Nội</div>
-                </div>
-              </div>
-
-              <div class="box2">
-                <div class="box2-item">
-                  <a href="">
-                    <img src="./media/fitech-logo.jpg" alt="Fitech-logo"
-                  /></a>
-                </div>
-
-                <div class="box2-item">
-                  <div>
-                    <a href=""> .NET/C# developer($1,000-$1,500 net)</a>
-                  </div>
-                  <div><a href="">Fitech</a></div>
-                </div>
-
-                <div class="box2-item">
-                  <div><i class="bi bi-cash"></i> 10-20 triệu</div>
-                  <div><i class="bi bi-geo-alt-fill"></i> Hà Nội</div>
-                </div>
-              </div>
-
-              <div class="box2">
-                <div class="box2-item">
-                  <a href="">
-                    <img src="./media/fitech-logo.jpg" alt="Fitech-logo"
-                  /></a>
-                </div>
-
-                <div class="box2-item">
-                  <div>
-                    <a href=""> .NET/C# developer($1,000-$1,500 net)</a>
-                  </div>
-                  <div><a href="">Fitech</a></div>
-                </div>
-
-                <div class="box2-item">
-                  <div><i class="bi bi-cash"></i> 10-20 triệu</div>
-                  <div><i class="bi bi-geo-alt-fill"></i> Hà Nội</div>
-                </div>
-              </div>
-
-              <div class="box2">
-                <div class="box2-item">
-                  <a href="">
-                    <img src="./media/fitech-logo.jpg" alt="Fitech-logo"
-                  /></a>
-                </div>
-
-                <div class="box2-item">
-                  <div>
-                    <a href=""> .NET/C# developer($1,000-$1,500 net)</a>
-                  </div>
-                  <div><a href="">Fitech</a></div>
                 </div>
 
                 <div class="box2-item">
@@ -820,15 +916,20 @@
           </div>
 
           <div class="container-row-top2">
-            <a href=""> <img src="./media/hna.jpg" alt="" /></a>
+            <a href="motacongviec.html" target="_bank">
+              <img src="./media/hna.jpg" alt=""
+            /></a>
           </div>
 
           <div class="container-row-top3">
-            <div class="top-head">TIN TỨC</div>
+            <div class="top-head" id="tintuc">TIN TỨC</div>
 
             <div class="top-cent1">
               <div class="top-cent1-box1">
-                <a href="">
+                <a
+                  href="https://luatvietnam.vn/lao-dong-tien-luong/khong-buoc-thoi-viec-562-25629-article.html"
+                  target="_blank"
+                >
                   <div class="box3-item1">
                     <img src="./media/news1.jpg" alt="New1" />
                   </div>
@@ -848,7 +949,10 @@
                 </a>
               </div>
               <div class="top-cent1-box1">
-                <a href="">
+                <a
+                  href="https://www.vietnamworks.com/hrinsider/nhay-viec-va-nhung-con-so-ban-can-phai-luu-tam.html"
+                  target="_blank"
+                >
                   <div class="box3-item1">
                     <img src="./media/news2.jpg" alt="New2" />
                   </div>
@@ -865,7 +969,10 @@
                 </a>
               </div>
               <div class="top-cent1-box1">
-                <a href="">
+                <a
+                  href="https://www.vietnamworks.com/hrinsider/danh-gia-buoc-dem-can-thiet-trong-viec-dao-tao-huan-luyen-nhan-vien.html"
+                  target="_blank"
+                >
                   <div class="box3-item1">
                     <img src="./media/news3.png" alt="New3" />
                   </div>
@@ -886,120 +993,119 @@
               </div>
             </div>
           </div>
-          <!-- Footer -->
-          <div id="footer">
-            <div class="logo">
-              <img src="./media/logo.png" width="297px" height="75px" />
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <footer>
+      <div class="container white">
+        <div class="row background">
+          <div class="col-md-12 col-sm-12 col-12">
+            <div class="logo-footer">
+              <a href="trangchu_nguoitimviec.html">
+                <img src="./media/logo.png" alt=""
+              /></a>
             </div>
-            <div class="content">
-              <div class="content_1">
-                <h3>
-                  Kết nối với <span class="blue">Work</span>Z<span class="blue"
+          </div>
+          <div class="col-md-4 col-sm-6 col-12 pd-left">
+            <div class="content_1">
+              <h3>
+                Kết nối với <span class="blue">Work</span>Z<span class="blue"
+                  >one</span
+                >
+              </h3>
+              <p>
+                <a href="">
+                  <img
+                    src="./media/phone.png"
+                    width="27px"
+                    height="27px"
+                  />&nbsp; +123 456 7890</a
+                >
+              </p>
+              <p>
+                <a
+                  href="https://www.google.com/intl/vi/gmail/about/"
+                  target="_blank"
+                  ><img
+                    src="./media/mail.png"
+                    width="27px"
+                    height="27px"
+                  />&nbsp; <span class="hover">uel@workzone.com</span></a
+                >
+              </p>
+              <p>
+                <a
+                  href="https://www.google.com/maps/place/Tr%C6%B0%E1%BB%9Dng+%C4%90%E1%BA%A1i+h%E1%BB%8Dc+Kinh+t%E1%BA%BF+-+Lu%E1%BA%ADt,+%C4%90%E1%BA%A1i+h%E1%BB%8Dc+Qu%E1%BB%91c+gia+Th%C3%A0nh+ph%E1%BB%91+H%E1%BB%93+Ch%C3%AD+Minh/@10.8709374,106.7760666,17z/data=!3m1!4b1!4m6!3m5!1s0x3175277dbf11a271:0x4567e34b99494e3f!8m2!3d10.8709321!4d106.7782553!16s%2Fm%2F0ds8rvh?hl=vi"
+                  target="_blank"
+                  ><img
+                    src="./media/location.png"
+                    width="27px"
+                    height="27px"
+                  />&nbsp;
+                  <span class="hover"
+                    >265, QL1A, Phường Linh Trung, Thủ Đức</span
+                  ></a
+                >
+              </p>
+              <p>
+                <a href="https://www.facebook.com/" target="_blank"
+                  ><img src="./media/fb.png" width="27px" height="27px" />&nbsp;
+                  <span class="hover">WorkZone</span></a
+                >
+              </p>
+              <p>
+                <a href="https://www.linkedin.com/" target="_blank"
+                  ><img
+                    src="./media/in.png"
+                    width="27px"
+                    height="27px"
+                  />&nbsp;<span class="hover">linkedin.com/workzone</span>
+                </a>
+              </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 col-12">
+            <div class="content_2">
+              <h3>Công việc</h3>
+              <p class="hover">
+                <a href="trangchu_nguoitimviec.html#hotjob">Hot Job</a>
+              </p>
+              <p class="hover">
+                <a href="trangchu_nguoitimviec.html#lastestjob">Lastest Job</a>
+              </p>
+              <p class="hover">
+                <a href="trangchu_nguoitimviec.html#congtyhangdau"
+                  >Công ty hàng đầu</a
+                >
+              </p>
+              <p class="hover">
+                <a href="trangchu_nguoitimviec.html#vieclamhapdan"
+                  >Việc làm hấp dẫn</a
+                >
+              </p>
+              <p class="hover">
+                <a href="trangchu_nguoitimviec.html#tintuc">Tin tức</a>
+              </p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 col-12">
+            <div class="content_3">
+              <h3>About us</h3>
+              <p class="hover">
+                <a href="thongtin.html"
+                  >Thông tin về <span class="blue">Work</span>Z<span
+                    class="blue"
                     >one</span
-                  >
-                </h3>
-                <p>
-                  <a href="">
-                    <img
-                      class="float"
-                      src="./media/phone.png"
-                      width="27px"
-                      height="27px"
-                    />&nbsp; +123 456 7890</a
-                  >
-                </p>
-                <p>
-                  <a
-                    href="https://www.google.com/intl/vi/gmail/about/"
-                    target="_blank"
-                    ><img
-                      class="float"
-                      src="./media/mail.png"
-                      width="27px"
-                      height="27px"
-                    />&nbsp; <span class="hover">uel@workzone.com</span></a
-                  >
-                </p>
-                <p>
-                  <a
-                    href="https://www.google.com/maps/place/Tr%C6%B0%E1%BB%9Dng+%C4%90%E1%BA%A1i+h%E1%BB%8Dc+Kinh+t%E1%BA%BF+-+Lu%E1%BA%ADt,+%C4%90%E1%BA%A1i+h%E1%BB%8Dc+Qu%E1%BB%91c+gia+Th%C3%A0nh+ph%E1%BB%91+H%E1%BB%93+Ch%C3%AD+Minh/@10.8709374,106.7760666,17z/data=!3m1!4b1!4m6!3m5!1s0x3175277dbf11a271:0x4567e34b99494e3f!8m2!3d10.8709321!4d106.7782553!16s%2Fm%2F0ds8rvh?hl=vi"
-                    target="_blank"
-                    ><img
-                      class="float"
-                      src="./media/location.png"
-                      width="27px"
-                      height="27px"
-                    />&nbsp;
-                    <span class="hover"
-                      >265, QL1A, Phường Linh Trung, Thủ Đức</span
-                    ></a
-                  >
-                </p>
-                <p>
-                  <a href="https://www.facebook.com/" target="_blank"
-                    ><img
-                      class="float"
-                      src="./media/fb.png"
-                      width="27px"
-                      height="27px"
-                    />&nbsp; <span class="hover">WorkZone</span></a
-                  >
-                </p>
-                <p>
-                  <a href="https://www.linkedin.com/" target="_blank"
-                    ><img
-                      class="float"
-                      src="./media/in.png"
-                      width="27px"
-                      height="27px"
-                    />&nbsp;<span class="hover">linkedin.com/workzone</span>
-                  </a>
-                </p>
-              </div>
-              <div class="content_2">
-                <h3>Công việc</h3>
-                <p class="hover"><a href="">Hot Job</a></p>
-                <p class="hover"><a href="">Latest Job</a></p>
-                <p class="hover"><a href="">Công ty hàng đầu</a></p>
-                <p class="hover"><a href="">Việc làm hấp dẫn</a></p>
-                <p class="hover"><a href="">Tin tức</a></p>
-              </div>
-              <div class="content_3">
-                <h3>About us</h3>
-                <p class="hover">
-                  <a href=""
-                    >Thông tin về <span class="blue">Work</span>Z<span
-                      class="blue"
-                      >one</span
-                    ></a
-                  >
-                </p>
-                <p class="hover"><a href="">Điều khoản và dịch vụ</a></p>
-              </div>
-              <div class="content_4">
-                <h3>Liên hệ</h3>
-                <p class="hover"><a href="">Liên hệ ngay</a></p>
-                <p class="hover"><a href="">Hỗ trợ</a></p>
-              </div>
-            </div>
-            <div class="content1">
-              <div class="content1_1">
-                <h3>Still Need Help?</h3>
-                <p>
-                  Hãy để chúng tôi giải đáp vấn đề của bạn ngay bây giờ
-                  <br />bằng cách để lại email của bạn tại đây.
-                </p>
-
-                <div class="box-tele">
-                  <img class="tele" src="./media/tele.png" />
-
-                  <input type="text" id="input-" placeholder="Địa chỉ Email" />
-                </div>
-                <p>
-                  Copyright &#169; 2022. <span class="blue">WorkZone</span> .
-                  All Right Reserved
-                </p>
-              </div>
+                  ></a
+                >
+              </p>
+              <p class="hover">
+                <a href="dieukhoandichvu.html" target="_bank"
+                  >Điều khoản và dịch vụ</a
+                >
+              </p>
               <div class="content1_2">
                 <h3>Chứng nhận bởi</h3>
                 <a href="">
@@ -1008,10 +1114,25 @@
               </div>
             </div>
           </div>
-
-          <!-- footer -->
+          <div class="col-md-2 col-sm-6 col-12 pd-left">
+            <div class="content_4">
+              <h3>Liên hệ</h3>
+              <p class="hover">
+                <a href="lienhe.html" target="_bank">Liên hệ ngay</a>
+              </p>
+              <p class="hover">
+                <a href="hotro.html" target="_bank">Hỗ trợ</a>
+              </p>
+            </div>
+          </div>
+          <div class="col-md-12 col-sm-12 col-12">
+            <p class="copyright white">
+              Copyright &#169; 2022. <span class="blue">WorkZone</span> . All
+              Right Reserved
+            </p>
+          </div>
         </div>
       </div>
-    </div>
+    </footer>
   </body>
 </html>
