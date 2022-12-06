@@ -43,6 +43,7 @@ body {
   color: #ffffff;
   width: 150px;
   background-color: #48c0fd;
+  padding: 15px 0px;
 }
 
 .btn-nav {
@@ -57,6 +58,7 @@ body {
   position: relative;
 }
 .ntd {
+  padding: 15px 0px;
   border-radius: 12px;
   border: 1px solid rgba(36, 0, 255, 1);
   font-size: 90%;
@@ -325,16 +327,16 @@ footer {
 @media screen and (max-width: 480px){
   footer{
     position: absolute;
-    top: 120vh;
+    top: 270vh;
   }
   .line{
     position: absolute;
-    top: 5vh;
+    top: 11vh;
     width: 18vw;
   }
   #contact{
     position: absolute;
-    top: 5vh;
+    top: 15vh;
   }
   #input1{
     margin-left: 11%;
