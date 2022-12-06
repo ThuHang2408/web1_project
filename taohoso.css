@@ -65,7 +65,7 @@ body {
   border: 1px solid rgba(36, 0, 255, 1);
   font-size: 90%;
   font-weight: bold;
-  padding: 15px 0px;
+  height: 47px;
   color: #ffffff;
   background-color: blue;
 }
@@ -141,64 +141,7 @@ body {
 #nav-mb button {
   display: none;
 }
-@media (max-width: 480px) {
-  .nav-pc,
-  .btn-menu,
-  .account {
-    display: none;
-  }
-  .logo img {
-    width: 43% !important;
-  }
-  #nav-mb button {
-    position: absolute;
-    top: 25px;
-    right: 10px;
-    font-size: 20px;
-    display: block;
-    color: #48c0fd;
-    border: none;
-    background: none;
-  }
-  .main {
-    margin: 10px 5% !important;
-  }
-  .taikhoan {
-    margin: 0px !important;
-    border: none !important;
-  }
-  .method {
-    border-left: 1px solid black !important;
-  }
-  .emp-menu {
-    display: block !important;
-    width: 100%;
-    overflow-x: auto;
-  }
-  .box-menu-pc {
-    display: none !important;
-  }
-  .box-menu-mb {
-    display: block !important;
-    width: 823px;
-    margin-top: 10px;
-  }
-  .box-menu-mb > span {
-    margin: 0px 20px;
-  }
-  .user {
-    width: 81% !important;
-  }
-  .birth-input {
-    width: 26% !important;
-  }
-  .img-profile {
-    margin-top: 20px;
-  }
-  .pad0 {
-    padding: 0px !important;
-  }
-}
+
 /* Header */
 
 /* menu-account */
@@ -251,6 +194,7 @@ body {
   border-radius: 2px;
   border: 1px solid #b6c0c5;
   margin-bottom: 10px;
+  padding-left: 5px;
 }
 .name-pass {
   margin-bottom: 5px;
@@ -337,7 +281,18 @@ body {
 .img-profile > p {
   text-align: center;
 }
-
+.border-menu {
+  content: "";
+  background-color: #48c0fd;
+  position: absolute;
+  top: 48px;
+  left: 113px;
+  height: 2px;
+  width: 92px;
+}
+.emp-menu > div > li:first-child {
+  font-weight: bold;
+}
 /* footer */
 .logo-footer img {
   width: 296px;
@@ -349,10 +304,13 @@ footer {
 .background {
   background-color: #2a363b;
 }
+.pd-left {
+  padding-left: 45px !important;
+}
 .copyright {
   text-align: center;
   margin-bottom: 0;
-  font-size:13px
+  font-size: 13px;
 }
 .content1_2 img {
   width: 150px;
@@ -367,4 +325,65 @@ footer {
 
 .hover:hover {
   text-decoration: underline;
+}
+@media (max-width: 480px) {
+  .nav-pc,
+  .btn-menu,
+  .account {
+    display: none;
+  }
+  .logo img {
+    width: 43% !important;
+  }
+  #nav-mb button {
+    position: absolute;
+    top: 25px;
+    right: 10px;
+    font-size: 20px;
+    display: block;
+    color: #48c0fd;
+    border: none;
+    background: none;
+  }
+  .main {
+    margin: 10px 5% !important;
+  }
+  .taikhoan {
+    margin: 0px !important;
+    border: none !important;
+  }
+  .method {
+    border-left: 1px solid black !important;
+  }
+  .emp-menu {
+    display: block !important;
+    width: 100%;
+    overflow-x: auto;
+  }
+  .box-menu-pc {
+    display: none !important;
+  }
+  .box-menu-mb {
+    display: block !important;
+    width: 823px;
+    margin-top: 10px;
+  }
+  .box-menu-mb > span {
+    margin: 0px 20px;
+  }
+  .user {
+    width: 81% !important;
+  }
+  .birth-input {
+    width: 26% !important;
+  }
+  .img-profile {
+    margin-top: 20px;
+  }
+  .pad0 {
+    padding: 0px !important;
+  }
+  .pd-left {
+    padding-left: 15px !important;
+  }
 }
