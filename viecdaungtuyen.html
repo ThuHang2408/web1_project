@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Việc đã ứng tuyển </title>
-    <link rel="stylesheet" href="viecdaungtuyen.css" />
-    <script type="text/javascript" src="../javaScrip.js"></script>
+    <title> Việc làm đã ứng tuyển </title>
+    <link rel="stylesheet" href="./vieclamungtuyen.css" />
+    <link rel="icon" href="./media/logo0nen.png" type="image/icon type">
+    <script src="javascript.js">
+    </script>
 
     <link
       href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900,900i&display=swap"
@@ -29,13 +31,13 @@
          <div class="left-main-menu">
            <div class="row">
              <div class="col-md-3">
-              <a class="logo" href="#"><img src="./media/workzone.png" alt="Logo"></a> 
+              <a class="logo" href="trangchu_nguoitimviec_login.html"><img src="./media/logo.png" alt="Logo"></a> 
              </div>
              <div class="col-md-5">
                <ul class="nav-pc">
-                 <li><a href="">Tìm việc</a></li>
-                 <li><a href="">Công việc</a></li>
-                 <li><a href="">Về WorkZone</a></li>
+                 <li><a href="timkiemvieclam.html">Tìm việc</a></li>
+                 <li><a href="trangchu_nguoitimviec_login#hot">Công việc</a></li>
+                 <li><a href="thongtin.html">Về WorkZone</a></li>
    
                </ul>
              </div>
@@ -43,17 +45,18 @@
          </div>
          <div class="right-main-menu">
            <div class="account" >
-             <i class="fa-regular fa-circle-user"></i><span style="color: blue; font-weight: 1000;">WorkZone</span>
-            <a onclick="menupc()" href="#"><i class="fa-solid fa-sort-down"></i></a> 
+             <i class="fa-regular fa-circle-user"></i><span>WorkZone</span>
+            <a onclick="menupc()" ><i class="fa-solid fa-sort-down"></i></a> 
            </div>
-           <button class="btn-menu ntd">NHÀ TUYỂN DỤNG</button>
+           <form action="./trangchu_nhatuyendung.html" target="_blank">
+           <button class="btn-menu ntd">NHÀ TUYỂN DỤNG</button></form>
          </div>
         </div>
        </div>
          <ul class="list-menu-pc is-display-none" id="list-menu-pc">
            <li>
              <div class="menu-list-row" >
-               <a href="#">
+               <a href="hosoxinviec.html">
                  <i class="fa-regular fa-file"></i>
                <span> Hồ sơ xin việc</span> 
                </a>
@@ -61,7 +64,7 @@
            </li>
            <li>
              <div class="menu-list-row">
-               <a href="">
+               <a href="vieclamdaluu.html">
                  <i class="fa-solid fa-heart"></i>
                  <span> Việc làm đã lưu</span> 
                </a>
@@ -69,14 +72,14 @@
            </li>
            <li>
              <div class="menu-list-row">
-               <a href="">
+               <a href="viecdaungtuyen.html">
                  <i class="fa-solid fa-paper-plane"></i>
                  <span>Việc làm đã ứng tuyển</span>
                </a>
              </div>
            </li>
            <li>
-             <div class="menu-list-row"> <a href="">
+             <div class="menu-list-row"> <a href="thongbaovieclam.html">
                <i class="fa-regular fa-bell"></i>
                <span>Thông báo việc làm</span>
              </a></div>
@@ -84,13 +87,13 @@
            <div class="border"></div>
            <li>
              <div class="menu-list-row name-account">
-               <a href="">
+               <a href="trangchu_nguoitimviec_login.html">
                  <i class="fa-regular fa-circle-user"></i>
                </a> <span>WorkZone</span>
              </div>
            </li>
            <li>
-             <div class=" log-out "> <a href="">
+             <div class=" log-out "> <a href="trangchu_nguoitimviec.html">
                <i class="fa-solid fa-arrow-right-from-bracket"></i>
              <span>Đăng xuất</span></a>
              </div>
@@ -104,36 +107,57 @@
        </div>
        <ul id="list-menu-mb-login" class="list-menu-mb-login">
          <li> <div class="menu-list-row" >
-               <a href="#">
-                <i class="fa-light fa-file"></i>
-               <span> Quản lý hồ sơ</span> 
+               <a href="hosoxinviec.html">
+                <i class="fa-regular fa-file"></i>
+               <span> Hồ sơ xin việc </span> 
                </a>
              </div></li>
+             <li> <div class="menu-list-row" >
+              <a href="viecdaluu.html">
+               <i class="fa-solid fa-heart"></i>
+              <span> Việc làm đã lưu </span> 
+              </a>
+            </div></li>
          <li><div class="menu-list-row">
-               <a href="">
-              <i class="fa-solid fa-id-card"></i>
-                 <span> Thanh toán</span> 
+               <a href="viecdaungtuyen.html">
+              <i class="fa-solid fa-paper-plane"></i>
+                 <span> Việc làm đã ứng tuyển</span> 
                </a>
              </div></li>
+             <li><div class="menu-list-row">
+              <a href="viecdaungtuyen.html">
+             <i class="fa-solid fa-id-card"></i>
+                <span> Thông báo việc làm</span> 
+              </a>
+            </div></li>
          <div class="border"></div>
            <li>
              <div class="menu-list-row name-account">
-               <a href="">
+               <a href="trangchu_nguoitimviec.html">
                  <i class="fa-solid fa-buildings"></i>
-               </a> <span>WorkZone Cop</span>
+                 <span>WorkZone</span>
+               </a> 
              </div>
            </li>
+          <div class="menu-list-row ">
+            <ul class="non-nav-pc">
+              <li><a href="timkiemvieclam.html">Tìm việc</a></li>
+              <li><a href="trangchu_nguoitimviec_login">Công việc</a></li>
+              <li><a href="thongtin.html">Về WorkZone</a></li>
+            </ul>
+          </div>
           <div class="account" >
              <i class="fa-solid fa-buildings"></i>
-               </a> <span>WorkZone Cop</span>
-            <a onclick="menupc()" href="#"><i class="fa-solid fa-sort-down"></i></a> 
+               <span>WorkZone Cop</span>
+            <a onclick="menupc()" href="trangchu_nguoitimviec_login"><i class="fa-solid fa-sort-down"></i></a> 
            </div>
-         <button class="btn-nav ntd">NGƯỜI TÌM VIỆC</button>
+           <form action="./trangchu_nhatuyendung.html" target="_blank" >
+         <button class="btn-nav ntd">NHÀ TUYỂN DỤNG</button></form>
            <li>
-             <div class=" log-out ">
+             <div class=" log-out "><a href="tranchu_nguoitimviec">
                <i class="fa-solid fa-arrow-right-from-bracket"></i>
              <span>Đăng xuất</span>
-             </div>
+             </a></div>
            </li>
        </ul>
        
@@ -145,22 +169,22 @@
         <div class="col-md-12 col-12">
           <ul class="emp-menu">
             <div class="box-menu-pc">
-              <li><a href="">Tài khoản</a></li>
-              <li><a href="">Hồ sơ công việc</a></li>
-              <li><a href="">Việc đã lưu (5)</a></li>
+              <li><a href="taohoso.html">Tài khoản</a></li>
+              <li><a href="hosoxinviec.html">Hồ sơ công việc</a></li>
+              <li><a href="vieclamdaluu.html">Việc đã lưu (5)</a></li>
               <li>
-                <b><a href="">Việc đã ứng tuyển (7)</a></b>
+                <b><a href="vieclamungtuyen.html">Việc đã ứng tuyển (7)</a></b>
                 <div class="blue_line"></div>
             </li>
               <li><a href="">Thông báo việc làm (0)</a></li>
             </div>
 
             <div class="box-menu-mb is-display-none">
-              <span><a href="">Tài khoản</a></span>
-              <span><a href="">Hồ sơ công việc</a></span>
-              <span><a href="">Việc đã lưu (5)</a></span>
-              <span><a href="">Việc đã ứng tuyển (7)</a></span>
-              <span><a href="">Thông báo việc làm (0)</a></span>
+              <span><a href="taohoso.html">Tài khoản</a></span>
+              <span><a href="hosoxinviec.html">Hồ sơ công việc</a></span>
+              <span><a href="vieclamdaluu.html">Việc đã lưu (5)</a></span>
+              <span><a href="vieclamungtuyen.html">Việc đã ứng tuyển (7)</a></span>
+              <span><a href="thongbaovieclam.html">Thông báo việc làm (0)</a></span>
             </div>
           </ul>
         </div>
@@ -190,8 +214,8 @@
           <div id="line">
             <div id="left">
             <img src="./media/nvg.png" alt="" style="float: left; width: 100px;"> 
-            <div class="line_job">Frontend Developer (JavaScript, ReactJS)</div>
-            <div class="line_company">MGM Technology</div>
+            <div class="line_job"> <a href="">Frontend Developer (JavaScript, ReactJS)</a></div>
+            <div class="line_company"><a href="">MGM Technology</a></div>
             </div>
 
             <div class="center">
@@ -207,8 +231,8 @@
           <div id="line">
             <div id="left">
             <img src="./media/fpt.png" alt="" style="float: left; width: 100px;"> 
-            <div class="line_job">[HCM] 02 Solution Architects            </div>
-            <div class="line_company">FPT Software</div>
+            <div class="line_job"><a href="">[HCM] 02 Solution Architects</a></div>
+            <div class="line_company"><a href="">FPT Software</a></div>
           </div>
           <div class="center">
             <div class="applydate">
@@ -222,9 +246,9 @@
           <div id="line">
             <div id="left">
             <img src="./media/erofins.png" alt="" style="float: left; width: 100px;"> 
-            <div class="line_job">Account Payable
+            <div class="line_job"> <a href="">Account Payable</a>
             </div>
-            <div class="line_company">Eurofin VietNam
+            <div class="line_company"> <a href="">Eurofin VietNam</a>
             </div>
             </div>
             <div class="center">
@@ -238,9 +262,9 @@
           <div id="line">
             <div id="left">
             <img src="./media/chicilon.png" alt="" style="float: left; width: 100px;"> 
-            <div class="line_job">Designer
+            <div class="line_job"> <a href="">Designer</a>
             </div>
-            <div class="line_company">Chicilon Media
+            <div class="line_company"> <a href="">Chicilon Media</a>
             </div>
             </div>
             <div class="center">
@@ -260,8 +284,8 @@
             <span>n</span>
         </div>
         <div class="page_2">
-            <button id="page_2">2</button>
-        </div>
+            
+            <a href="#"><button id="page_2">2</button></a>        </div>
         <span><i class="fa-sharp fa-solid fa-chevron-right"></i></span>
       </div>
       </div>
