@@ -30,6 +30,7 @@
   color: #ffffff;
   width: 150px;
   background-color: #48c0fd;
+  padding: 15px 0px;
 }
 
 .btn-nav {
@@ -44,6 +45,7 @@
   position: relative;
 }
 .ntd {
+  padding: 15px 0px;
   border-radius: 12px;
   border: 1px solid rgba(36, 0, 255, 1);
   font-size: 90%;
@@ -211,7 +213,7 @@ border: none;
 @media screen and (max-width:480px){
   .rec29{
     position: absolute;
-    top: 12vh;
+    top: 26vh;
   }
 }
 /* Footer */
