@@ -389,4 +389,7 @@ footer {
   .pd-left {
     padding-left: 15px !important;
   }
+   .border-menu {
+    display: none;
+  }
 }
