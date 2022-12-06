@@ -29,7 +29,7 @@
   font-weight: bold;
   color: #ffffff;
   width: 150px;
-  height: 48px;
+  padding: 15px 0px;
   background-color: #48c0fd;
 }
 .account {
@@ -63,7 +63,7 @@
   font-size: 90%;
   font-weight: bold;
   color: #ffffff;
-  height: 47px;
+  padding: 15px 0px;
   background-color: blue;
 }
 .list-menu-pc {
