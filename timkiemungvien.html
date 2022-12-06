@@ -4,14 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-    rel="shortcut icon"
-    type="image/png"
-    href="./media/logo-tab-icon.png"
-  />
-    <title>WorkZone - Tìm kiếm việc làm</title>
-    <link rel="stylesheet" href="./Search.css" />
-    <script type="text/javascript" src="./search.js"></script>
+    <title>Tìm kiếm ứng viên</title>
+    <link rel="stylesheet" href="./timkiemungvien.css" />
+    <script src="javascript.js">
+    </script>
 
     <link
       href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900,900i&display=swap"
@@ -28,433 +24,355 @@
     <link rel="stylesheet" href="./bootstrap.css" />
   </head>
   <body>
+    <!-- header -->
     <div class="container">
       <div class="main-menu">
-        <div class="left-main-menu">
-          <div class="row">
-            <div class="col-md-3">
-              <a class="logo" href="#"
-                ><img src="./media/logo.png" alt="Logo"
-              /></a>
-            </div>
-            <div class="col-md-6">
-              <ul class="nav-pc">
-                <li><a href="timkiemvieclam.html">Tìm việc</a></li>
-                <li><a href="#">Công việc</a></li>
-                <li><a href="thongtin.html">Về WorkZone</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="right-main-menu">
-        <form action="dangky_nguoitimviec.html">  <button class="btn-menu">ĐĂNG KÝ</button></form>
-        <form action="dangnhap_nguoitimviec.html"><button class="btn-menu">ĐĂNG NHẬP</button></form>
-        <form action="trangchu_nhatuyendung.html" target="_blank"><button class="btn-menu ntd">NHÀ TUYỂN DỤNG</button></form>
-        </div>
+       <div class="left-main-menu">
+         <div class="row">
+           <div class="col-md-3">
+            <a class="logo" href="trangchu_nhatuyendung.html"><img src="./media/logo.png" alt="Logo"></a> 
+           </div>
+           <div class="col-md-6">
+             <ul class="nav-pc">
+               <li><a href="dangnhap_nhatuyendung.html">Đăng tuyển dụng</a></li>
+               <li><a href="dangnhap_nhatuyendung.html">Tìm hồ sơ</a></li>
+               <li><a href="lienhe.html">Liên hệ</a></li>
+ 
+             </ul>
+           </div>
+         </div>
+       </div>
+       <div class="right-main-menu">
+         <form action="./dangky_nhatuyendung.html" target="_blank">
+         <button class="btn-menu">ĐĂNG KÝ</button></form>
+         <form action="./dangnhap_nhatuyendung.html" target="_blank">
+         <button class="btn-menu">ĐĂNG NHẬP</button></form>
+         <form action="./trangchu_nguoitimviec.html" target="_blank">
+         <button class="btn-menu ntd">NGƯỜI TÌM VIỆC</button></form>
+       
+       </div>
       </div>
-    </div>
-
-   
-    <div id="nav-mb">
-      <button onclick="menu()">
-        <i class="fa-solid fa-bars"></i>
-      </button>
-    </div>
-
-    <ul id="list-menu-mb-login" class="list-menu-mb-login">
-      <li><a href="timkiemvieclam.html">Tìm việc</a></li>
-      <li><a href="#">Công việc</a></li>
-      <li><a href="thongtin.html">Về WorkZone</a></li>
-      <form action="dangky_nguoitimviec.html">  <button class="btn-nav">ĐĂNG KÝ</button></form>
-      <form action="dangnhap_nguoitimviec.html"> <button class="btn-nav">ĐĂNG NHẬP</button></form>
-      <form action="trangchu_nhatuyendung.html" target="_blank"> <button class="btn-nav ntd">NHÀ TUYỂN DỤNG</button></form>
-    </ul>
-
+     </div>
+ 
+       <div id="nav-mb">
+         <button onclick="menu()">
+           <i class="fa-solid fa-bars"></i>
+         </button>
+       </div>
+     </div>
+     <ul id="list-menu-mb-login" class="list-menu-mb-login">
+       <li><a href="dangnhap_nhatuyendung.html">Đăng tuyển dụng</a></li>
+       <li><a href="dangnhap_nhatuyendung.html">Tìm hồ sơ</a></li>
+       <li><a href="lienhe.html">Liên hệ</a></li>
+ 
+       <form action="./dangky_nhatuyendung.html" target="_blank">
+         <button class="btn-nav">ĐĂNG KÝ</button></form>
+         <form action="./dangnhap_nhatuyendung.html" target="_blank">
+         <button class="btn-nav">ĐĂNG NHẬP</button></form>
+         <form action="./trangchu_nguoitimviec.html" target="_blank">
+         <button class="btn-nav ntd">NGƯỜI TÌM VIỆC</button></form>
+     </ul>
     <!-- body -->
-    <div class="abc" class="relative">
-    <div class="main-banner">
-      <div class="banner-image">
-        <img src="./media/banner2.jpg" alt="Banner" />
-      </div>
-    </div>
-    <div class="banner-content">
-      <div class="container">
-        <div class="title-banner">
-          <p class="button_color title">TÌM KIẾM VIỆC</p>
-        </div>
-        <div class="row filter-row">
-          <div class="col-md-5 col-sm-6 col-12">
-            <div class="input relative">
-              <span class="icon">
-                <i class="fas fa-search"></i>
-              </span>
-              <input
-                type="text"
-                id="job"
-                placeholder="Nhập công việc, kỹ năng,..."
-              />
-            </div>
-          </div>
-          <div class="col-md-4 col-sm-6 col-12">
-            <div class="input relative">
-              <span class="icon"><i class="fas fa-map-marker-alt"></i> </span>
-              <select name="location" id="location">
-                <option value="">Tất cả địa điểm</option>
-                <option value="">An Giang</option>
-                <option value="">Đà Nẵng</option>
-                <option value="">Hà Nội</option>
-              </select>
-            </div>
-          </div>
-          <div class="col-md-2 col-sm-6 col-12">
-            <div class="input relative">
-              <button id="search">Tìm kiếm</button>
-            </div>
-          </div>
+    <div id="abc">
+      <div class="main-banner">
+        <div class="banner-image">
+          <img src="./media/banner2.jpg" alt="Banner" />
         </div>
       </div>
-    </div>
 
-    <div class="main">
-      <div class="container">
-        <div class="row">
-          <div class="filter col-md-3">
-            <a
-              id="click_advance"
-              class="btn btn-c-filter"
-              type="button"
-              onclick="display()"
-            >
-              <span id="icon-x"><i class="pr-2 fa-solid fa-xmark"></i></span>
-              <span id="icon-filter" class="is-display-none"
-                ><i class="pr-2 fa-solid fa-filter"></i
-              ></span>
-              Filter & Refind
-            </a>
-            <div class="collapse" id="infor-box">
-              <div class="card card-body bg-card-body-filter">
-                <div class="filter-bar">
-                  <div class="filter-form">
-                    <div class="filter-form-item">
-                      <p>
-                        <a
-                          type="button"
-                          id="clickc_advance"
-                          class="btnf btn-filter"
-                          onclick="display1()"
-                        >
-                          Ngành nghề
-                          <i
-                            id="icon-up-1"
-                            class="fa-solid fa-angle-up is-display-none"
-                          ></i>
-                          <i
-                            id="icon-down-1"
-                            class="fa-solid fa-angle-down"
-                          ></i>
-                        </a>
-                      </p>
-                      <div class="collapse show" id="filter-topic">
-                        <div class="card o-card card-body">
-                          <div class="filter-panel">
-                            <div id="category" class="panel-content">
-                              <div class="filter-topic cotain-common-filter">
-                                <a href="#" class="filter-action"
-                                  >Tất cả ngành nghề</a
-                                >
-                                <span class="filter-count">1,000</span>
-                              </div>
-                              <div class="filter-topic cotain-common-filter">
-                                <a href="#" class="filter-action"
-                                  >Lập trình viên</a
-                                >
-                                <span class="filter-count">555</span>
-                              </div>
-                              <div class="filter-topic cotain-common-filter">
-                                <a href="#" class="filter-action"
-                                  >Kiểm thử phần mềm</a
-                                >
-                                <span class="filter-count">233</span>
-                              </div>
-                              <div class="filter-topic cotain-common-filter">
-                                <a href="#" class="filter-action"
-                                  >Thiết kế đồ họa</a
-                                >
-                                <span class="filter-count">100</span>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-
-                      <p>
-                        <a
-                          id="clickc2_advance"
-                          class="btnf btn-filter"
-                          onclick="display2()"
-                          type="button"
-                        >
-                          Mức Lương
-                          <i
-                            id="icon-up-2"
-                            class="fa-solid fa-angle-up is-display-none"
-                          ></i>
-                          <i
-                            id="icon-down-2"
-                            class="fa-solid fa-angle-down"
-                          ></i>
-                        </a>
-                      </p>
-                      <div class="collapse show" id="filter-price">
-                        <div class="card o-card card-body" id="price">
-                          <div class="filter-panel">
-                            <div class="panel-content">
-                              <div class="filter-topic filter-input-price">
-                                <form class="al-price-filter">
-                                  <span class="_fpblock">
-                                    <input
-                                      type="number"
-                                      class="if-price"
-                                      id=""
-                                      placeholder="50,000"
-                                    />
-                                  </span>
-                                  <span class="_fpblock _line">
-                                    <p>-</p>
-                                  </span>
-                                  <span class="_fpblock">
-                                    <input
-                                      type="number"
-                                      class="if-price"
-                                      id=""
-                                      placeholder="1,000,000"
-                                    />
-                                  </span>
-                                  <span class="_fpblock">
-                                    <button type="submit" class="sb-fprice">
-                                      <i class="bi bi-arrow-right"></i>
-                                    </button>
-                                  </span>
-                                </form>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="filter-form-item">
-                      <p>
-                        <a
-                          id="clickc3_advance"
-                          class="btnf btn-filter"
-                          type="button"
-                          onclick="display3()"
-                        >
-                          Đánh giá
-                          <i
-                            id="icon-up-3"
-                            class="fa-solid fa-angle-up is-display-none"
-                          ></i>
-                          <i
-                            id="icon-down-3"
-                            class="fa-solid fa-angle-down"
-                          ></i>
-                        </a>
-                      </p>
-                      <div class="collapse show" id="filter-video-duration">
-                        <div class="card o-card card-body" id="rate">
-                          <div class="filter-panel">
-                            <div class="panel-content">
-                              <div class="filter-rating">
-                                <a href="#">
-                                  <span class="rating-wrapper">
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                  </span>
-                                  <span>(từ 5 sao)</span>
-                                </a>
-                              </div>
-                              <div class="filter-rating">
-                                <a href="#">
-                                  <span class="rating-wrapper">
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star-o"></i>
-                                  </span>
-                                  <span>(từ 4 sao)</span>
-                                </a>
-                              </div>
-                              <div class="filter-rating">
-                                <a href="#">
-                                  <span class="rating-wrapper">
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star-o"></i>
-                                    <i class="fa fa-star-o"></i>
-                                  </span>
-                                  <span>(từ 3 sao)</span>
-                                </a>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <p>
-                        <a
-                          id="clickc4_advance"
-                          class="btnf btn-filter"
-                          type="button"
-                          onclick="display4()"
-                        >
-                          Cấp bậc
-                          <i
-                            id="icon-up-4"
-                            class="fa-solid fa-angle-up is-display-none"
-                          ></i>
-                          <i
-                            id="icon-down-4"
-                            class="fa-solid fa-angle-down"
-                          ></i>
-                        </a>
-                      </p>
-                      <div class="collapse show" id="filter-provider">
-                        <div class="card o-card card-body" id="level">
-                          <div class="filter-panel">
-                            <div class="panel-content">
-                              <div class="filter-topic cotain-common-filter">
-                                <a href="#" class="filter-action"
-                                  >Tất cả cấp bậc</a
-                                >
-                                <span class="filter-count">2,450</span>
-                              </div>
-                              <div class="filter-topic cotain-common-filter">
-                                <a href="#" class="filter-action"
-                                  >Thực tập sinh</a
-                                >
-                                <span class="filter-count">555</span>
-                              </div>
-                              <div class="filter-topic cotain-common-filter">
-                                <a href="#" class="filter-action">Nhân viên</a>
-                                <span class="filter-count">233</span>
-                              </div>
-                              <div class="filter-topic cotain-common-filter">
-                                <a href="#" class="filter-action"
-                                  >Trưởng nhóm</a
-                                >
-                                <span class="filter-count">100</span>
-                              </div>
-                              <div class="filter-topic cotain-common-filter">
-                                <a href="#" class="filter-action"
-                                  >Trưởng phòng</a
-                                >
-                                <span class="filter-count">99</span>
-                              </div>
-                              <div class="filter-topic cotain-common-filter">
-                                <a href="#" class="filter-action"
-                                  >Phó giám đốc</a
-                                >
-                                <span class="filter-count">95</span>
-                              </div>
-                              <div class="filter-topic cotain-common-filter">
-                                <a href="#" class="filter-action">Giám đốc</a>
-                                <span class="filter-count">77</span>
-                              </div>
-                              <div class="filter-topic cotain-common-filter">
-                                <a href="#" class="filter-action"
-                                  >Tổng giám đốc điều hành</a
-                                >
-                                <span class="filter-count">50</span>
-                              </div>
-                              <div class="filter-topic cotain-common-filter">
-                                <a href="#" class="filter-action">Thư kí</a>
-                                <span class="filter-count">50</span>
-                              </div>
-                              <div class="filter-topic cotain-common-filter">
-                                <a href="#" class="filter-action">Khác</a>
-                                <span class="filter-count">50</span>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- filter bar -->
+     
+      
+      <div class="banner-content">
+        <div class="container">
+          <div class="title-banner">
+            <a href="#" class="button_color title">TÌM ỨNG VIÊN</a>
+          </div>
+          <div class="row filter-row">
+            <div class="col-md-5 col-sm-6 col-12">
+              <div class="input relative">
+                <span class="icon">
+                  <i class="fas fa-search"></i>
+                </span>
+                <input
+                  type="text"
+                  id="job"
+                  placeholder="Nhập công việc, kỹ năng,..."
+                />
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-12">
+              <div class="input relative">
+                <span class="icon"><i class="fas fa-map-marker-alt"></i> </span>
+                <select name="location" id="location">
+                  <option value="">Tất cả địa điểm</option>
+                  <option value="">An Giang</option>
+                  <option value="">Đà Nẵng</option>
+                  <option value="">Hà Nội</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-6 col-12">
+              <div class="input relative">
+                <a href="#"><button id="search">Tìm kiếm</button></a>
               </div>
             </div>
           </div>
-          <div class="job col-md-9 col-12">
-            <h4 class="search-find">Tìm thấy 4 việc làm đang tuyển dụng</h4>
-            <div class="job-board-wrap">
-              <div class="job-group">
-                <div class="job pagi">
-                  <div class="job-content">
-                    <div class="row">
-                      <div class="col-md-3 col-sm-3 col-3 job-logo">
-                        <a href="#">
-                          <img
-                            src="./media/fpt-logo.png"
-                            class="job-logo-ima"
-                            alt="job-logo"
-                          />
-                        </a>
-                      </div>
-                      <div class="col-md-6 col-sm-9 col-9">
-                        <div class="job-desc">
-                          <div class="job-title">
-                            <a href="#"
-                              >[HCM] 02 Solution Architects–Up to $2000</a
-                            >
-                          </div>
-                          <div class="job-company">
-                            <a href="#">Fpt Software</a>
-                            <a href="#" class="job-address"
-                              ><i class="bi bi-geo-alt-fill"></i> Đà Nẵng</a
-                            >
-                          </div>
-                          <div class="job-inf">
-                            <div class="job-salary">
-                              <i class="bi bi-cash"></i>
-                              <span class="salary-min"
-                                >15<span class="salary-unit">triệu</span></span
-                              >
-                              -
-                              <span class="salary-max"
-                                >35 <span class="salary-unit">triệu</span></span
-                              >
+        </div>
+      </div>
+      <div class="main">
+        <div class="container">
+          <div class="row">
+            <div class="filter col-md-3">
+              <a
+                id="click_advance"
+                class="btn btn-c-filter"
+                type="button"
+                onclick="display()"
+              >
+                <span id="icon-x"><i class="fa-solid fa-filter"></i></span>
+                <span id="icon-filter" class="is-display-none"
+                  ><i class="pr-2 fa-solid fa-filter"></i
+                ></span>
+                Bộ lọc nâng cao
+              </a>
+              <div class="collapse" id="infor-box">
+                <div class="card card-body bg-card-body-filter">
+                  <div class="filter-bar">
+                    <div class="filter-form">
+                      <div class="filter-form-item">
+                        <p>
+                          <a
+                            type="button"
+                            id="clickc_advance"
+                            class="btnf btn-filter"
+                            onclick="display1()"
+                          >
+                            Ngành nghề
+                            <i
+                              id="icon-up-1"
+                              class="fa-solid fa-angle-up is-display-none"
+                            ></i>
+                            <i
+                              id="icon-down-1"
+                              class="fa-solid fa-angle-down"
+                            ></i>
+                          </a>
+                        </p>
+                        <div class="collapse show" id="filter-topic">
+                          <div class="card o-card card-body">
+                            <div class="filter-panel">
+                              <div id="category" class="panel-content">
+                                <div class="filter-topic cotain-common-filter">
+                                  <a href="#" class="filter-action"
+                                    >Tất cả lĩnh vực</a
+                                  >
+                                  <span class="filter-count">6018</span>
+                                </div>
+                                <div class="filter-topic cotain-common-filter">
+                                  <a href="#" class="filter-action"
+                                    >IT</a
+                                  >
+                                  <span class="filter-count">2109</span>
+                                </div>
+                                <div class="filter-topic cotain-common-filter">
+                                  <a href="#" class="filter-action"
+                                    >Kinh doanh</a
+                                  >
+                                  <span class="filter-count">3109</span>
+                                </div>
+                                <div class="filter-topic cotain-common-filter">
+                                  <a href="#" class="filter-action"
+                                    >Nghệ thuật đồ họa</a
+                                  >
+                                  <span class="filter-count">1560</span>
+                                </div>
+                                <div class="filter-topic cotain-common-filter">
+                                  <a href="#" class="filter-action"
+                                    >Luật - Nhân văn</a
+                                  >
+                                  <span class="filter-count">670</span>
+                                </div>
+                                <div class="filter-topic cotain-common-filter">
+                                  <a href="#" class="filter-action"
+                                    >Kiến trúc xây dựng</a
+                                  >
+                                  <span class="filter-count">378</span>
+                                </div>
+                                <div class="filter-topic cotain-common-filter">
+                                  <a href="#" class="filter-action"
+                                    >Báo chí - Khoa học và xã hội</a
+                                  >
+                                  <span class="filter-count">214</span>
+                                </div>
+                              </div>
                             </div>
-                            <div class="job-deadline">
-                              <span
-                                ><i class="bi bi-clock"></i> Hạn nộp:
-                                <strong>31/12/2019</strong></span
-                              >
+                          </div>
+                        </div>
+
+                        <p>
+                          <a
+                            id="clickc2_advance"
+                            class="btnf btn-filter"
+                            onclick="display2()"
+                            type="button"
+                          >
+                            Năm kinh nghiệm
+                            <i
+                              id="icon-up-2"
+                              class="fa-solid fa-angle-up is-display-none"
+                            ></i>
+                            <i
+                              id="icon-down-2"
+                              class="fa-solid fa-angle-down"
+                            ></i>
+                          </a>
+                        </p>
+                        <div class="collapse show" id="filter-price">
+                          <div class="card o-card card-body" id="price">
+                            <div class="filter-panel">
+                              <div class="panel-content">
+                                <div class="filter-topic filter-input-price">
+                                  <form class="al-price-filter">
+                                    <span class="_fpblock">
+                                      <input
+                                        type="number"
+                                        class="if-price"
+                                        id=""
+                                        placeholder="1"
+                                      />
+                                    </span>
+                                    <span class="_fpblock _line">
+                                      <p>-</p>
+                                    </span>
+                                    <span class="_fpblock">
+                                      <input
+                                        type="number"
+                                        class="if-price"
+                                        id=""
+                                        placeholder="2"
+                                      />
+                                    </span>
+                                    
+                                    <span class="_fpblock">
+                                      <button type="submit" class="sb-fprice">
+                                        <i class="bi bi-arrow-right"></i>
+                                      </button>
+                                    </span>
+                                  </form>
+                                </div>
+                              </div>
                             </div>
                           </div>
                         </div>
                       </div>
-                      <div class="col-md-3 col-sm-12 col-12">
-                        <div class="wrap-btn-appl">
-                          <a href="#" class="btn btn-appl">Apply Now</a>
+                      <div class="filter-form-item">
+                        <p>
+                          <a
+                            id="clickc3_advance"
+                            class="btnf btn-filter"
+                            type="button"
+                            onclick="display3()"
+                          >
+                            Lượng theo dõi
+                            <i
+                              id="icon-up-3"
+                              class="fa-solid fa-angle-up is-display-none"
+                            ></i>
+                            <i
+                              id="icon-down-3"
+                              class="fa-solid fa-angle-down"
+                            ></i>
+                          </a>
+                        </p>
+                        <div class="collapse show" id="filter-video-duration">
+                          <div class="card o-card card-body" id="rate">
+                            <div class="filter-panel">
+                              <div class="panel-content">
+                                <div class="filter-rating">
+                                  <a href="#">
+                                    <span class="rating-wrapper">
+                                      <p>>5000 followers</p>
+                                    </span>
+                                  </a>
+                                </div>
+                                <div class="filter-rating">
+                                  <a href="#">
+                                    <span class="rating-wrapper">
+                                      <p>>3000 flowwers</p>
+                                    </span>
+                                  </a>
+                                </div>
+                                <div class="filter-rating">
+                                  <a href="#">
+                                    <span class="rating-wrapper">
+                                      <p>>1000 followers</p>
+                                    </span>
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <p>
+                          <a
+                            id="clickc4_advance"
+                            class="btnf btn-filter"
+                            type="button"
+                            onclick="display4()"
+                          >
+                            Học vấn
+                            <i
+                              id="icon-up-4"
+                              class="fa-solid fa-angle-up is-display-none"
+                            ></i>
+                            <i
+                              id="icon-down-4"
+                              class="fa-solid fa-angle-down"
+                            ></i>
+                          </a>
+                        </p>
+                        <div class="collapse show" id="filter-provider">
+                          <div class="card o-card card-body" id="level">
+                            <div class="filter-panel">
+                              <div class="panel-content">
+                                <div class="filter-topic cotain-common-filter">
+                                  <a href="#" class="filter-action"
+                                    >Tốt nghiệp đại học</a
+                                  >
+                                </div>
+                                <div class="filter-topic cotain-common-filter">
+                                  <a href="#" class="filter-action"
+                                    >Tốt nghiệp cao đẳng</a
+                                  >
+                                </div>
+                                <div class="filter-topic cotain-common-filter">
+                                  <a href="#" class="filter-action"
+                                    >Tốt nghiệp THPT</a
+                                  >
+                                </div>
+                              </div>
+                            </div>
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
-
+                  <!-- filter bar -->
+                </div>
+              </div>
+            </div>
+            <div class="job col-md-9 col-12">
+              <h4 class="search-find">Tìm thấy 6 ứng viên đang tìm việc</h4>
+              <div class="job-board-wrap">
+                <div class="job-group">
                   <div class="job pagi">
                     <div class="job-content">
                       <div class="row">
                         <div class="col-md-3 col-sm-3 col-3 job-logo">
                           <a href="#">
                             <img
-                              src="./media/grab-vietnam.png"
-                              class="job-logo-ima"
+                              src="./media/pic1.png"
+                              class="job-logo"
                               alt="job-logo"
                             />
                           </a>
@@ -463,33 +381,26 @@
                           <div class="job-desc">
                             <div class="job-title">
                               <a href="#"
-                                >Fullstack .NET Developer (Angular/React)</a
+                                >Nguyễn Thu Hằng - Máy Tính / Công nghệ</a
                               >
                             </div>
                             <div class="job-company">
-                              <a href="#">Grab Cop</a>
+                              <a href="#"
+                                ><i class="fa-regular fa-user"></i> Kinh nghiệm</a>
                               <a href="#" class="job-address"
-                                ><i class="bi bi-geo-alt-fill"></i> Hà Nội</a
+                                ><i class="bi bi-geo-alt-fill"></i> Đà Lạt</a
                               >
                             </div>
                             <div class="job-inf">
                               <div class="job-salary">
                                 <i class="bi bi-cash"></i>
                                 <span class="salary-min"
-                                  >25<span class="salary-unit"
-                                    >triệu</span
-                                  ></span
-                                >
-                                -
-                                <span class="salary-max"
-                                  >35
-                                  <span class="salary-unit">triệu</span></span
-                                >
+                                  >Lương: 15 triệu
+                                </span>
                               </div>
                               <div class="job-deadline">
                                 <span
-                                  ><i class="bi bi-clock"></i> Hạn nộp:
-                                  <strong>31/12/2019</strong></span
+                                  ><i class="fa-solid fa-users"></i> Followers: 1321</span
                                 >
                               </div>
                             </div>
@@ -497,10 +408,261 @@
                         </div>
                         <div class="col-md-3 col-sm-12 col-12">
                           <div class="wrap-btn-appl">
-                            <a href="#" class="btn btn-appl">Apply Now</a>
+                            <a href="#" class="btn btn-appl">Lưu Hồ Sơ</a>
                           </div>
                         </div>
                       </div>
+                    </div>
+
+                    <div class="job pagi">
+                      <div class="job-content">
+                        <div class="row">
+                          <div class="col-md-3 col-sm-3 col-3 job-logo">
+                            <a href="#">
+                              <img
+                                src="./media/pic2.png"
+                                class="job-logo"
+                                alt="job-logo"
+                              />
+                            </a>
+                          </div>
+                          <div class="col-md-6 col-sm-9 col-9">
+                            <div class="job-desc">
+                              <div class="job-title">
+                                <a href="#"
+                                  >Lê Trọng Sơn - Thiết kế đồ họa</a
+                                >
+                              </div>
+                              <div class="job-company">
+                                <a href="#"><i class="fa-regular fa-user"></i> Kinh nghiệm: 1 năm</a>
+                                <a href="#" class="job-address"
+                                  ><i class="bi bi-geo-alt-fill"></i> Phú Yên</a
+                                >
+                              </div>
+                              <div class="job-inf">
+                                <div class="job-salary">
+                                  <i class="bi bi-cash"></i>
+                                  <span class="salary-min"
+                                    >Lương: Thõa thuận
+                                  </span>
+                                </div>
+                                <div class="job-deadline">
+                                  <span
+                                    ><i class="fa-solid fa-users"></i> Followers: 1198</span
+                                  >
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-3 col-sm-12 col-12">
+                            <div class="wrap-btn-appl">
+                              <a href="#" class="btn btn-appl">Lưu Hồ Sơ</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+
+                    </div>
+                    <div class="job pagi">
+                      <div class="job-content">
+                        <div class="row">
+                          <div class="col-md-3 col-sm-3 col-3 job-logo">
+                            <a href="#">
+                              <img
+                                src="./media/pic3.png"
+                                class="job-logo"
+                                alt="job-logo"
+                              />
+                            </a>
+                          </div>
+                          <div class="col-md-6 col-sm-9 col-9">
+                            <div class="job-desc">
+                              <div class="job-title">
+                                <a href="#"
+                                  >Âu Lạc Nhi - Kiến trúc</a
+                                >
+                              </div>
+                              <div class="job-company">
+                                <a href="#"> <i class="fa-regular fa-user"></i> Kinh nghiệm: Chưa có</a>
+                                <a href="#" class="job-address"
+                                  ><i class="bi bi-geo-alt-fill"></i> An Giang</a
+                                >
+                              </div>
+                              <div class="job-inf">
+                                <div class="job-salary">
+                                  <i class="bi bi-cash"></i>
+                                  <span class="salary-min"
+                                    >Lương: 10 triệu
+                                  </span>
+                                </div>
+                                <div class="job-deadline">
+                                  <span
+                                    ><i class="fa-solid fa-users"></i> Followers: 1023</span
+                                  >
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-3 col-sm-12 col-12">
+                            <div class="wrap-btn-appl">
+                              <a href="#" class="btn btn-appl">Lưu Hồ Sơ</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      
+                    </div>
+                    <div class="job pagi">
+                      <div class="job-content">
+                        <div class="row">
+                          <div class="col-md-3 col-sm-3 col-3 job-logo">
+                            <a href="#">
+                              <img
+                                src="./media/pic4.png"
+                                class="job-logo"
+                                alt="job-logo"
+                              />
+                            </a>
+                          </div>
+                          <div class="col-md-6 col-sm-9 col-9">
+                            <div class="job-desc">
+                              <div class="job-title">
+                                <a href="#"
+                                  >Trần Nhật Hàn Lâm - Nhân viên kinh doanh</a
+                                >
+                              </div>
+                              <div class="job-company">
+                                <a href="#"><i class="fa-regular fa-user"></i> Kinh nghiệm: 2 năm</a>
+                                <a href="#" class="job-address"
+                                  ><i class="bi bi-geo-alt-fill"></i> Khánh Hòa</a
+                                >
+                              </div>
+                              <div class="job-inf">
+                                <div class="job-salary">
+                                  <i class="bi bi-cash"></i>
+                                  <span class="salary-min"
+                                    >Lương: 20 triệu
+                                  </span>
+                                </div>
+                                <div class="job-deadline">
+                                  <span
+                                    ><i class="fa-solid fa-users"></i> Followers: 1513</span
+                                  >
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-3 col-sm-12 col-12">
+                            <div class="wrap-btn-appl">
+                              <a href="#" class="btn btn-appl">Lưu Hồ Sơ</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      
+                    </div>
+                    <div class="job pagi">
+                      <div class="job-content">
+                        <div class="row">
+                          <div class="col-md-3 col-sm-3 col-3 job-logo">
+                            <a href="#">
+                              <img
+                                src="./media/pic5.png"
+                                class="job-logo"
+                                alt="job-logo"
+                              />
+                            </a>
+                          </div>
+                          <div class="col-md-6 col-sm-9 col-9">
+                            <div class="job-desc">
+                              <div class="job-title">
+                                <a href="#"
+                                  >Nguyễn Phước Thịnh - Nhân viên Marketing</a
+                                >
+                              </div>
+                              <div class="job-company">
+                                <a href="#"><i class="fa-regular fa-user"></i> Kinh nghiệm: Chưa có</a>
+                                <a href="#" class="job-address"
+                                  ><i class="bi bi-geo-alt-fill"></i> Bạc Liêu</a
+                                >
+                              </div>
+                              <div class="job-inf">
+                                <div class="job-salary">
+                                  <i class="bi bi-cash"></i>
+                                  <span class="salary-min"
+                                    >Lương: 12 triệu
+                                  </span>
+                                </div>
+                                <div class="job-deadline">
+                                  <span
+                                    ><i class="fa-solid fa-users"></i> Followers: 1003</span
+                                  >
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-3 col-sm-12 col-12">
+                            <div class="wrap-btn-appl">
+                              <a href="#" class="btn btn-appl">Lưu Hồ Sơ</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      
+                    </div>
+                    <div class="job pagi">
+                      <div class="job-content">
+                        <div class="row">
+                          <div class="col-md-3 col-sm-3 col-3 job-logo">
+                            <a href="#">
+                              <img
+                                src="./media/pic6.png"
+                                class="job-logo"
+                                alt="job-logo"
+                              />
+                            </a>
+                          </div>
+                          <div class="col-md-6 col-sm-9 col-9">
+                            <div class="job-desc">
+                              <div class="job-title">
+                                <a href="#"
+                                  >Phạm Ngọc Hiền - Nhân viên tư vấn</a
+                                >
+                              </div>
+                              <div class="job-company">
+                                <a href="#"><i class="fa-regular fa-user"></i> Kinh nghiệm: 1 năm</a>
+                                <a href="#" class="job-address"
+                                  ><i class="bi bi-geo-alt-fill"></i> Kon Tum</a
+                                >
+                              </div>
+                              <div class="job-inf">
+                                <div class="job-salary">
+                                  <i class="bi bi-cash"></i>
+                                  <span class="salary-min"
+                                    >Lương: Thỏa thuận
+                                  </span>
+                                </div>
+                                <div class="job-deadline">
+                                  <span
+                                    ><i class="fa-solid fa-users"></i> Followers: 1206</span
+                                  >
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-3 col-sm-12 col-12">
+                            <div class="wrap-btn-appl">
+                              <a href="#" class="btn btn-appl">Lưu Hồ Sơ</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      
                     </div>
                   </div>
                 </div>
@@ -509,121 +671,125 @@
           </div>
         </div>
       </div>
-    </div>
-
-    <footer>
-      <div class="container white">
-        <div class="row background">
-          <div class="col-md-12 col-sm-12 col-12">
-            <div class="logo-footer">
-              <img src="./media/logo.png" alt="" />
-            </div>
-          </div>
-          <div class="col-md-4 col-sm-6 col-12 pd-left">
-            <div class="content_1">
-              <h3>
-                Kết nối với <span class="blue">Work</span>Z<span class="blue"
-                  >one</span
-                >
-              </h3>
-              <p>
-                <a href="">
-                  <img
-                    src="./media/phone.png"
-                    width="27px"
-                    height="27px"
-                  />&nbsp; +123 456 7890</a
-                >
-              </p>
-              <p>
-                <a
-                  href="https://www.google.com/intl/vi/gmail/about/"
-                  target="_blank"
-                  ><img
-                    src="./media/mail.png"
-                    width="27px"
-                    height="27px"
-                  />&nbsp; <span class="hover">uel@workzone.com</span></a
-                >
-              </p>
-              <p>
-                <a
-                  href="https://www.google.com/maps/place/Tr%C6%B0%E1%BB%9Dng+%C4%90%E1%BA%A1i+h%E1%BB%8Dc+Kinh+t%E1%BA%BF+-+Lu%E1%BA%ADt,+%C4%90%E1%BA%A1i+h%E1%BB%8Dc+Qu%E1%BB%91c+gia+Th%C3%A0nh+ph%E1%BB%91+H%E1%BB%93+Ch%C3%AD+Minh/@10.8709374,106.7760666,17z/data=!3m1!4b1!4m6!3m5!1s0x3175277dbf11a271:0x4567e34b99494e3f!8m2!3d10.8709321!4d106.7782553!16s%2Fm%2F0ds8rvh?hl=vi"
-                  target="_blank"
-                  ><img
-                    src="./media/location.png"
-                    width="27px"
-                    height="27px"
-                  />&nbsp;
-                  <span class="hover"
-                    >265, QL1A, Phường Linh Trung, Thủ Đức</span
-                  ></a
-                >
-              </p>
-              <p>
-                <a href="https://www.facebook.com/" target="_blank"
-                  ><img src="./media/fb.png" width="27px" height="27px" />&nbsp;
-                  <span class="hover">WorkZone</span></a
-                >
-              </p>
-              <p>
-                <a href="https://www.linkedin.com/" target="_blank"
-                  ><img
-                    src="./media/in.png"
-                    width="27px"
-                    height="27px"
-                  />&nbsp;<span class="hover">linkedin.com/workzone</span>
-                </a>
-              </p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6 col-12">
-            <div class="content_2">
-              <h3>Công việc</h3>
-              <p class="hover"><a href="trangchu_nguoitimviec.html#hotjob">Hot Job</a></p>
-              <p class="hover"><a href="trangchu_nguoitimviec.html#lastestjob">Latest Job</a></p>
-              <p class="hover"><a href="trangchu_nguoitimviec.html#congtyhangdau">Công ty hàng đầu</a></p>
-              <p class="hover"><a href="trangchu_nguoitimviec.html#vieclamhapdan">Việc làm hấp dẫn</a></p>
-              <p class="hover"><a href="trangchu_nguoitimviec.html#tintuc">Tin tức</a></p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6 col-12">
-            <div class="content_3">
-              <h3>About us</h3>
-              <p class="hover">
-                <a href="thongtin.html"
-                  >Thông tin về <span class="blue">Work</span>Z<span
-                    class="blue"
-                    >one</span
-                  ></a
-                >
-              </p>
-              <p class="hover">
-                <a href="dieukhoandichvu.html">Điều khoản và dịch vụ</a>
-              </p>
-              <div class="content1_2">
-                <h3>Chứng nhận bởi</h3>
-                <a href="">
-                  <img src="./media/chứng nhận.png" width="198px" height="89px"
-                /></a>
+      
+  
+      <footer>
+        <div class="container white">
+          <div class="row background">
+            <div class="col-md-12 col-sm-12 col-12">
+              <div class="logo-footer">
+              <a href="trangchu_nhatuyendung.html" target="_blank">
+              <img
+                src="./media/logo.png"
+                alt=""
+              /></a>
               </div>
             </div>
-          </div>
-          <div class="col-md-2 col-sm-6 col-12 pd-left">
-            <div class="content_4">
-              <h3>Liên hệ</h3>
-              <p class="hover"><a href="lienhe.html">Liên hệ ngay</a></p>
-              <p class="hover"><a href="hotro.html">Hỗ trợ</a></p>
+            <div class="col-md-4 col-sm-6 col-12 pd-left">
+              <div class="content_1">
+                <h3>
+                  Kết nối với <span class="blue">Work</span>Z<span class="blue"
+                    >one</span
+                  >
+                </h3>
+                <p>
+                  <a href="">
+                    <img
+                      src="./media/phone.png"
+                      width="27px"
+                      height="27px"
+                    />&nbsp; +123 456 7890</a
+                  >
+                </p>
+                <p>
+                  <a
+                    href="https://www.google.com/intl/vi/gmail/about/"
+                    target="_blank"
+                    ><img
+                      src="./media/mail.png"
+                      width="27px"
+                      height="27px"
+                    />&nbsp; <span class="hover">uel@workzone.com</span></a
+                  >
+                </p>
+                <p>
+                  <a
+                    href="https://www.google.com/maps/place/Tr%C6%B0%E1%BB%9Dng+%C4%90%E1%BA%A1i+h%E1%BB%8Dc+Kinh+t%E1%BA%BF+-+Lu%E1%BA%ADt,+%C4%90%E1%BA%A1i+h%E1%BB%8Dc+Qu%E1%BB%91c+gia+Th%C3%A0nh+ph%E1%BB%91+H%E1%BB%93+Ch%C3%AD+Minh/@10.8709374,106.7760666,17z/data=!3m1!4b1!4m6!3m5!1s0x3175277dbf11a271:0x4567e34b99494e3f!8m2!3d10.8709321!4d106.7782553!16s%2Fm%2F0ds8rvh?hl=vi"
+                    target="_blank"
+                    ><img
+                      src="./media/location.png"
+                      width="27px"
+                      height="27px"
+                    />&nbsp;
+                    <span class="hover"
+                      >265, QL1A, Phường Linh Trung, Thủ Đức</span
+                    ></a
+                  >
+                </p>
+                <p>
+                  <a href="https://www.facebook.com/" target="_blank"
+                    ><img src="./media/fb.png" width="27px" height="27px" />&nbsp;
+                    <span class="hover">WorkZone</span></a
+                  >
+                </p>
+                <p>
+                  <a href="https://www.linkedin.com/" target="_blank"
+                    ><img
+                      src="./media/in.png"
+                      width="27px"
+                      height="27px"
+                    />&nbsp;<span class="hover">linkedin.com/workzone</span>
+                  </a>
+                </p>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-12">
+              <div class="content_2">
+                <h3>Nhà tuyển dụng</h3>
+                <p class="hover"><a href="dangnhap_nhatuyendung.html" target="_blank">Tìm kiếm hồ sơ</a></p>
+                <p class="hover">
+                  <a href="dangnhap_nhatuyendung.html" target="_blank">Đăng tin tuyển dụng</a>
+                </p>
+                <p class="hover"><a href="dangnhap_nhatuyendung.html" target="_blank">Quản lý hồ sơ</a></p>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-12">
+              <div class="content_3">
+                <h3>Về WorkZone</h3>
+                <p class="hover">
+                  <a href="thongtin.html" target="_blank"
+                    >Thông tin về <span class="blue">Work</span>Z<span
+                      class="blue"
+                      >one</span
+                    ></a
+                  >
+                </p>
+                <p class="hover">
+                  <a href="dieukhoandichvu.html" target="_blank">Điều khoản và dịch vụ</a>
+                </p>
+                <div class="content1_2">
+                  <h3>Chứng nhận bởi</h3>
+                  <a href="#">
+                    <img src="./media/chứng nhận.png" width="198px" height="89px"
+                  /></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-6 col-12 pd-left">
+              <div class="content_4">
+                <h3>Liên hệ</h3>
+                <p class="hover"><a href="lienhe.html" target="_blank">Liên hệ ngay</a></p>
+                <p class="hover"><a href="hotro.html" target="_blank">Hỗ trợ</a></p>
+              </div>
+            </div>
+            <div class="col-md-12 col-sm-12 col-12">
+              <p class="copyright white">
+                Copyright &#169; 2022. <span class="blue">WorkZone</span> . All
+                Right Reserved
+              </p>
             </div>
           </div>
-          <div class="col-md-12 col-sm-12 col-12">
-            <p class="copyright white">
-              Copyright &#169; 2022. <span class="blue">WorkZone</span> . All
-              Right Reserved
-            </p>
-          </div>
         </div>
-      </div>
-    </footer>
+      </footer>
   </body>
 </html>
