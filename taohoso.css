@@ -180,6 +180,9 @@ body {
 .red {
   color: red;
 }
+.name-user {
+  font-weight: 500;
+}
 /* change--pass */
 
 .form-change-pass {
@@ -187,7 +190,6 @@ body {
 }
 .row-pass {
   font-size: 12px;
-  
 }
 .input {
   width: 100%;
@@ -198,6 +200,7 @@ body {
 }
 .name-pass {
   margin-bottom: 5px;
+  font-weight: bold;
 }
 
 .check {
@@ -385,8 +388,5 @@ footer {
   }
   .pd-left {
     padding-left: 15px !important;
-  }
-  .border-menu {
-    display: none;
   }
 }
