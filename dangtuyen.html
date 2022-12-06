@@ -7,65 +7,154 @@
     <title>Đăng tin tuyển dụng</title>
     <link rel="stylesheet" href="./bootstrap.css">
     <link rel="stylesheet" href="./dangtuyen.css">
+    <script src="./javascript.js">
+    </script>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
     />
+    
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    rel="stylesheet"
+  />
 </head>
 <body>
     <!-- header -->
-    <header>
-        <div class="container">
-            <div class="main-menu">
-             <div class="left-main-menu">
-               <div class="row">
-                 <div class="col-md-3">
-                  <a class="logo" href="#"><img id="logo" src="./image/workzone.png" alt="Logo"></a> 
-                 </div>
-                 <div class="col-md-5">
-                   <ul class="nav-pc">
-                     <li><a href="">Đăng tuyển dụng</a></li>
-                     <li><a href="">Tìm hồ sơ</a></li>
-                     <li><a href="">Liên hệ</a></li>
-       
-                   </ul>
-                 </div>
-               </div>
-             </div>
-             <div class="right-main-menu">
-               <button class="btn-menu">ĐĂNG KÝ</button>
-               <button class="btn-menu">ĐĂNG NHẬP</button>
-               <button class="btn-menu ntd">NGƯỜI TÌM VIỆC</button>
-             
-             </div>
+    <div class="container">
+      <div class="main-menu">
+        <div class="left-main-menu">
+          <div class="row">
+            <div class="col-md-3">
+              <a class="logo" href="trangchu_nhatuyendung_login.html"
+                ><img
+                  src="./media/logo.png"
+                  alt="Logo"
+              /></a>
             </div>
-           </div>
-       
-             <div id="nav-mb">
-               <button onclick="menu()">
-                 <i class="fa-solid fa-bars"></i>
-               </button>
-             </div>
-           </div>
-           <ul id="list-menu-mb-login" class="list-menu-mb-login">
-             <li><a href="#">Đăng tuyển dụng</a></li>
-             <li><a href="#">Tìm hồ sơ</a></li>
-             <li><a href="#">Liên hệ</a></li>
-       
-             <button class="btn-nav">ĐĂNG KÝ</button>
-             <button class="btn-nav">ĐĂNG NHẬP</button>
-             <button class="btn-nav ntd">NGƯỜI TÌM VIỆC</button>
-           </ul>
+            <div class="col-md-5">
+              <ul class="nav-pc">
+                <li><a href="dangtuyen.html" >Đăng tuyển dụng</a></li>
+                <li><a href="timkiemungvien.html">Tìm hồ sơ</a></li>
+                <li><a href="lienhe.html">Liên hệ</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="right-main-menu">
+          <div class="account">
+            <i class="fa-regular fa-circle-user"></i><span>WorkZone</span>
+            <a onclick="menupc()" 
+              ><i class="fa-solid fa-sort-down"></i
+            ></a>
+          </div>
+          <form action="trangchu_nguoitimviec.html" target="_blank">
+          <button class="btn-menu ntd">NGƯỜI TÌM VIỆC</button></form>
+        </div>
+      </div>
+    </div>
+    <div>
+      <ul class="list-menu-pc is-display-none" id="list-menu-pc">
+        <li>
+          <div class="menu-list-row">
+            <a href="quanlyhoso.html">
+              <i class="fa-solid fa-id-card"></i>
+              <span> Quản lý hồ sơ</span>
+            </a>
+          </div>
+        </li>
+        <li>
+          <div class="menu-list-row">
+            <a href="thanhtoan.html">
+              <i class="fa-solid fa-heart"></i>
+              <span> Thanh toán</span>
+            </a>
+          </div>
+        </li>
+        
+        <div class="border"></div>
+        <li>
+          <div class="menu-list-row name-account">
+            <a href="trangchu_nhatuyendung_login.html">
+              <i class="fa-regular fa-buildings"></i>
+            </a>
+            <span>WorkZone Cop</span>
+          </div>
+        </li>
+        <li>
+          <div class="log-out">
+            <a href="trangchu_nhatuyendung.html">
+              <i class="fa-solid fa-arrow-right-from-bracket"></i>
+              <span>Đăng xuất</span>
+            </a>
+          </div>
+        </li>
+      </ul>
+      <div id="nav-mb">
+        <button onclick="menu()">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+    <ul id="list-menu-mb-login" class="list-menu-mb-login">
+      <li>
+        <div class="menu-list-row">
+          <a href="quanlyhoso.html">
+            <i class="fa-light fa-file"></i>
+            <span> Quản lý hồ sơ</span>
+          </a>
+        </div>
+      </li>
+      <li>
+        <div class="menu-list-row">
+          <a href="thanhtoan.html">
+            <i class="fa-solid fa-id-card"></i>
+            <span> Thanh toán</span>
+          </a>
+        </div>
+      </li>
+
+      <div class="border"></div>
+      <li>
+        <div class="menu-list-row name-account">
+          <a href="trangchu_nhatuyendung_login.html">
+            <i class="fa-solid fa-buildings"></i>
+          </a>
+          <span>WorkZone Cop</span>
+        </div>
+      </li>
+      <div class="account">
+        <a href="#">
+          <i class="fa-solid fa-buildings"></i>
+        </a>
+        <span>WorkZone Cop</span>
+        <a onclick="menupc()" href="#"><i class="fa-solid fa-sort-down"></i></a>
+      </div>
+      <div class="menu-list-row">
+        <ul class="non-nav-pc">
+          <li><a href="dangtuyen.html">Đăng tuyển dụng</a></li>
+          <li><a href="timkiemungvien.html">Tìm hồ sơ</a></li>
+          <li><a href="lienhe.html">Liên hệ</a></li>
+        </ul>
+      </div>
+      <form action="trangchu_nguoitimviec.html">
+      <button class="btn-nav ntd">NGƯỜI TÌM VIỆC</button></form>
+      <li>
+        <div class="log-out">
+          <a href="trangchu_nhatuyendung.html"
+            ><i class="fa-solid fa-arrow-right-from-bracket"></i>
+            <span>Đăng xuất</span></a>
+        </div>
+      </li>
+    </ul>
            <hr class="blue_hr">
-    </header>
        <!-- body -->
        <div class="blue"></div>
-       <div class="bg">
-       </div>
+       <br>
        <div class="max-div">
             <div class="res-infor-img">
                 <div class="res-img">
-                    <img id="ic-profile" src="./image/oc-peo.png" alt="">
+                    <img id="ic-profile" src="./media/profile.png" alt="">
                     <p id="name">Name</p>
                 </div>
                 <div class="res-infor">
@@ -171,14 +260,6 @@
                                 <div><input type="checkbox"> <span>Du lịch nước ngoài</span></div>
                                 <div><input type="checkbox"> <span>Du lịch nước ngoài</span></div>
                             </div>
-                            <div class="div-checkbox-child">
-                                <div><input type="checkbox"> <span>Du lịch nước ngoài</span>
-                                </div>
-                                <div><input type="checkbox"> <span>Du lịch nước ngoài</span></div>
-                                <div><input type="checkbox"> <span>Du lịch nước ngoài</span></div>
-                                <div><input type="checkbox"> <span>Du lịch nước ngoài</span></div>
-                                <div><input type="checkbox"> <span>Du lịch nước ngoài</span></div>
-                            </div>
                         </div>
                     </div>
                     <label class="title" for="">THÔNG TIN LIÊN HỆ</label>
@@ -226,7 +307,7 @@
                     <div class="div-logo">
                         <label class="form-label" for="">Logo <span style="color:red; font-weight:bolder">*</span>:</label>
                         <input class="form-input" id="insert-logo" type="text">
-                        <a href=""><i class="fa-solid fa-plus"></i></a>
+                        <a onclick="" href=""><i class="fa-solid fa-plus"></i></a>
                     </div>
                     <div>
                         <label class="form-label" for="">Website <span style="color:red; font-weight:bolder">*</span>:</label>
@@ -237,7 +318,7 @@
             </div>
             <div class="div-infor">
                 <div class="div-profile">
-                    <div class="ic-profile" ><img id="ic-profile"  src="./image/oc-peo.png" alt=""></div>
+                    <div class="ic-profile" ><img id="ic-profile"  src="./media/profile.png" alt=""></div>
                     <p id="name">Name</p>
                     <div class="div-table-infor">
                         <div class="div-table">
@@ -265,14 +346,14 @@
                         </div>
                         <div class="done">
                             <p class="quanly-title">Quản lý tuyển dụng</p>
-                            <a class="quanly-click" href="#">dangtuyen.html</a> <br>
-                            <a class="quanly-click" href="#">quanlyhoso.html</a>
+                            <a class="quanly-click" href="dangtuyen.html" target="_blank"> Đăng tin tuyển dụng </a> <br>
+                            <a class="quanly-click" href="quanlyhoso.html" target="_blank"> Danh sách tin tuyển dụng</a>
                         </div>
                         <div class="done">
                             <p class="quanly-title">Hỗ trợ và thông báo</p>
-                            <a class="quanly-click" href="lienhe.html"></a> <br>
+                            <a class="quanly-click" href="lienhe.html" target="_blank"></a> <br>
                             <a class="quanly-click" href="#">Thông tin thanh toán</a> <br>
-                            <a class="quanly-click" href="hotro.html"></a> <br>
+                            <a class="quanly-click" href="hotro.html" target="_blank"></a> <br>
                         </div>
                         <a class="quanly-click" href="trangchu_nhatuyendung.html"><b>Đăng xuất</b></a>
                     </div>
@@ -280,120 +361,123 @@
                 <div class="emty"></div>
             </div>
        </div>
-      <footer>
-      <div class="container white">
-        <div class="row background">
-          <div class="col-md-12 col-sm-12 col-12">
-            <div class="logo-footer">
-              <img src="./media/logo.png" alt="logo" />
-            </div>
-          </div>
-          <div class="col-md-4 col-sm-6 col-12 pd-left">
-            <div class="content_1">
-              <h3>
-                Kết nối với <span class="blue">Work</span>Z<span class="blue"
-                  >one</span
-                >
-              </h3>
-              <p>
-                <a href="">
-                  <img
-                    src="./media/phone.png"
-                    width="27px"
-                    height="27px"
-                  />&nbsp; +123 456 7890</a
-                >
-              </p>
-              <p>
-                <a
-                  href="https://www.google.com/intl/vi/gmail/about/"
-                  target="_blank"
-                  ><img
-                    src="./media/mail.png"
-                    width="27px"
-                    height="27px"
-                  />&nbsp; <span class="hover">uel@workzone.com</span></a
-                >
-              </p>
-              <p>
-                <a
-                  href="https://www.google.com/maps/place/Tr%C6%B0%E1%BB%9Dng+%C4%90%E1%BA%A1i+h%E1%BB%8Dc+Kinh+t%E1%BA%BF+-+Lu%E1%BA%ADt,+%C4%90%E1%BA%A1i+h%E1%BB%8Dc+Qu%E1%BB%91c+gia+Th%C3%A0nh+ph%E1%BB%91+H%E1%BB%93+Ch%C3%AD+Minh/@10.8709374,106.7760666,17z/data=!3m1!4b1!4m6!3m5!1s0x3175277dbf11a271:0x4567e34b99494e3f!8m2!3d10.8709321!4d106.7782553!16s%2Fm%2F0ds8rvh?hl=vi"
-                  target="_blank"
-                  ><img
-                    src="./media/location.png"
-                    width="27px"
-                    height="27px"
-                  />&nbsp;
-                  <span class="hover"
-                    >265, QL1A, Phường Linh Trung, Thủ Đức</span
-                  ></a
-                >
-              </p>
-              <p>
-                <a href="https://www.facebook.com/" target="_blank"
-                  ><img src="./media/fb.png" width="27px" height="27px" />&nbsp;
-                  <span class="hover">WorkZone</span></a
-                >
-              </p>
-              <p>
-                <a href="https://www.linkedin.com/" target="_blank"
-                  ><img
-                    src="./media/in.png"
-                    width="27px"
-                    height="27px"
-                  />&nbsp;<span class="hover">linkedin.com/workzone</span>
-                </a>
-              </p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6 col-12">
-            <div class="content_2">
-              <h3>Nhà tuyển dụng</h3>
-             <p class="hover"><a href="timkiehoso.html">Tìm kiếm hồ sơ</a></p>
-              <p class="hover">
-                <a href="dangtuyen.html">Đăng tin tuyển dụng</a>
-              </p>
-              <p class="hover"><a href="quanlyhoso.html">Quản lý hồ sơ</a></p>
-            </div>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6 col-12">
-            <div class="content_3">
-              <h3>Về WorkZone</h3>
-              <p class="hover">
-                <a href="thongtin.html"
-                  >Thông tin về <span class="blue">Work</span>Z<span
-                    class="blue"
-                    >one</span
-                  ></a
-                >
-              </p>
-              <p class="hover">
-                <a href="dieukhoandichvu.html">Điều khoản và dịch vụ</a>
-              </p>
-              <div class="content1_2">
-                <h3>Chứng nhận bởi</h3>
-                <a href="#">
-                  <img src="./media/chứng nhận.png" width="198px" height="89px"
-                /></a>
+       <footer>
+        <div class="container white">
+          <div class="row background">
+            <div class="col-md-12 col-sm-12 col-12">
+              <div class="logo-footer">
+              <a href="trangchu_nhatuyendung.html" target="_blank">
+              <img
+                src="./media/logo.png"
+                alt=""
+              /></a>
               </div>
             </div>
-          </div>
-          <div class="col-md-2 col-sm-6 col-12 pd-left">
-            <div class="content_4">
-              <h3>Liên hệ</h3>
-              <p class="hover"><a href="">Liên hệ ngay</a></p>
-              <p class="hover"><a href="">Hỗ trợ</a></p>
+            <div class="col-md-4 col-sm-6 col-12 pd-left">
+              <div class="content_1">
+                <h3>
+                  Kết nối với <span class="blue">Work</span>Z<span class="blue"
+                    >one</span
+                  >
+                </h3>
+                <p>
+                  <a href="">
+                    <img
+                      src="./media/phone.png"
+                      width="27px"
+                      height="27px"
+                    />&nbsp; +123 456 7890</a
+                  >
+                </p>
+                <p>
+                  <a
+                    href="https://www.google.com/intl/vi/gmail/about/"
+                    target="_blank"
+                    ><img
+                      src="./media/mail.png"
+                      width="27px"
+                      height="27px"
+                    />&nbsp; <span class="hover">uel@workzone.com</span></a
+                  >
+                </p>
+                <p>
+                  <a
+                    href="https://www.google.com/maps/place/Tr%C6%B0%E1%BB%9Dng+%C4%90%E1%BA%A1i+h%E1%BB%8Dc+Kinh+t%E1%BA%BF+-+Lu%E1%BA%ADt,+%C4%90%E1%BA%A1i+h%E1%BB%8Dc+Qu%E1%BB%91c+gia+Th%C3%A0nh+ph%E1%BB%91+H%E1%BB%93+Ch%C3%AD+Minh/@10.8709374,106.7760666,17z/data=!3m1!4b1!4m6!3m5!1s0x3175277dbf11a271:0x4567e34b99494e3f!8m2!3d10.8709321!4d106.7782553!16s%2Fm%2F0ds8rvh?hl=vi"
+                    target="_blank"
+                    ><img
+                      src="./media/location.png"
+                      width="27px"
+                      height="27px"
+                    />&nbsp;
+                    <span class="hover"
+                      >265, QL1A, Phường Linh Trung, Thủ Đức</span
+                    ></a
+                  >
+                </p>
+                <p>
+                  <a href="https://www.facebook.com/" target="_blank"
+                    ><img src="./media/fb.png" width="27px" height="27px" />&nbsp;
+                    <span class="hover">WorkZone</span></a
+                  >
+                </p>
+                <p>
+                  <a href="https://www.linkedin.com/" target="_blank"
+                    ><img
+                      src="./media/in.png"
+                      width="27px"
+                      height="27px"
+                    />&nbsp;<span class="hover">linkedin.com/workzone</span>
+                  </a>
+                </p>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-12">
+              <div class="content_2">
+                <h3>Nhà tuyển dụng</h3>
+                <p class="hover"><a href="dangnhap_nhatuyendung.html" target="_blank">Tìm kiếm hồ sơ</a></p>
+                <p class="hover">
+                  <a href="dangnhap_nhatuyendung.html" target="_blank">Đăng tin tuyển dụng</a>
+                </p>
+                <p class="hover"><a href="dangnhap_nhatuyendung.html" target="_blank">Quản lý hồ sơ</a></p>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-12">
+              <div class="content_3">
+                <h3>Về WorkZone</h3>
+                <p class="hover">
+                  <a href="thongtin.html" target="_blank"
+                    >Thông tin về <span class="blue">Work</span>Z<span
+                      class="blue"
+                      >one</span
+                    ></a
+                  >
+                </p>
+                <p class="hover">
+                  <a href="dieukhoandichvu.html" target="_blank">Điều khoản và dịch vụ</a>
+                </p>
+                <div class="content1_2">
+                  <h3>Chứng nhận bởi</h3>
+                  <a href="#">
+                    <img src="./media/chứng nhận.png" width="198px" height="89px"
+                  /></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-6 col-12 pd-left">
+              <div class="content_4">
+                <h3>Liên hệ</h3>
+                <p class="hover"><a href="lienhe.html" target="_blank">Liên hệ ngay</a></p>
+                <p class="hover"><a href="hotro.html" target="_blank">Hỗ trợ</a></p>
+              </div>
+            </div>
+            <div class="col-md-12 col-sm-12 col-12">
+              <p class="copyright white">
+                Copyright &#169; 2022. <span class="blue">WorkZone</span> . All
+                Right Reserved
+              </p>
             </div>
           </div>
-          <div class="col-md-12 col-sm-12 col-12">
-            <p class="copyright white">
-              Copyright &#169; 2022. <span class="blue">WorkZone</span> . All
-              Right Reserved
-            </p>
-          </div>
         </div>
-      </div>
-    </footer>
+      </footer>
 </body>
 </html>
