@@ -321,10 +321,13 @@ footer {
 
 @media screen and (max-width: 480px){
   footer{
-    margin-top: 160vh;
+    margin-top: 210vh;
   }
   .line{
     position: absolute;
-    top: 11vh;
+    top: 17.3vh;
+  }
+  .rec465{
+    margin-top: 5vh;
   }
 }
