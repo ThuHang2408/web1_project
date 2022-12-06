@@ -108,4 +108,47 @@ function show6() {
   var show6 = document.getElementById("abi-mb-6");
   show6.classList.toggle("display-flex");
 }
+function luu() {
+  var listpc = document.getElementById("boluu");
+  listpc.classList.toggle("display");
+  var listpc = document.getElementById("luu");
+  listpc.classList.toggle("is-display-none");
+}
+function luu1() {
+  var listpc = document.getElementById("boluu1");
+  listpc.classList.toggle("display");
+  var listpc = document.getElementById("luu1");
+  listpc.classList.toggle("is-display-none");
+}
+function luu2() {
+  var listpc = document.getElementById("boluu2");
+  listpc.classList.toggle("display");
+  var listpc = document.getElementById("luu2");
+  listpc.classList.toggle("is-display-none");
+}
+function luu3() {
+  var listpc = document.getElementById("boluu3");
+  listpc.classList.toggle("display");
+  var listpc = document.getElementById("luu3");
+  listpc.classList.toggle("is-display-none");
+}
+function luu4() {
+  var listpc = document.getElementById("boluu4");
+  listpc.classList.toggle("display");
+  var listpc = document.getElementById("luu4");
+  listpc.classList.toggle("is-display-none");
+}
+function luu5() {
+  var listpc = document.getElementById("boluu5");
+  listpc.classList.toggle("display");
+  var listpc = document.getElementById("luu5");
+  listpc.classList.toggle("is-display-none");
+}
+function luu6() {
+  var listpc = document.getElementById("boluu6");
+  listpc.classList.toggle("display");
+  var listpc = document.getElementById("luu6");
+  listpc.classList.toggle("is-display-none");
+}
+
 
