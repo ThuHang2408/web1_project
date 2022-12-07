@@ -314,6 +314,8 @@ p {
     padding-left: 15px !important;
   }
 }
-  
+.blue_line{
+  border-bottom: 2px solid #00A9FF;
+}  
     
   
