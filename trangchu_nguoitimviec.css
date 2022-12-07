@@ -41,7 +41,7 @@ html {
   color: #ffffff;
   width: 150px;
   background-color: #48c0fd;
-  height: 47px;
+  padding: 15px 0px;
 }
 .account {
   width: 180px;
@@ -81,7 +81,7 @@ html {
   font-size: 90%;
   font-weight: bold;
   color: #ffffff;
-  padding: 15px 0;
+  padding: 15px 0px;
   background-color: blue;
 }
 
