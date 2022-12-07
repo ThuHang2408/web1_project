@@ -242,15 +242,6 @@ html {
   font-size: 20px;
   line-height: 35px;
 }
-.line {
-  position: absolute;
-  width: 15%;
-  height: 0px;
-  right: 17vw;
-  top: 22vh;
-  background-color: #48c0fd;
-  border: 3px solid #48c0fd;
-}
 @media (max-width: 700px) {
   .content__dieukhoandichvu {
     width: 100%;
