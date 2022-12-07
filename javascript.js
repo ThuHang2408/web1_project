@@ -151,4 +151,30 @@ function luu6() {
   listpc.classList.toggle("is-display-none");
 }
 
-
+$(document).ready(function () {
+  $(".image-slider").slick({
+    slidesToShow: 3,
+    // slidesToScroll: 2,
+    Infinity: true,
+    // arrows: false,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    prevArrow: `<button type='button' class='slick-prev slick-arrow'><i class="fa-solid fa-chevron-left"></i></button>`,
+    nextArrow: `<button type='button' class='slick-next slick-arrow'><i class="fa-solid fa-chevron-right"></i></button>`,
+    dots: true,
+    responsive: [
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
+  });
+});
