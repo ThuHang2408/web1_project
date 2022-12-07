@@ -162,15 +162,7 @@ body {
   line-height: 35px;
   color: #2f55d4;
 }
-.line {
-  position: absolute;
-  width: 5vw;
-  height: 0px;
-  right: 22.7vw;
-  top: 17.3vh;
-  background-color: #48c0fd;
-  border: 3px solid #48c0fd;
-}
+
 .content-1 {
   text-align: center;
   background: linear-gradient(180deg, #48c0fd 0%, #cfeefe 100%);
@@ -299,12 +291,7 @@ h2 {
   color: #000000;
 }
 @media screen and (max-width: 480px) {
-  .line {
-    position: absolute;
-    right: 15.5vw;
-    top: 9.5vh;
-    width: 15vw;
-  }
+ 
   h1 {
     font-size: 40px;
   }
