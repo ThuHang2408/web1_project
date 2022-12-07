@@ -327,6 +327,62 @@ h2 {
 .hover2:hover {
   color: #0e3680;
 }
+/* luu */
+#boluu7,
+#boluu8,
+#boluu9,
+#boluu10,
+#boluu11,
+#boluu12,
+#boluu13 {
+  display: none;
+}
+#boluu7 .fa-heart,
+#boluu8 .fa-heart,
+#boluu9 .fa-heart,
+#boluu10 .fa-heart,
+#boluu11 .fa-heart,
+#boluu12 .fa-heart,
+#boluu13 .fa-heart {
+  color: #0075ff;
+}
+#luu7,
+#luu8,
+#luu9,
+#luu10,
+#luu11,
+#luu12,
+#luu13,
+#boluu7,
+#boluu8,
+#boluu9,
+#boluu10,
+#boluu11,
+#boluu12,
+#boluu13 {
+  width: 80%;
+  margin-top: 10px;
+  border-radius: 5px;
+  border: 0.5px solid rgb(202, 185, 172);
+  padding: 8px 0;
+}
+#luu7:hover,
+#luu8:hover,
+#luu9:hover,
+#luu10:hover,
+#luu11:hover,
+#luu12:hover,
+#luu13:hover,
+#boluu7:hover,
+#boluu8:hover,
+#boluu9:hover,
+#boluu10:hover,
+#boluu11:hover,
+#boluu12:hover,
+#boluu13:hover {
+  background-color: #ebdddd;
+}
+/*  luu*/
 #apply {
   margin-bottom: 15px;
   width: 80%;
@@ -412,6 +468,96 @@ ul {
   width: 85%;
   margin: auto;
 }
+/* joblastest */
+.image-slider {
+  padding-bottom: 30px;
+  display: flex;
+}
+.job-lastest-item {
+  width: 30%;
+  border: 1px solid rgb(153, 152, 152);
+}
+.compa {
+  font-weight: bold;
+}
+.job-image {
+  height: 100px;
+  width: 90px;
+  margin-bottom: 20px;
+  float: left;
+  margin-right: 10px;
+}
+.job-image img {
+  margin-top: 10px;
+  width: 100%;
+  height: 100%;
+}
+.comp {
+  margin-top: 10px;
+}
+.slick-initialized .slick-slide {
+  margin: 0 10px;
+}
+.slick-arrow {
+  position: absolute;
+  top: 40%;
+  transform: translateY(-50%);
+  border: none;
+  border-radius: 100px;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  line-height: 1;
+  z-index: 5;
+  transition: all 0.2s linear;
+}
+.slick-arrow:hover {
+  background-color: #cbebf6;
+  color: #00b8f5;
+}
+.slick-prev {
+  left: 0;
+}
+.slick-next {
+  right: 0px;
+}
+
+.slick-dots {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0px);
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  gap: 0 10px;
+}
+.slick-dots button {
+  font-size: 0;
+  width: 10px;
+  height: 10px;
+  border-radius: 100px;
+  background-color: #eee;
+  border: none;
+  outline: none;
+  transform: all 0.2s linear;
+}
+.slick-dots .slick-active button {
+  background-color: #2cccff;
+}
+
+.bgcl {
+  background-color: aliceblue;
+}
+.container-row-top .head {
+  background-color: #0075ff;
+  color: white;
+  margin-bottom: 10px;
+}
+/* joblastest */
 .top-head {
   width: 100%;
   text-align: center;
