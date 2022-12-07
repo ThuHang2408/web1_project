@@ -151,15 +151,6 @@ body {
   color: #2f55d4;
   font-weight: 700;
 }
-.line {
-  position: absolute;
-  width: 6vw;
-  height: 0px;
-  left: 22vw;
-  top: 17vh;
-  background-color: #48c0fd;
-  border: 3px solid #48c0fd;
-}
 .lienheh1 {
   text-align: center;
   font-family: "Roboto";
