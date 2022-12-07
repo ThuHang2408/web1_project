@@ -134,15 +134,6 @@ body {
   line-height: 35px;
   color: #2f55d4;
 }
-.line {
-  position: absolute;
-  width: 9%;
-  height: 0px;
-  left: 20vw;
-  top: 17vh;
-  background-color: #48c0fd;
-  border: 3px solid #48c0fd;
-}
 .vechungtoi {
   margin-top: 30px;
   font-family: "Roboto";
