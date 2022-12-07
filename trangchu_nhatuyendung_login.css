@@ -145,30 +145,7 @@ body {
   #nav-mb button {
     display: none;
   }
-  @media (max-width: 830px) {
-    .list-menu-pc {
-        display: none;
-    }
-    .nav-pc,
-    .btn-menu,
-    .account {
-      display: none;
-    }
-    .logo img {
-      width: 43% !important;
-    }
-    #nav-mb button {
-      position: absolute;
-      top: 25px;
-      right: 10px;
-      font-size: 20px;
-  
-      display: block;
-      color: #48c0fd;
-      border: none;
-      background: none;
-    }
-  }
+ 
 /* body */
 #body{
     margin-left: 45px;
@@ -379,34 +356,48 @@ color: #0075FF;
     top: 21px;
 
 }
+hr{
+  width: 100%; top: 260px; position: absolute; background-color: black;
+}
+.exist > a {
+  text-decoration: none; color: black;
+}
 /* footer */
 .logo-footer img {
-    width: 296px;
-    margin-bottom: 10px;
-  }
-  footer {
-    margin-top: 40px;
-    background-color: #2A363B;
-  }
-  
-  .copyright {
-    text-align: center;
-  }
-  .content1_2 img {
-    width: 150px;
-    margin-left: -12px;
-  }
-  .blue {
-    color: #0075ff;
-  }
-  h3,p{
-      color: white;
-  }
-  .hover:hover{
-      text-decoration: underline;
-  }
-@media screen and (max-width: 990px){
-    #content_header{
+  width: 296px;
+  margin-bottom: 10px;
+}
+.pd-left {
+  padding-left: 45px !important;
+}
+footer {
+  margin-top: 30px;
+}
+.background {
+  background-color: #2a363b;
+}
+.copyright {
+  text-align: center;
+  margin-bottom: 0;
+  font-size: 13px;
+}
+.content1_2 img {
+  width: 150px;
+  margin-left: -12px;
+}
+.white {
+  color: white;
+}
+.blue {
+  color: #0075ff;
+}
+
+.hover:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 480px){
+  #content_header{
     padding-left: 0%;
     }
     #body img{
@@ -435,36 +426,6 @@ color: #0075FF;
     #contentBody .rightContent .rightTopContent .changeView{
         left: 40%;
     }
-}
-@media screen and (max-width: 768px){
-    #contentBody .leftContent .leftBottomContent .myPost{
-        font-size: 18px;
-    }
-}
-@media screen and (max-width: 650px){
-    #body img{
-        width: 100%;
-        height: auto;
-    }
-    #contentBody .leftContent .leftBottomContent .myPost{
-        font-size: 17px;
-    }
-    #contentBody .leftContent .leftBottomContent .tatCa_chuaXem{
-        top: 35px;
-        left: 69%;
-    }
-}
-@media screen and (max-width: 580px){
-    #body img{
-        width: 100%;
-        height: auto;
-        margin-top: -20px;
-    }
-    #contentBody .leftContent .leftBottomContent .myPost{
-        font-size: 16px;
-    }
-}
-@media screen and (max-width: 480px){
 #gach_ngang{
     height: 3px;
 }
@@ -492,4 +453,29 @@ color: #0075FF;
     #contentBody .rightContent .rightTopContent .exit{
       left: 75%;
     }
+    .pd-left {
+      padding-left: 15px !important;
+    }
+    .list-menu-pc {
+      display: none;
+  }
+  .nav-pc,
+  .btn-menu,
+  .account {
+    display: none;
+  }
+  .logo img {
+    width: 43% !important;
+  }
+  #nav-mb button {
+    position: absolute;
+    top: 25px;
+    right: 10px;
+    font-size: 20px;
+
+    display: block;
+    color: #48c0fd;
+    border: none;
+    background: none;
+  }
 }
