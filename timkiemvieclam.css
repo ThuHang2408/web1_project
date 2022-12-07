@@ -410,9 +410,9 @@ h4 {
   display: inline-block;
   padding: 15px;
 }
-.job-logo {
-  width: 100px;
-  height: 100px;
+.job-logo-ima {
+  width: 100% ;
+  height: 120px;
   display: flex;
   align-items: center;
   justify-content: center;
